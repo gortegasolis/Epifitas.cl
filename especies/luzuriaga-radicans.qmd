@@ -1,0 +1,49 @@
+---
+title: "*Luzuriaga radicans*"
+subtitle: "Quilineja, Azahar de monte"
+description: "Luzuriaga radicans — Trepadora, rastrera. Luzuriagaceae. Distribución: VII-XI regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/arb-044escala.jpg.pagespeed.ic.S6IZHCBBZ-.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Luzuriagaceae
+
+Nombre común
+: Quilineja, Azahar de monte
+
+Forma de crecimiento
+: Trepadora, rastrera
+
+Distribución
+: VII-XI regiones
+
+:::
+
+## Descripción
+
+Planta perenne, trepadora, común en bosques costeros del tipo Valdiviano. Hojas oblongo-lanceoladas, alcanzan hasta 5 cm de largo, nervaduras paralelas, envés de las hojas con lineas blancas marcadas. Flores blancas con 5-6 tépalos. Los frutos corresponden a bayas ovoides de distintivo color rojo-anaranjado.Los frutos son consumidos por micromamíferos como el Monito del monte (Dromiciops gliroides).
+
+### Floración
+
+Septiembre a Diciembre
+
+### Fructificación
+
+Diciembre a Mayo
+
+### Estado de conservación
+
+No existen revisiones sobre esta especie.
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/frutos-lr-300x225.jpg)
+![](../images/especies/arb-036escala-225x300.jpg)
+![](../images/especies/arb-040escala-300x225.jpg)
+:::

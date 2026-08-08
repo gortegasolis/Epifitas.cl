@@ -1,0 +1,19 @@
+---
+title: "Trepadoras"
+description: "Plantas arraigadas en el suelo que utilizan otros vegetales para ascender hacia la luz"
+listing:
+  contents: "../especies/*.qmd"
+  type: grid
+  grid-columns: 3
+  include:
+    categories: "Trepadoras"
+  sort: "title"
+  fields: [image, title, subtitle]
+---
+
+Las trepadoras y lianas son plantas con tallos flexibles que germinan en el suelo del bosque y se apoyan o sujetan de árboles y arbustos para alcanzar la luz en el dosel.
+
+## Especies trepadoras
+
+:::{#listing}
+:::

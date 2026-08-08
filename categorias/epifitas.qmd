@@ -1,0 +1,23 @@
+---
+title: "Epífitas"
+description: "Plantas que crecen sobre otras plantas sin ser parásitas"
+listing:
+  contents: "../especies/*.qmd"
+  type: grid
+  grid-columns: 3
+  include:
+    categories: "Epífitas"
+  sort: "title"
+  fields: [image, title, subtitle]
+---
+
+Las epífitas son plantas que crecen sobre otras plantas, usándolas como soporte y siendo capaces de desarrollar todo su ciclo de vida sobre ellas.
+
+::: {.callout-note}
+A diferencia de las plantas parásitas, las epífitas **no extraen nutrientes directamente del tejido vivo de su hospedero**. Para sobrevivir en lo alto del dosel, han desarrollado diversas adaptaciones para capturar humedad atmosférica, almacenar agua y retener materia orgánica.
+:::
+
+## Especies epífitas
+
+:::{#listing}
+:::

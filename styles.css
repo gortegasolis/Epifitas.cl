@@ -1,0 +1,455 @@
+/* ============================================================
+   Epifitas.cl — Custom Quarto Styles
+   Chilean forest epiphytes site
+   ============================================================ */
+
+/* ---- Custom Properties ---- */
+:root {
+  --ep-green-dark: #1a2f1a;
+  --ep-green-mid: #2d5a2d;
+  --ep-green-light: #4a8c4a;
+  --ep-green-pale: #e8f0e8;
+  --ep-green-accent: #6fbf6f;
+  --ep-brown: #5c4a32;
+  --ep-cream: #f5f2eb;
+  --ep-gold: #c9a84c;
+  --ep-text: #2c3e2c;
+  --ep-text-light: #a0b8a0;
+  --ep-shadow: rgba(26, 47, 26, 0.15);
+  --ep-radius: 12px;
+  --ep-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ---- Base Typography ---- */
+body {
+  font-family: 'Roboto', -apple-system, sans-serif;
+  color: var(--ep-text);
+  background-color: var(--ep-cream);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', 'Georgia', serif;
+  color: var(--ep-green-dark);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+}
+
+/* ---- Navbar Customization ---- */
+.navbar {
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px var(--ep-shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar .navbar-brand img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  transition: transform var(--ep-transition);
+}
+
+.navbar .navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color var(--ep-transition), background-color var(--ep-transition);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem !important;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(111, 191, 111, 0.15);
+  color: var(--ep-green-accent) !important;
+}
+
+/* ---- Hero Section (Homepage) ---- */
+.hero-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 var(--ep-radius) var(--ep-radius);
+  overflow: hidden;
+  margin: -1rem -1rem 2rem -1rem;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 47, 26, 0.85) 0%,
+    rgba(45, 90, 45, 0.6) 50%,
+    rgba(26, 47, 26, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 3rem 2rem;
+  animation: heroFadeIn 1s ease-out;
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .highlight {
+  font-style: italic;
+  color: var(--ep-green-accent);
+  font-weight: 500;
+}
+
+/* ---- Species Cards (Listing Grid) ---- */
+.quarto-listing-default .listing-image,
+.quarto-grid-item .listing-item-img-placeholder,
+.card-img-top {
+  border-radius: var(--ep-radius) var(--ep-radius) 0 0;
+  object-fit: cover;
+  height: 220px;
+  transition: transform var(--ep-transition), filter var(--ep-transition);
+}
+
+.quarto-grid-item:hover .card-img-top,
+.quarto-grid-item:hover .listing-item-img-placeholder {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.quarto-grid-item .card {
+  border: none;
+  border-radius: var(--ep-radius);
+  box-shadow: 0 4px 20px var(--ep-shadow);
+  overflow: hidden;
+  transition: transform var(--ep-transition), box-shadow var(--ep-transition);
+  background: white;
+}
+
+.quarto-grid-item .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(26, 47, 26, 0.2);
+}
+
+.quarto-grid-item .card-body {
+  padding: 1.2rem;
+}
+
+.quarto-grid-item .card-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ep-green-dark);
+}
+
+.quarto-grid-item .card-subtitle {
+  color: var(--ep-green-mid);
+  font-size: 0.85rem;
+}
+
+/* ---- Category Badges ---- */
+.quarto-category {
+  background-color: var(--ep-green-mid) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 20px;
+  padding: 0.25em 0.8em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: background-color var(--ep-transition);
+}
+
+.quarto-category:hover {
+  background-color: var(--ep-green-light) !important;
+}
+
+/* ---- Species Info Card ---- */
+.species-info {
+  background: linear-gradient(135deg, var(--ep-green-pale), white);
+  border-left: 4px solid var(--ep-green-mid);
+  border-radius: 0 var(--ep-radius) var(--ep-radius) 0;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 12px var(--ep-shadow);
+}
+
+.species-info dt {
+  color: var(--ep-green-dark);
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.8rem;
+}
+
+.species-info dt:first-child {
+  margin-top: 0;
+}
+
+.species-info dd {
+  color: var(--ep-text);
+  margin-left: 0;
+  margin-bottom: 0.3rem;
+  padding-left: 0;
+}
+
+/* ---- Species Page Title ---- */
+.species-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--ep-green-dark);
+  border-bottom: 3px solid var(--ep-green-accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Image Gallery ---- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery figure {
+  margin: 0;
+  border-radius: var(--ep-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 15px var(--ep-shadow);
+  transition: transform var(--ep-transition);
+}
+
+.gallery figure:hover {
+  transform: scale(1.02);
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter var(--ep-transition);
+}
+
+.gallery figure:hover img {
+  filter: brightness(1.08);
+}
+
+.gallery figcaption {
+  padding: 0.6rem 0.8rem;
+  background: var(--ep-green-dark);
+  color: var(--ep-text-light);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ---- Bibliography Section ---- */
+.bibliografia {
+  background: var(--ep-cream);
+  border-radius: var(--ep-radius);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(45, 90, 45, 0.1);
+}
+
+.bibliografia h2,
+.bibliografia h3 {
+  font-size: 1.1rem;
+  color: var(--ep-green-mid);
+  margin-bottom: 1rem;
+}
+
+.bibliografia ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bibliografia li {
+  padding: 0.5rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(45, 90, 45, 0.06);
+}
+
+.bibliografia li::before {
+  content: '📄';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.bibliografia li:last-child {
+  border-bottom: none;
+}
+
+/* ---- Alphabetical Index ---- */
+.alpha-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--ep-green-pale);
+  border-radius: var(--ep-radius);
+  justify-content: center;
+}
+
+.alpha-index a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--ep-green-dark);
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  box-shadow: 0 2px 6px var(--ep-shadow);
+  transition: all var(--ep-transition);
+}
+
+.alpha-index a:hover {
+  background: var(--ep-green-mid);
+  color: white;
+  transform: scale(1.15);
+}
+
+/* ---- Page Content ---- */
+.content-section {
+  background: white;
+  border-radius: var(--ep-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 15px var(--ep-shadow);
+}
+
+/* ---- Footer ---- */
+.nav-footer {
+  font-size: 0.85rem;
+}
+
+.nav-footer a {
+  color: var(--ep-green-accent) !important;
+}
+
+.nav-footer a:hover {
+  color: white !important;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .species-info {
+    padding: 1rem 1.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ---- Smooth transitions for page elements ---- */
+.quarto-grid-item,
+.content-section,
+.species-info,
+.bibliografia {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--ep-green-mid);
+  transition: color var(--ep-transition);
+}
+
+a:hover {
+  color: var(--ep-green-light);
+}
+
+/* ---- TOC Styling ---- */
+#TOC a {
+  color: var(--ep-text);
+  border-left: 2px solid transparent;
+  padding-left: 0.5rem;
+  transition: all var(--ep-transition);
+}
+
+#TOC a:hover,
+#TOC a.active {
+  color: var(--ep-green-mid);
+  border-left-color: var(--ep-green-accent);
+}
+
+/* ---- Leaflet map container ---- */
+.map-container {
+  border-radius: var(--ep-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--ep-shadow);
+  margin: 1.5rem 0;
+  height: 500px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

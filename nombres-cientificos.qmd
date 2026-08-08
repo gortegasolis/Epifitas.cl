@@ -1,0 +1,86 @@
+---
+title: "Nombres científicos"
+description: "Índice alfabético de plantas epífitas, trepadoras y hemiepífitas de Chile"
+toc: true
+toc-depth: 2
+---
+
+Listado alfabético de las especies de plantas epífitas, trepadoras y hemiepífitas presentes en los bosques de Chile.
+
+::: {.alpha-index}
+[A](#a) [B](#b) [C](#c) [E](#e) [F](#f) [G](#g) [H](#h) [L](#l) [M](#m) [P](#p) [R](#r) [S](#s)
+:::
+
+## A
+
+- [*Asplenium dareoides*](especies/asplenium-dareoides.qmd)
+- [*Asplenium trilobum*](especies/asplenium-trilobum.qmd)
+- [*Asteranthera ovata*](especies/asteranthera-ovata.qmd)
+
+## B
+
+- *Boquila trifoliolata*
+
+## C
+
+- *Campsidium valdivianum*
+- *Cissus striata*
+
+## E
+
+- *Elytropus chilensis*
+- *Ercilla syncarpelata*
+
+## F
+
+- [*Fascicularia bicolor*](especies/fascicularia-bicolor.qmd)
+
+## G
+
+- [*Gaultheria insana*](especies/gaultheria-insana.qmd)
+- *Grammitis magellanica*
+- *Griselinia racemosa*
+
+## H
+
+- *Hydrangea serratifolia*
+- [*Hymenophyllum caudiculatum*](especies/hymenophyllum-caudiculatum.qmd)
+- [*Hymenophyllum cruentum*](especies/hymenophyllum-cruentum.qmd)
+- *Hymenophyllum cuneatum*
+- *Hymenophyllum darwinii*
+- [*Hymenophyllum dicranotrichum*](especies/hymenophyllum-dicranotrichum.qmd)
+- *Hymenophyllum ferrugineum*
+- [*Hymenophyllum pectinatum*](especies/hymenophyllum-pectinatum.qmd)
+- *Hymenophyllum peltatum*
+- *Hymenophyllum plicatum*
+- [*Hymenophyllum rugosum*](especies/hymenophyllum-rugosum.qmd)
+
+## L
+
+- [*Lapageria rosea*](especies/lapageria-rosea.qmd)
+- *Luzuriaga polyphylla*
+- [*Luzuriaga radicans*](especies/luzuriaga-radicans.qmd)
+
+## M
+
+- [*Mitraria coccinea*](especies/mitraria-coccinea.qmd)
+
+## P
+
+- [*Philesia magellanica*](especies/philesia-magellanica.qmd)
+
+## R
+
+- *Raukaua laetevirens*
+- *Raukaua valdiviensis*
+
+## S
+
+- [*Sarmienta scandens*](especies/sarmienta-scandens.qmd)
+- *Serpyllopsis caespitosa*
+- *Synammia feullei*
+- *Synammia intermedia*
+
+::: {.callout-note}
+Las especies con enlace tienen ficha botánica disponible. Las demás serán incorporadas en futuras actualizaciones.
+:::

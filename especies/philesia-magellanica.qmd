@@ -1,0 +1,57 @@
+---
+title: "*Philesia magellanica*"
+subtitle: "Coicopihue, copihue chilote"
+description: "Philesia magellanica — Trepador apoyante, también puede ser encontrado como epífito. Philesiaceae. Distribución: XIV-XII regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/coi_AC_esc.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Philesiaceae
+
+Nombre común
+: Coicopihue, copihue chilote
+
+Forma de crecimiento
+: Trepador apoyante, también puede ser encontrado como epífito
+
+Distribución
+: XIV-XII regiones
+
+:::
+
+## Descripción
+
+Arbusto muy asociado a bosques húmedos de Alerce (Fitzroya cupressoides), en donde ha sido reportado como una especie dominante del dosel de alerces andinos. Hojas alternas, son coráceas, oblongas, de margen entero, y mucronadas. Sus flores son péndulas, grandes, acampanadas, y rosadas. Sus frutos corresponden a bayas globosas elipsoides.
+
+### Floración
+
+Diciembre- Abril
+
+### Fructificación
+
+Marzo- Junio
+
+### Estado de conservación
+
+No existen revisiones sobre esta especie.
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/coi_AC_esc.jpg)
+![](../images/especies/Chiloé-2009-145escala-225x300.jpg)
+![](../images/especies/coi_fru_esc.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Armesto JJ, J Díaz-Forester, C Tejo Haristoy, JL Celis-Diez. 2011.Botánica ecológica. Guía de Campo de la flora leñosa de Chiloé. IEB. Santiago, Ch.
+- ile. 161 p.Marticorena A, D Alarcón, L Abello, C Atala. 2010. Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.
+- Clement JP, M Moffett, D Shaw, A Lara, D Alarcón, O Larrain. 2001. Crown Structure and Biodiversity in Fitzroya cupressoides, the Giant Conifers of Alerce Andino National Park, Chile. Selbyana, 76-88.
+:::

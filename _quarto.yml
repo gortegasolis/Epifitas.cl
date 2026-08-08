@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Epifitas.cl"
+  description: "Plantas epífitas, trepadoras y hemiepífitas de los bosques de Chile"
+  site-url: "https://epifitas.cl"
+  favicon: "images/cc-by-nc-sa.png"
+
+  navbar:
+    background: "#1a2f1a"
+    foreground: "#e8f0e8"
+    logo: "images/header/bombus.jpg"
+    logo-alt: "Epifitas.cl"
+    title: "Epifitas.cl"
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Nombres científicos"
+        href: nombres-cientificos.qmd
+      - text: "Formas de crecimiento"
+        menu:
+          - text: "Epífitas"
+            href: categorias/epifitas.qmd
+          - text: "Hemiepífitas"
+            href: categorias/hemiepifitas.qmd
+          - text: "Trepadoras"
+            href: categorias/trepadoras.qmd
+      - text: "Referencias"
+        href: referencias.qmd
+      - text: "Distribución"
+        href: distribucion.qmd
+      - text: "Contacto"
+        href: contacto.qmd
+
+  page-footer:
+    left: |
+      © 2025 [Epifitas.cl](/index.qmd)
+    center: |
+      [![CC BY-NC-SA 4.0](/images/cc-by-nc-sa.png){height="31"}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+      [Daniela Mellado-Mansilla & Gabriel Ortega-Solís](/contacto.qmd)
+    right: |
+      Construido con [Quarto](https://quarto.org)
+    background: "#1a2f1a"
+    foreground: "#a0b8a0"
+
+  open-graph: true
+  twitter-card: true
+
+  search:
+    location: navbar
+    type: textbox
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    lang: es
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+

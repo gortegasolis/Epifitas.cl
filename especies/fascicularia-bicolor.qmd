@@ -1,0 +1,55 @@
+---
+title: "*Fascicularia bicolor*"
+subtitle: "Chupalla, poe, puñeñe"
+description: "Fascicularia bicolor — Epífita. Bromeliaceae. Distribución: V-X Regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/DSCN4057escala-945x709.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Bromeliaceae
+
+Nombre común
+: Chupalla, poe, puñeñe
+
+Forma de crecimiento
+: Epífita
+
+Distribución
+: V-X Regiones
+
+:::
+
+## Descripción
+
+Epífita de gran tamaño, común en bosques costeros del tipo Valdiviano y asociada a la presencia de árboles antiguos. Hojas largas, dispuestas en forma de roseta, con espinas en los bordes y de color verde claro. En época de floración las hojas se tornan rojas en la base (de ahí su nombre “bicolor”) , produciendo en el centro múltiples flores celestes. Es frecuente ver agrupaciones de múltiples rosetas de esta planta creciendo juntas. Los frutos son similares a los de su pariente terrestre el “chupón” (Greigia sphacelata), pero de pequeño tamaño.
+
+### Floración
+
+Febrero
+
+### Fructificación
+
+Marzo a Abril
+
+### Estado de conservación
+
+Vulnerable
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/pagweb-768x576.jpg)
+![](../images/especies/fbicoloresc-945x709.jpg)
+![](../images/especies/DSCN4529esc.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Armesto JJ., J Díaz-Forester, C Tejo Haristoy, JL Celis-Diez. 2011.Botánica ecológica. Guía de Campo de la flora leñosa de Chiloé. IEB. Santiago, Chile. 161 p.Marticorena A., D Alarcón, L Abello, C Atala. 2010. Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.
+:::

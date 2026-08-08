@@ -1,0 +1,52 @@
+---
+title: "*Hymenophyllum rugosum*"
+subtitle: "Helecho película"
+description: "Hymenophyllum rugosum — Epífito, eventualmente rastrero. Hymenophyllaceae. Distribución: V Región. (Endémico de Juan Fernández)."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/Hymenophyllum_rugosum2_esc-945x709.jpg.pagespeed.ic.Vj9EKblqJD.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Hymenophyllaceae
+
+Nombre común
+: Helecho película
+
+Forma de crecimiento
+: Epífito, eventualmente rastrero
+
+Distribución
+: V Región. (Endémico de Juan Fernández)
+
+:::
+
+## Descripción
+
+Helecho perenne, epífito, crece trepando sobre los troncos de árboles y de otros helechos como Blechnum cycadifolium y Dicksonia sp. en los bosques de montaña (Myrtisilva de altura) de Robinson Crusoe y Alejandro Selkirk. Sus frondas son aovado-lanceoladas de unos 4 a 6, incluso hasta 9 cm de largo por 1-4 cm de ancho. Sus venas son marcadas y de color negruzco que contrastan con el color de la hoja, tienen pequeñas protuberancias piliformes. Borde de la hoja denticulado. Soros dispuestos de 1-3 por segmento, indusios aserrado-dentados en el borde superior.
+
+### Estado de conservación
+
+Vulnerable. (MMA 2008)
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/Hymenophyllum_rugosum1_esc.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Rodríguez, R. 1995. Pteridophyta. En: Marticorena, C. & R. Rodriguez (Eds.). Flora de Chile. Vol. 1. Pteridophyta – Gymnospermae. Universidad de Concepción, Chile. 119 – 309.
+- BARRERA, E. 1997. Helechos de Juan Fernández. Museo Nacional de Historia Natural, Publicación Ocasional Nº 51, 104 pp.
+- Larsen, Cristian, Ponce, M. Mónica, & Scataglini, M. Amalia. (2013). Revisión de las especies de Hymenophyllum (Hymenophyllaceae) del sur de Argentina y Chile. Gayana. Botánica, 70(2), 275-330.
+- GuardarGuardar.
+:::
+
+---
+
+*Autor de la ficha: Diego Penneckamp Furniel.Citar como: Penneckamp D. 2017. Hymenophyllum rugosum. Disponible en: [http://epifitas.cl/hymenophyllum-rugosum/*

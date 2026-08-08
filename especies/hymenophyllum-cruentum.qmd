@@ -1,0 +1,49 @@
+---
+title: "*Hymenophyllum cruentum*"
+subtitle: "Seda de la luma, sanguinaria, voladora del monte"
+description: "Hymenophyllum cruentum — Epífito. Hymenophyllaceae. Distribución: VII-XII regiones, también en el Archipiélago de Juan Fernández."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/puyehue-147escala.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Hymenophyllaceae
+
+Nombre común
+: Seda de la luma, sanguinaria, voladora del monte
+
+Forma de crecimiento
+: Epífito
+
+Distribución
+: VII-XII regiones, también en el Archipiélago de Juan Fernández
+
+:::
+
+## Descripción
+
+Helecho epífito, común en bosques costeros. Rizoma rastrero, rígido de color marrón oscuro. Peciolos delgados, de color café oscuro. Láminas enteras, aovado-lanceoladas, anchas y suaves (de ahí tal vez el nombre de seda), margen ligeramente dentado. Nervadura principal de color oscuro, nervios secundarios alternos u opuestos de color claro. Soros grandes marginales protegidos por indusios romboidales o semiorbiculares, de margen entero. 50-80 esporangios por soro. H. cruentum puede presentarse hasta los 23 m en olivillos costeros en Chiloé, encontrando incluso colonias que crecen sólo en las secciones superiores de los forófitos.
+
+### Estado de conservación
+
+Vulnerable
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/arb-278escala-225x300.jpg)
+![](../images/especies/100_4404escala-300x225.jpg)
+![](../images/especies/puyehue-135escala-225x300.jpg)
+![](../images/especies/arb-275escala-225x300.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Cárdenas R. & C. Villagrán. 2005. Chiloé, Botánica de la Cotidianidad. Consejo Nacional del Libro y la lectura. Chile, 365 p.Diem, J., & de Lichtenstein, J. S. 1959. Las Himenofiláceas del área argentino-chilena del sud. Darwiniana, 611-760.Díaz, I. A., Sieving, K. E., Pena-Foxon, M. E., Larraín, J., & Armesto, J. J. 2010. Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A neglected functional component. Forest Ecology and Management, 259(8), 1490-1501.
+- Rodríguez, R., D. Alarcón y J. Espejo. 2009. Helechos Nativos del Centro y Sur de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepcion, Chile, 212 p.
+:::

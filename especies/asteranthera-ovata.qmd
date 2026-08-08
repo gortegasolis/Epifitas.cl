@@ -1,0 +1,54 @@
+---
+title: "*Asteranthera ovata*"
+subtitle: "Estrellita"
+description: "Asteranthera ovata — Rastrera, trepadora. Gesneriaceae. Distribución: VII-XII regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/DSCN3857esc.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Gesneriaceae
+
+Nombre común
+: Estrellita
+
+Forma de crecimiento
+: Rastrera, trepadora
+
+Distribución
+: VII-XII regiones
+
+:::
+
+## Descripción
+
+Planta perenne, crece en bosques húmedos, costeros y andinos. Hojas opuestas, ovadas, con el borde crenado. Flores muy rojas, tubulares, con lineas blancas en el interior. Debido a su color, las flores de A. ovata son altamente atractivas para picaflores, aunque también son polinizadas por moscardones y otros insectos. Los frutos son bayas globosas.
+
+### Floración
+
+Noviembre a Enero
+
+### Fructificación
+
+Mayo a Agosto
+
+### Estado de conservación
+
+No existen datos para esta especie.
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/san-pablo-033escala.jpg)
+![](../images/especies/makeo2-431escala.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Armesto JJ, J Díaz-Forester, C Tejo Haristoy, JL Celis-Diez. 2011.Botánica ecológica. Guía de Campo de la flora leñosa de Chiloé. IEB. Santiago, Chile. 161 p.Marticorena A, D Alarcón, L Abello, C Atala. 2010. Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.
+:::

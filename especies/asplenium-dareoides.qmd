@@ -1,0 +1,9 @@
+---
+title: "*Asplenium dareoides*"
+subtitle: ""
+description: "Content not recovered."
+categories: [Epífitas]
+image: "../images/especies/default.jpg"
+---
+
+Contenido no recuperado de los respaldos.

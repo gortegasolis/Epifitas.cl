@@ -1,0 +1,48 @@
+---
+title: "*Hymenophyllum dicranotrichum*"
+subtitle: "Helecho película, Mämell-täpel (“Hoja de palo” en mapudungún)"
+description: "Hymenophyllum dicranotrichum — Epifito, epipetrico. Hymenophyllaceae. Distribución: VIII-XI regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/makeo2-063escala-768x576.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Hymenophyllaceae
+
+Nombre común
+: Helecho película, Mämell-täpel (“Hoja de palo” en mapudungún)
+
+Forma de crecimiento
+: Epifito, epipetrico
+
+Distribución
+: VIII-XI regiones
+
+:::
+
+## Descripción
+
+Helecho pequeño muy abundante en bosques costeros, con láminas pinnada- pinnatifídas lanceoladas de entre 1 y 6 cm. Rizoma rastrero café oscuro muy delgado. Peciolo glabro. Raquis alado. Margenes enteros, en la sección superior con algunos pelos café claro en el envés. Soros axilares, arqueados en la base y con indusios bivalvos. Se ha registrado a H. dicranotrichum creciendo desde la base de los fustes hasta los 15 m en Ulmos y Olivillos costeros.
+
+### Estado de conservación
+
+Preocupación menor.
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/DSCN0410esca-300x225.jpg)
+![](../images/especies/DSCN0414escala-300x225.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Diem, J., & de Lichtenstein, J. S. 1959. Las Himenofiláceas del área argentino-chilena del sud. Darwiniana, 611-760.Díaz, I. A., Sieving, K. E., Pena-Foxon, M. E., Larraín, J., & Armesto, J. J. 2010. Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A neglected functional component. Forest Ecology and Management, 259(8), 1490-1501.
+- Mösbach E.W. 1992. Botánica Indígena de Chile. Editorial Andrés Bello. Santiago, Chile, 140 p.
+- Rodríguez, R., D. Alarcón y J. Espejo. 2009. Helechos Nativos del Centro y Sur de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepcion, Chile, 212 p.
+:::

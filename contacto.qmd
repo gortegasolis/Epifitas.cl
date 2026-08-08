@@ -1,0 +1,31 @@
+---
+title: "Contacto"
+description: "Contacto con los autores de Epifitas.cl — Daniela Mellado-Mansilla y Gabriel Ortega-Solís"
+toc: false
+---
+
+## Los autores
+
+Si tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con **Daniela Mellado** y/o **Gabriel Ortega** a través del siguiente correo:
+
+::: {.content-section}
+
+📧 **Correo de contacto:** [epifitas.cl\@gmail.com](mailto:epifitas.cl@gmail.com)
+
+:::
+
+Desde ya te agradecemos por visitar la página.
+
+---
+
+## Licencia
+
+::: {.content-section}
+
+[![Licencia Creative Commons](images/cc-by-nc-sa.png){height="31"}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**Epifitas.cl** por [Daniela Mellado-Mansilla & Gabriel Ortega-Solís](contacto.qmd) se distribuye bajo una [Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Excepciones o derechos de uso no cubiertos por esta licencia deben ser solicitados a los autores.
+
+:::

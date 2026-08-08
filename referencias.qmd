@@ -1,0 +1,65 @@
+---
+title: "Referencias"
+description: "Listado de trabajos científicos sobre epífitas, trepadoras y parásitas en Chile"
+toc: false
+---
+
+En esta sección presentamos una recopilación de investigaciones científicas sobre plantas epífitas, trepadoras, lianas y parásitas realizadas en los bosques de Chile.
+
+::: {.content-section}
+
+### Trabajos destacados
+
+- **Armesto JJ, J Díaz-Forester, C Tejo Haristoy, JL Celis-Diez. 2011.** *Botánica ecológica. Guía de Campo de la flora leñosa de Chiloé*. IEB. Santiago, Chile. 161 p.
+- **Díaz IA, KE Sieving, ME Pena-Foxon, J Larraín, JJ Armesto. 2010.** Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A neglected functional component. *Forest Ecology and Management*, 259(8): 1490-1501.
+- **Marticorena A, D Alarcón, L Abello, C Atala. 2010.** *Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo*. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.
+- **Ortega-Solís G, I Díaz, D Mellado-Mansilla, F Tello, R Moreno, C Tejo. 2017.** Ecosystem engineering by *Fascicularia bicolor* in the canopy of the South-American temperate rainforest. *Forest Ecology and Management*, 400: 417-428.
+
+:::
+
+Found 42 references
+
+| Autor | Título | Año | Revista | Tipo |
+|-------|--------|-----|---------|------|
+| Arroniz-Crespo, M., Perez-Ortega, S., De los Rios, A., Green, T.G.A., Ochoa-Hues | Bryophyte-Cyanobacteria Associations during Primary Succession in Recently Deglaciated Areas of Tier | 2014 | PLOS ONEVol. 9(5) | article |
+| Atala, C., Schneider, C., Bravo, G., Quilodran, M. and Vargas, R. | Anatomical, physiological and chemical differences between populations of Pseudocyphellaria flavican | 2015 | GAYANA BOTANICAVol. 72(1), pp. 21-26 | article |
+| Cornelius, C. | SPATIAL VARIATION IN NEST-SITE SELECTION BY A SECONDARY CAVITY-NESTING BIRD IN A HUMAN-ALTERED LANDS | 2008 | CONDORVol. 110(4), pp. 615-626 | article |
+| Del Val, E. and Dirzo, R. | Myrmecophily: Plants with their own army | 2004 | INTERCIENCIAVol. 29(12), pp. 673+ | article |
+| Diaz, I., Papic, C. and Armesto, J. | An assessment of post-dispersal seed predation in temperate rain forest fragments in Chiloe Island,  | 1999 | OIKOSVol. 87(2), pp. 228-238 | article |
+| Diaz, I.A., Correa, C., Pena-Foxon, M.E., Mendez, M.A. and Charrier, A. | First record on an amphibian in the canopy of temperate rainforests of southern South America: Eupso | 2010 | BOSQUEVol. 31(2), pp. 165-168 | article |
+| Diaz, I.A., Sieving, K.E., Pena-Foxon, M. and Armesto, J.J. | A field experiment links forest structure and biodiversity: epiphytes enhance canopy invertebrates i | 2012 | ECOSPHEREVol. 3(1) | article |
+| Diaz, I.A., Sieving, K.E., Pena-Foxon, M.E., Larrain, J. and Armesto, J.J. | Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A n | 2010 | FOREST ECOLOGY AND MANAGEMENTVol. 259(8), pp. 1490-1501 | article |
+| Ely, F., Torres, F., Rada, F. and Leon, Y. | Morpho-anatomical study of two tropical cloud forest orchids | 2007 | INTERCIENCIAVol. 32(6), pp. 410-418 | article |
+| Fernanda Salinas, M., Arroyo, M.T.K. and Armesto, J.J. | EPIPHYTIC GROWTH HABITS OF CHILEAN GESNERIACEAE AND THE EVOLUTION OF EPIPHYTES WITHIN THE TRIBE CORO | 2010 | ANNALS OF THE MISSOURI BOTANICAL GARDENVol. 97(1), pp. 117-1 | article |
+| Fernandez, R., Moreno-Chacon, M., Canessa, R., Mardones, D., Viveros, N. and Sal | Relationship between ecological breadth of vascular epiphytes and their ecophysiological responses t | 2016 | GAYANA BOTANICAVol. 73(1), pp. 68-76 | article |
+| Figueroa, J. and Armesto, J. | Community-wide germination strategies in a temperate rainforest of Southern Chile: ecological and ev | 2001 | AUSTRALIAN JOURNAL OF BOTANYVol. 49(4), pp. 411-425 | article |
+| Gatica, A., Pereira, I. and Vallejos, O. | Epiphytic lichens: a tool for to study the ecological continuity Mocha Island, Chile | 2011 | GAYANA BOTANICAVol. 68(2), pp. 226-235 | article |
+| Godoy, O. and Gianoli, E. | Functional variation of leaf succulence in a cold rainforest epiphyte | 2013 | PLANT ECOLOGY AND EVOLUTIONVol. 146(2), pp. 167-172 | article |
+| Godoy, R., Oyarzun, C. and Gerding, V. | Precipitation chemistry in deciduous and evergreen Nothofagus forests of southern Chile under a low- | 2001 | BASIC AND APPLIED ECOLOGYVol. 2(1), pp. 65-72 | article |
+| Gonzalez, A.L., Miguel Farina, J., Pinto, R., Perez, C., Weathers, K.C., Armesto | Bromeliad growth and stoichiometry: responses to atmospheric nutrient supply in fog-dependent ecosys | 2011 | OECOLOGIAVol. 167(3), pp. 835-845 | article |
+| Gradstein, S.R. and Cuvertino, J. | Observations on the liverwort flora of the surroundings of Santiago, Central Chile | 2015 | CRYPTOGAMIE BRYOLOGIEVol. 36(2), pp. 129-141 | article |
+| Guzman-Marin, R. and Saldana, A. | Contribution of accidental epiphytism to the vascular plants distribution in a southern temperate ra | 2017 | GAYANA BOTANICAVol. 74(1), pp. 226-228 | article |
+| Jose Parra, M., Acuna, K.I., Sierra-Almeida, A., Sanfuentes, C., Saldana, A., Co | Photosynthetic Light Responses May Explain Vertical Distribution of Hymenophyllaceae Species in a Te | 2015 | PLOS ONEVol. 10(12) | article |
+| Jose Parra, M., Rodriguez, R., Cavieres, L., Munoz-Tapia, L. and Atala, C. | Latitudinal patterns in Pteridophyte distribution of Continental Chile | 2015 | GAYANA BOTANICAVol. 72(1), pp. 58-69 | article |
+| Mellado-Mansilla, D., Leon, C.A., Ortega-Solis, G., Godoy-Guinao, J., Moreno, R. | Vertical patterns of epiphytic bryophyte diversity in a montane Nothofagus forest in the Chilean And | 2017 | NEW ZEALAND JOURNAL OF BOTANYVol. 55(4), pp. 514-529 | article |
+| Moreno, J., Merino, S., Vasquez, R. and Armesto, J. | Breeding biology of the Thorn-tailed Rayadito (Furnariidae) in south-temperate rainforests of Chile | 2005 | CONDORVol. 107(1), pp. 69-77 | article |
+| Munoz, A., Chacon, P., Perez, F., Barnert, E. and Armesto, J. | Diversity and host tree preferences of vascular epiphytes and vines in a temperate rainforest in sou | 2003 | AUSTRALIAN JOURNAL OF BOTANYVol. 51(4), pp. 381-391 | article |
+| Ortega-Solis, G., Diaz, I., Mellado-Mansilla, D., Tello, F., Moreno, R. and Tejo | Ecosystem engineering by Fascicularia bicolor in the canopy of the South-American temperate rainfore | 2017 | FOREST ECOLOGY AND MANAGEMENTVol. 400, pp. 417-428 | article |
+| Parra, M.J., Acuna, K., Corcuera, L.J. and Saldana, A. | Vertical distribution of Hymenophyllaceae species among host tree microhabitats in a temperate rain  | 2009 | JOURNAL OF VEGETATION SCIENCEVol. 20(4), pp. 588-595 | article |
+| Perez, C., Guevara, R., Carmona, M. and Armesto, J. | Nitrogen mineralization in epiphytic soils of an old-growth Fitzroya cupressoides forest, southern C | 2005 | ECOSCIENCEVol. 12(2), pp. 210-215 | article |
+| Pincheira-Ulbrich, J. | Diversity patterns of climbing plants and vascular epiphytes in the Valdivian rain forest of South A | 2011 | PHYTON-INTERNATIONAL JOURNAL OF EXPERIMENTAL BOTANYVol. 80,  | article |
+| Pincheira-Ulbrich, J., Hernandez, C., Saldana, A., Pena-Cortes, F. and Aguilera- | Assessing the completeness of inventories of vascular epiphytes and climbing plants in Chilean swamp | 2016 | NEW ZEALAND JOURNAL OF BOTANYVol. 54(4) | article |
+| Pincheira-Ulbrich, J., Hernandez, C.E., Saldana, A., Pena-Cortes, F. and Aguiler | Assessing the completeness of inventories of vascular epiphytes and climbing plants in Chilean swamp | 2016 | NEW ZEALAND JOURNAL OF BOTANYVol. 54(4), pp. 458-474 | article |
+| Pincheira-Ulbrich, J., Rau, J.R. and Smith-Ramirez, C. | Vascular epiphytes and climbing plants diversity in an agroforestal landscape in southern Chile: a c | 2012 | BOLETIN DE LA SOCIEDAD ARGENTINA DE BOTANICAVol. 47(3-4), pp | article |
+| Promis, A., Bergh, G., Teresa Serra, M. and Cruz, G. | Description of the vascular flora in the understory of a swamp forest and in an anthropogenic Juncus | 2013 | GAYANA BOTANICAVol. 70(1), pp. 164-169 | article |
+| Quilodran, C.S., Vasquez, R.A. and Estades, C.F. | NESTING OF THE THORN-TAILED RAYADITO (APHRASTURA SPINICAUDA) IN A PINE PLANTATION IN SOUTHCENTRAL CH | 2012 | WILSON JOURNAL OF ORNITHOLOGYVol. 124(4), pp. 737-742 | article |
+| Reyes, F., Zanetti, S., Espinosa, A. and Alvear, M. | BIOCHEMICAL PROPERTIES IN VASCULAR EPIPHYTES SUBSTRATE FROM A TEMPERATE FOREST OF CHILE | 2010 | REVISTA DE LA CIENCIA DEL SUELO Y NUTRICION VEGETALVol. 10(2 | article |
+| Reyes, F., Zanetti, S., Espinosa, A. and Alvear, M. | BIOCHEMICAL PROPERTIES IN VASCULAR EPIPHYTES SUBSTRATE FROM A TEMPERATE FOREST OF CHILE | 2010 | JOURNAL OF SOIL SCIENCE AND PLANT NUTRITIONVol. 10(2), pp. 1 | article |
+| Saldana, A., Parra, M.J., Flores-Bavestrello, A., Corcuera, L.J. and Bravo, L.A. | Effects of forest successional status on microenvironmental conditions, diversity, and distribution  | 2014 | PLANT SPECIES BIOLOGYVol. 29(3), pp. 253-262 | article |
+| Salinas, F. and Armesto, J.J. | Regeneration niche of three epiphytic species of Gesneriaceae from Chilean rainforests: implications | 2012 | BOTANICAL JOURNAL OF THE LINNEAN SOCIETYVol. 170(1), pp. 79- | article |
+| Soler, R., Martinez Pastur, G., Vanessa Lencinas, M. and Rosenfeld, M. | Variable retention management influences biomass of Misodendrum and Usnea in Nothofagus pumilio sout | 2014 | NEW ZEALAND JOURNAL OF BOTANYVol. 52(2), pp. 224-235 | article |
+| Stanton, D.E., Huallpa Chavez, J., Villegas, L., Villasante, F., Armesto, J., He | Epiphytes improve host plant water use by microenvironment modification | 2014 | FUNCTIONAL ECOLOGYVol. 28(5), pp. 1274-1283 | article |
+| Taylor, A., Saldana, A., Zotz, G., Kirby, C., Diaz, I. and Burns, K. | Composition patterns and network structure of epiphyte-host interactions in Chilean and New Zealand  | 2016 | NEW ZEALAND JOURNAL OF BOTANYVol. 54(2, SI), pp. 204-222 | article |
+| Tejo Haristoy, C., Zabowski, D. and Nadkarni, N. | Canopy Soils of Sitka Spruce and Bigleaf Maple in the Queets River Watershed, Washington | 2014 | SOIL SCIENCE SOCIETY OF AMERICA JOURNALVol. 78(1), pp. S118- | article |
+| Tejo, C.F., Zabowski, D. and Nadkarni, N.M. | Total and epiphytic litter under the canopy of Acer macrophyllum in an old-growth temperate rainfore | 2015 | CANADIAN JOURNAL OF FOREST RESEARCHVol. 45(11), pp. 1654-166 | article |
+| Troncoso, P.A., Perez, C.A., Larrain, J. and Ardiles, V. | The development of symbiotic nitrogen fixation along a primary chronosequence in Santa Ines Island,  | 2013 | REVISTA CHILENA DE HISTORIA NATURALVol. 86(3), pp. 345-355 | article |

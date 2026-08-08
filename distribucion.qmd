@@ -1,0 +1,21 @@
+---
+title: "Distribución"
+description: "Ocurrencia de especies de plantas epífitas, trepadoras y parásitas en Chile"
+toc: false
+---
+
+Distribución geográfica de las ocurrencias reportadas para especies de plantas epífitas, trepadoras y parásitas presentes en Chile, a partir de registros del Global Biodiversity Information Facility (**GBIF**).
+
+::: {.callout-info}
+### Fuentes y herramientas
+- **Datos:** Global Biodiversity Information Facility ([GBIF](https://www.gbif.org/))
+- **Análisis y Mapas:** R Core Team, paquetes `spocc` y `leaflet`.
+:::
+
+::: {.map-container}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290000!2d-73.5!3d-40.5!2z4DGB!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+:::
+
+::: {.callout-tip}
+*Nota: El mapa dinámico interactivo con capas de especies puede ser generado nuevamente ejecutando scripts de consulta directa a la API de GBIF.*
+:::

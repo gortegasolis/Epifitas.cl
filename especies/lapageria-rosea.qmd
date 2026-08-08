@@ -1,0 +1,55 @@
+---
+title: "*Lapageria rosea*"
+subtitle: "Copihue"
+description: "Lapageria rosea — Trepadora. Philesiaceae. Distribución: V-X Regiones."
+categories: [Epífitas, Hemiepífitas, Trepadoras]
+image: "../images/especies/lrosea.jpg"
+---
+
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Philesiaceae
+
+Nombre común
+: Copihue
+
+Forma de crecimiento
+: Trepadora
+
+Distribución
+: V-X Regiones
+
+:::
+
+## Descripción
+
+Planta trepadora, también arbustiva. En bosques costeros de la región de Los Ríos alcanza alturas notables en los árboles, llegando incluso hasta los 15 m. Tiene hojas coriáceas, de bordes lisos, alternas, lanceoladas a ovadas, con base cordada, y con características nervaduras paralelas. Tiene grandes flores con seis tépalos de forma linear. Las flores son de variados colores: blancas, rosadas, pero el color más común es el rojo. Sus frutos son bayas ovado-oblongas, de color verde amarillento. Sus flores son un recurso valioso para los picaflores en el invierno austral, ya que la máxima floración de la especie se produce entre abril y mayo. Sus frutos son consumidos por el monito del monte (Dromiciops gliroides).
+
+### Floración
+
+Marzo-Julio
+
+### Fructificación
+
+Junio-Marzo
+
+### Estado de conservación
+
+Vulnerable. Por ser la flora nacional de Chile y símbolo del pueblo Araucano, se encuentra protegida por el Decreto Supremo n°129 de 1971.
+
+## Galería
+
+::: {.gallery}
+![](../images/especies/laro-225x300.jpg)
+![](../images/especies/hojaslrosea-225x300.jpg)
+![](../images/especies/laro2-225x300.jpg)
+:::
+
+## Bibliografía
+
+::: {.bibliografia}
+- Marticorena A., D Alarcón, L Abello, C Atala. 2010. Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.Guardar.
+:::

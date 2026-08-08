@@ -1,0 +1,16 @@
+{
+  "listingMap": {
+    "categorias/hemiepifitas.qmd": [
+      "../especies/*.qmd"
+    ],
+    "categorias/trepadoras.qmd": [
+      "../especies/*.qmd"
+    ],
+    "categorias/epifitas.qmd": [
+      "../especies/*.qmd"
+    ],
+    "index.qmd": [
+      "especies"
+    ]
+  }
+}
