@@ -1,9 +1,43 @@
 ---
 title: "*Asplenium dareoides*"
-subtitle: ""
-description: "Content not recovered."
+subtitle: "Helechito perejil, filu-lahuén"
+description: "Asplenium dareoides — Epífito. Aspleniaceae. Distribución: IV-XII regiones y Archipiélago de Juan Fernández."
 categories: [Epífitas]
-image: "../images/especies/default.jpg"
 ---
 
-Contenido no recuperado de los respaldos.
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Aspleniaceae
+
+Nombre común
+: Helechito perejil, filu-lahuén (mapudungún)
+
+Forma de crecimiento
+: Epífito
+
+Distribución
+: IV-XII regiones y Archipiélago de Juan Fernández
+
+:::
+
+## Descripción
+
+Helecho minúsculo perenne, terrestre o epífito, con rizomas escamosos de color café oscuro. Las hojas miden entre 6 y 15 cm de largo; el pecíolo es delgado, negruzco en la base y verde claro hacia el ápice. El raquis es marcado y tiene algunos pelos. La lámina es bi- a tripinnada o cuadripinnatífida, algo carnosa y verde oscura; los últimos segmentos son enteros o lobulados, de 3 a 5 mm de largo y finamente denticulados en el ápice. Presenta de uno a tres soros ovalados por segmento, de unos 2 mm de largo, cubiertos por un indusio lateral reniforme y blanquecino. En los árboles que habita puede alcanzar hasta 20 m de altura.
+
+### Estado de conservación
+
+Vulnerable en Chile continental y de preocupación menor en Juan Fernández.
+
+## Bibliografía
+
+::: {.bibliografia}
+- Johow J. 2017. *Helechos del bosque húmedo templado patagónico en Huilo Huilo*. Fundación Huilo Huilo, Santiago, Chile. 163 p.
+- Rodríguez R., D. Alarcón y J. Espejo. 2009. *Helechos nativos del centro y sur de Chile. Guía de campo*. Corporación Chilena de la Madera, Concepción, Chile. 212 p.
+:::
+
+---
+
+*Autor de la ficha: Felipe González Cifuentes. Citar como: González F. 2017. Asplenium dareoides. Disponible en: [http://epifitas.cl/asplenium-dareoides/](http://epifitas.cl/asplenium-dareoides/).*

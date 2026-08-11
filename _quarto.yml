@@ -54,12 +54,17 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: [lumen, custom_theme.scss]
     css: styles.css
+    fontsize: 1.05rem
+    monofont: "Fira Code"
+    highlight-style: arrow
     toc: true
     toc-depth: 3
     lang: es
+    linkcolor: "#2d5a2d"
     code-copy: true
+    code-overflow: scroll
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true

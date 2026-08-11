@@ -1,9 +1,38 @@
 ---
 title: "*Asplenium trilobum*"
-subtitle: ""
-description: "Content not recovered."
+subtitle: "Helecho trilobulado"
+description: "Asplenium trilobum — Epífito, raramente terrestre. Aspleniaceae. Distribución: VII-XI regiones."
 categories: [Epífitas]
-image: "../images/especies/default.jpg"
 ---
 
-Contenido no recuperado de los respaldos.
+## Información taxonómica {.species-title}
+
+::: {.species-info}
+
+Familia
+: Aspleniaceae
+
+Nombre común
+: No conocido
+
+Forma de crecimiento
+: Epífito, raramente terrestre
+
+Distribución
+: VII-XI regiones
+
+:::
+
+## Descripción
+
+Helecho perenne, común en bosques húmedos costeros. También puede encontrarse en bosques andinos de baja altitud. Las láminas son rómbicas a lanceoladas, trilobuladas, de 4 a 10 cm de largo, subcoriáceas y glabras, al igual que los pecíolos. Presenta de dos a seis soros en el envés de la lámina, protegidos por indusios laterales. Ha sido registrado entre 7 y 23 m de altura en olivillos (*Aextoxicon punctatum*); Looser ya mencionaba en 1944 que esta especie crece a gran altura en los árboles.
+
+### Estado de conservación
+
+Vulnerable entre las regiones del Biobío y La Araucanía, y de preocupación menor en el resto de su distribución austral.
+
+## Bibliografía
+
+::: {.bibliografia}
+- Rodríguez R., D. Alarcón y J. Espejo. 2009. *Helechos nativos del centro y sur de Chile. Guía de campo*. Corporación Chilena de la Madera, Concepción, Chile. 212 p.
+:::

@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+// use lumen as the base
+$theme: "lumen" !default;
+
+// fonts
+$font-family-sans-serif: "Roboto", Roboto, sans-serif;
+$font-family-monospace: "Fira Code", "Fira Mono", monospace;
+$headings-font-family: "Lato", "Roboto", sans-serif;
+
+// colours
+$link-color: #2d5a2d;
+$navbar-hl: #6fbf6f;
+
+/*-- scss:rules --*/
+h4, .h4 {
+  font-size: 1.11rem !important;
+}
