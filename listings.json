@@ -1,0 +1,78 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/especies/asplenium-dareoides.html",
+      "/especies/asplenium-trilobum.html",
+      "/especies/asteranthera-ovata.html",
+      "/especies/fascicularia-bicolor.html",
+      "/especies/gaultheria-insana.html",
+      "/especies/hymenophyllum-caudiculatum.html",
+      "/especies/hymenophyllum-cruentum.html",
+      "/especies/hymenophyllum-dicranotrichum.html",
+      "/especies/hymenophyllum-pectinatum.html",
+      "/especies/hymenophyllum-rugosum.html",
+      "/especies/lapageria-rosea.html",
+      "/especies/luzuriaga-radicans.html",
+      "/especies/mitraria-coccinea.html",
+      "/especies/philesia-magellanica.html",
+      "/especies/sarmienta-scandens.html"
+    ]
+  },
+  {
+    "listing": "/categorias/trepadoras.html",
+    "items": [
+      "/especies/asteranthera-ovata.html",
+      "/especies/fascicularia-bicolor.html",
+      "/especies/gaultheria-insana.html",
+      "/especies/hymenophyllum-caudiculatum.html",
+      "/especies/hymenophyllum-cruentum.html",
+      "/especies/hymenophyllum-dicranotrichum.html",
+      "/especies/hymenophyllum-pectinatum.html",
+      "/especies/hymenophyllum-rugosum.html",
+      "/especies/lapageria-rosea.html",
+      "/especies/luzuriaga-radicans.html",
+      "/especies/mitraria-coccinea.html",
+      "/especies/philesia-magellanica.html",
+      "/especies/sarmienta-scandens.html"
+    ]
+  },
+  {
+    "listing": "/categorias/hemiepifitas.html",
+    "items": [
+      "/especies/asteranthera-ovata.html",
+      "/especies/fascicularia-bicolor.html",
+      "/especies/gaultheria-insana.html",
+      "/especies/hymenophyllum-caudiculatum.html",
+      "/especies/hymenophyllum-cruentum.html",
+      "/especies/hymenophyllum-dicranotrichum.html",
+      "/especies/hymenophyllum-pectinatum.html",
+      "/especies/hymenophyllum-rugosum.html",
+      "/especies/lapageria-rosea.html",
+      "/especies/luzuriaga-radicans.html",
+      "/especies/mitraria-coccinea.html",
+      "/especies/philesia-magellanica.html",
+      "/especies/sarmienta-scandens.html"
+    ]
+  },
+  {
+    "listing": "/categorias/epifitas.html",
+    "items": [
+      "/especies/asplenium-dareoides.html",
+      "/especies/asplenium-trilobum.html",
+      "/especies/asteranthera-ovata.html",
+      "/especies/fascicularia-bicolor.html",
+      "/especies/gaultheria-insana.html",
+      "/especies/hymenophyllum-caudiculatum.html",
+      "/especies/hymenophyllum-cruentum.html",
+      "/especies/hymenophyllum-dicranotrichum.html",
+      "/especies/hymenophyllum-pectinatum.html",
+      "/especies/hymenophyllum-rugosum.html",
+      "/especies/lapageria-rosea.html",
+      "/especies/luzuriaga-radicans.html",
+      "/especies/mitraria-coccinea.html",
+      "/especies/philesia-magellanica.html",
+      "/especies/sarmienta-scandens.html"
+    ]
+  }
+]

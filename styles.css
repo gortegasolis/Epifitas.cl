@@ -1,0 +1,460 @@
+/* ============================================================
+   Epifitas.cl — Custom theme (structure adapted from ALA Labs)
+   Green forest palette
+   ============================================================ */
+
+/* This must remain at the top of this file. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --ep-green-dark: #1a2f1a;
+  --ep-green-mid: #2d5a2d;
+  --ep-green-light: #4a8c4a;
+  --ep-green-pale: #e8f0e8;
+  --ep-green-accent: #6fbf6f;
+  --ep-gold: #c9a84c;
+  --ep-cream: #f5f2eb;
+  --ep-text: #2c3e2c;
+  --ep-text-light: #a0b8a0;
+  --ep-shadow: rgba(26, 47, 26, 0.15);
+  --ep-radius: 12px;
+  --bs-navbar-hover-color: #6fbf6f;
+}
+
+/* ---- Base typography ---- */
+body {
+  color: var(--ep-text);
+  background-color: var(--ep-cream);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ep-green-dark);
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 20px var(--ep-shadow);
+}
+
+.navbar-brand > img {
+  max-height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 8px;
+  transition: transform 0.3s;
+}
+
+.navbar-brand > img:hover {
+  transform: scale(1.08);
+}
+
+a.nav-link,
+a.nav-link:after,
+a.nav-link:before {
+  transition: all .3s;
+}
+
+a.nav-link {
+  position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-title:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: var(--ep-green-accent) !important;
+}
+
+.dropdown-item:active {
+  background-color: var(--ep-green-mid);
+}
+
+/* TOC active item highlight */
+.sidebar nav[role=doc-toc] ul > li > a.active {
+  border-left: 1px solid var(--ep-green-mid) !important;
+  color: var(--ep-green-mid) !important;
+}
+
+/* ---- Links ---- */
+a {
+  text-decoration: none;
+  color: var(--ep-green-mid);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--ep-green-light);
+}
+
+/* ---- Hero banner (homepage) ---- */
+.hero-banner {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 var(--ep-radius) var(--ep-radius);
+  overflow: hidden;
+  margin: -1rem -1rem 2rem -1rem;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 47, 26, 0.85) 0%,
+    rgba(45, 90, 45, 0.6) 50%,
+    rgba(26, 47, 26, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 3rem 2rem;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .highlight {
+  font-style: italic;
+  color: var(--ep-green-accent);
+  font-weight: 500;
+}
+
+/* ---- Figure captions ---- */
+.figure-caption {
+  text-align: center;
+  font-size: .8rem;
+}
+
+/* ---- Listing grid cards ---- */
+.quarto-grid-item .card {
+  border: none;
+  border-radius: var(--ep-radius);
+  box-shadow: 0 4px 20px var(--ep-shadow);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+}
+
+.quarto-grid-item .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(26, 47, 26, 0.2);
+}
+
+.quarto-grid-item .card-img-top,
+.quarto-grid-item .listing-item-img-placeholder {
+  border-radius: var(--ep-radius) var(--ep-radius) 0 0;
+  object-fit: cover;
+  height: 220px;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.quarto-grid-item:hover .card-img-top,
+.quarto-grid-item:hover .listing-item-img-placeholder {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.quarto-grid-item .card-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ep-green-dark);
+}
+
+.quarto-grid-item .card-subtitle {
+  color: var(--ep-green-mid);
+  font-size: 0.85rem;
+}
+
+/* ---- Category badges ---- */
+.quarto-category {
+  background-color: var(--ep-green-mid) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 20px;
+  padding: 0.25em 0.8em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: background-color 0.3s;
+}
+
+.quarto-category:hover {
+  background-color: var(--ep-green-light) !important;
+}
+
+/* ---- Pagination ---- */
+.page-item.active .page-link {
+  color: #fff;
+  background-color: var(--ep-green-mid);
+  border-color: var(--ep-green-dark);
+}
+
+.page-link {
+  color: var(--ep-green-mid);
+}
+
+/* ---- Tabsets ---- */
+.nav-pills .nav-link {
+  background: none;
+  border-radius: 1rem;
+  color: var(--ep-green-mid);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--ep-green-accent);
+  color: var(--ep-green-dark);
+}
+
+.nav-pills .nav-item .nav-link:hover {
+  color: var(--ep-green-light);
+}
+
+/* ---- Species info card ---- */
+.species-info {
+  background: linear-gradient(135deg, var(--ep-green-pale), white);
+  border-left: 4px solid var(--ep-green-mid);
+  border-radius: 0 var(--ep-radius) var(--ep-radius) 0;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 12px var(--ep-shadow);
+}
+
+.species-info dt {
+  color: var(--ep-green-dark);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 0.8rem;
+}
+
+.species-info dt:first-child {
+  margin-top: 0;
+}
+
+.species-info dd {
+  margin-left: 0;
+  margin-bottom: 0.3rem;
+  padding-left: 0;
+}
+
+/* ---- Image gallery ---- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery figure {
+  margin: 0;
+  border-radius: var(--ep-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 15px var(--ep-shadow);
+  transition: transform 0.3s;
+}
+
+.gallery figure:hover {
+  transform: scale(1.02);
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.gallery figure:hover img {
+  filter: brightness(1.08);
+}
+
+.gallery figcaption {
+  padding: 0.6rem 0.8rem;
+  background: var(--ep-green-dark);
+  color: var(--ep-text-light);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ---- Bibliography section ---- */
+.bibliografia {
+  background: var(--ep-cream);
+  border-radius: var(--ep-radius);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(45, 90, 45, 0.1);
+}
+
+.bibliografia h2,
+.bibliografia h3 {
+  font-size: 1.1rem;
+  color: var(--ep-green-mid);
+  margin-bottom: 1rem;
+}
+
+.bibliografia ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bibliografia li {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(45, 90, 45, 0.06);
+}
+
+.bibliografia li::before {
+  content: '📄';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.bibliografia li:last-child {
+  border-bottom: none;
+}
+
+/* ---- Alphabetical index ---- */
+.alpha-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--ep-green-pale);
+  border-radius: var(--ep-radius);
+  justify-content: center;
+}
+
+.alpha-index a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--ep-green-dark);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 2px 6px var(--ep-shadow);
+  transition: all 0.3s;
+}
+
+.alpha-index a:hover {
+  background: var(--ep-green-mid);
+  color: white;
+  transform: scale(1.15);
+}
+
+/* ---- Content sections ---- */
+.content-section {
+  background: white;
+  border-radius: var(--ep-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 15px var(--ep-shadow);
+}
+
+/* ---- Footer ---- */
+.nav-footer {
+  font-size: 0.85rem;
+}
+
+.nav-footer a {
+  color: var(--ep-green-accent) !important;
+}
+
+.nav-footer a:hover {
+  color: white !important;
+}
+
+/* ---- TOC styling ---- */
+#TOC a {
+  color: var(--ep-text);
+  transition: color 0.3s;
+}
+
+#TOC a:hover {
+  color: var(--ep-green-mid);
+}
+
+/* ---- Map container ---- */
+.map-container {
+  border-radius: var(--ep-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--ep-shadow);
+  margin: 1.5rem 0;
+  height: 500px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .species-info {
+    padding: 1rem 1.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
