@@ -3,7 +3,7 @@ title: "*Lapageria rosea*"
 subtitle: "Copihue"
 description: "Lapageria rosea — Trepadora. Philesiaceae. Distribución: V-X Regiones."
 categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/lrosea.jpg"
+image: "../images/especies/lrosea-600x800.jpg"
 ---
 
 ## Información taxonómica {.species-title}

@@ -3,7 +3,7 @@ title: "*Gaultheria insana*"
 subtitle: "Hued-hued, Chaura"
 description: "Gaultheria insana — Arbusto, eventualmente epífito. Ericaceae. Distribución: VII-XII Regiones, con una población aislada en la II Región."
 categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/gaul_esc-768x432.jpg.pagespeed.ic.8glI7joD11.jpg"
+image: "../images/especies/gaul_esc.JPG"
 ---
 
 ## Información taxonómica {.species-title}
@@ -43,8 +43,8 @@ No Amenazada
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/gault_esc.jpg)
-![](../images/especies/ga_esc-1024x576.jpg)
+![](../images/especies/gault_esc.JPG)
+![](../images/especies/ga_esc.JPG)
 :::
 
 ## Bibliografía

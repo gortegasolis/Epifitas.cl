@@ -3,7 +3,7 @@ title: "*Fascicularia bicolor*"
 subtitle: "Chupalla, poe, puñeñe"
 description: "Fascicularia bicolor — Epífita. Bromeliaceae. Distribución: V-X Regiones."
 categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/DSCN4057escala-945x709.jpg"
+image: "../images/especies/DSCN4057escala.JPG"
 ---
 
 ## Información taxonómica {.species-title}
@@ -43,9 +43,9 @@ Vulnerable
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/pagweb-768x576.jpg)
-![](../images/especies/fbicoloresc-945x709.jpg)
-![](../images/especies/DSCN4529esc.jpg)
+![](../images/especies/pagweb.JPG)
+![](../images/especies/fbicoloresc.JPG)
+![](../images/especies/DSCN4529esc.JPG)
 :::
 
 ## Bibliografía
