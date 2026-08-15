@@ -35,9 +35,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/IMG_0646-300x225.jpg)
-![](../images/especies/IMG_0582-300x225.jpg)
-![](../images/especies/IMG_0057-300x225.jpg)
+![](../images/especies/IMG_0646-300x225.jpg){group="sarmienta-scandens"}
+
+![](../images/especies/IMG_0582-300x225.jpg){group="sarmienta-scandens"}
+
+![](../images/especies/IMG_0057-300x225.jpg){group="sarmienta-scandens"}
 :::
 
 ## Bibliografía

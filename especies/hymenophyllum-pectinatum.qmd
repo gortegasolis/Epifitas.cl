@@ -35,9 +35,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0434escala-300x225.jpg)
-![](../images/especies/300x225xsan-pablo-467escala-300x225.jpg.pagespeed.ic.jsTNNDMF-g.jpg)
-![](../images/especies/300x225xDSCN0438esca-300x225.jpg.pagespeed.ic.9oEE3eMfwh.jpg)
+![](../images/especies/DSCN0434escala-300x225.jpg){group="hymenophyllum-pectinatum"}
+
+![](../images/especies/300x225xsan-pablo-467escala-300x225.jpg.pagespeed.ic.jsTNNDMF-g.jpg){group="hymenophyllum-pectinatum"}
+
+![](../images/especies/300x225xDSCN0438esca-300x225.jpg.pagespeed.ic.9oEE3eMfwh.jpg){group="hymenophyllum-pectinatum"}
 :::
 
 ## Bibliografía

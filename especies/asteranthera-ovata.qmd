@@ -43,8 +43,9 @@ No existen datos para esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/san-pablo-033escala.jpg)
-![](../images/especies/makeo2-431escala.jpg)
+![](../images/especies/san-pablo-033escala.jpg){group="asteranthera-ovata"}
+
+![](../images/especies/makeo2-431escala.jpg){group="asteranthera-ovata"}
 :::
 
 ## Bibliografía

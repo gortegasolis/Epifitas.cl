@@ -43,9 +43,11 @@ Vulnerable
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/pagweb.JPG)
-![](../images/especies/fbicoloresc.JPG)
-![](../images/especies/DSCN4529esc.JPG)
+![](../images/especies/pagweb.JPG){group="fascicularia-bicolor"}
+
+![](../images/especies/fbicoloresc.JPG){group="fascicularia-bicolor"}
+
+![](../images/especies/DSCN4529esc.JPG){group="fascicularia-bicolor"}
 :::
 
 ## Bibliografía

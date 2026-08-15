@@ -35,7 +35,7 @@ Vulnerable. (MMA 2008)
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/Hymenophyllum_rugosum1_esc.jpg)
+![](../images/especies/Hymenophyllum_rugosum1_esc.jpg){group="hymenophyllum-rugosum"}
 :::
 
 ## Bibliografía

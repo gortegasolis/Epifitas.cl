@@ -43,7 +43,9 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/frutos-lr-300x225.jpg)
-![](../images/especies/arb-036escala-225x300.jpg)
-![](../images/especies/arb-040escala-300x225.jpg)
+![](../images/especies/frutos-lr-300x225.jpg){group="luzuriaga-radicans"}
+
+![](../images/especies/arb-036escala-225x300.jpg){group="luzuriaga-radicans"}
+
+![](../images/especies/arb-040escala-300x225.jpg){group="luzuriaga-radicans"}
 :::

@@ -43,8 +43,9 @@ No Amenazada
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/gault_esc.JPG)
-![](../images/especies/ga_esc.JPG)
+![](../images/especies/gault_esc.JPG){group="gaultheria-insana"}
+
+![](../images/especies/ga_esc.JPG){group="gaultheria-insana"}
 :::
 
 ## Bibliografía

@@ -35,8 +35,9 @@ Preocupación menor.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0410esca-300x225.jpg)
-![](../images/especies/DSCN0414escala-300x225.jpg)
+![](../images/especies/DSCN0410esca-300x225.jpg){group="hymenophyllum-dicranotrichum"}
+
+![](../images/especies/DSCN0414escala-300x225.jpg){group="hymenophyllum-dicranotrichum"}
 :::
 
 ## Bibliografía

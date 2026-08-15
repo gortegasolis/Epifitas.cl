@@ -43,9 +43,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN1351escala.jpg)
-![](../images/especies/DSCN3806escala.jpg)
-![](../images/especies/DSCN3812escala-600x450.jpg)
+![](../images/especies/DSCN1351escala.jpg){group="mitraria-coccinea"}
+
+![](../images/especies/DSCN3806escala.jpg){group="mitraria-coccinea"}
+
+![](../images/especies/DSCN3812escala-600x450.jpg){group="mitraria-coccinea"}
 :::
 
 ## Bibliografía

@@ -43,9 +43,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/coi_AC_esc.jpg)
-![](../images/especies/Chiloé-2009-145escala-225x300.jpg)
-![](../images/especies/coi_fru_esc.jpg)
+![](../images/especies/coi_AC_esc.jpg){group="philesia-magellanica"}
+
+![](../images/especies/Chiloé-2009-145escala-225x300.jpg){group="philesia-magellanica"}
+
+![](../images/especies/coi_fru_esc.jpg){group="philesia-magellanica"}
 :::
 
 ## Bibliografía

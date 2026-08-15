@@ -35,8 +35,9 @@ Vulnerable.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0451escala.JPG)
-![](../images/especies/arb-303escala-300x225.jpg)
+![](../images/especies/DSCN0451escala.JPG){group="hymenophyllum-caudiculatum"}
+
+![](../images/especies/arb-303escala-300x225.jpg){group="hymenophyllum-caudiculatum"}
 :::
 
 ## Bibliografía

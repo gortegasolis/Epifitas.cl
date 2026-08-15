@@ -35,10 +35,13 @@ Vulnerable
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/arb-278escala-225x300.jpg)
-![](../images/especies/100_4404escala-300x225.jpg)
-![](../images/especies/puyehue-135escala-225x300.jpg)
-![](../images/especies/arb-275escala-225x300.jpg)
+![](../images/especies/arb-278escala-225x300.jpg){group="hymenophyllum-cruentum"}
+
+![](../images/especies/100_4404escala-300x225.jpg){group="hymenophyllum-cruentum"}
+
+![](../images/especies/puyehue-135escala-225x300.jpg){group="hymenophyllum-cruentum"}
+
+![](../images/especies/arb-275escala-225x300.jpg){group="hymenophyllum-cruentum"}
 :::
 
 ## Bibliografía

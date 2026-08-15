@@ -43,9 +43,11 @@ Vulnerable. Por ser la flora nacional de Chile y símbolo del pueblo Araucano, s
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/laro-225x300.jpg)
-![](../images/especies/hojaslrosea-225x300.jpg)
-![](../images/especies/laro2-225x300.jpg)
+![](../images/especies/laro-225x300.jpg){group="lapageria-rosea"}
+
+![](../images/especies/hojaslrosea-225x300.jpg){group="lapageria-rosea"}
+
+![](../images/especies/laro2-225x300.jpg){group="lapageria-rosea"}
 :::
 
 ## Bibliografía
