@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - mapas/
+    - geolibre/
+    - ocurrencias/
 
 website:
   title: "Epifitas.cl"

@@ -42,6 +42,24 @@ No existen revisiones sobre esta especie.
 ![](../images/especies/300x225xDSCN0438esca-300x225.jpg.pagespeed.ic.9oEE3eMfwh.jpg){group="hymenophyllum-pectinatum"}
 :::
 
+### Mapa de distribución en Chile
+```{r}
+#| echo: false
+#| results: asis
+species_name <- tools::file_path_sans_ext(basename(knitr::current_input()))
+cat(sprintf(
+  '<iframe data-external="1" src="../mapas/%s.html" width="100%%" height="600px" style="border:none;"></iframe>',
+  species_name))
+geolibre_url <- sprintf(
+  "https://web.geolibre.app/?url=%s",
+  utils::URLencode(
+    sprintf("https://epifitas.cl/ocurrencias/%s.csv", species_name),
+    reserved = TRUE))
+cat(sprintf(
+  '<p><a href="%s" target="_blank" rel="noopener">Explorar datos de ocurrencia en GeoLibre</a></p>',
+  geolibre_url))
+```
+
 ## Bibliografía
 
 ::: {.bibliografia}
