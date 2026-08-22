@@ -6,11 +6,13 @@ toc: false
 
 ## Los autores
 
-Si tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con **Daniela Mellado** y/o **Gabriel Ortega** a través del siguiente correo:
+Si tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con **Daniela Mellado** y/o **Gabriel Ortega** a través de los siguientes correo:
 
 ::: {.content-section}
 
-📧 **Correo de contacto:** [epifitas.cl\@gmail.com](mailto:epifitas.cl@gmail.com)
+📧 **Correo de contacto:** 
+[d.mellado.mansilla\@epifitas.cl](mailto:d.mellado.mansilla@epifitas.cl)
+[g.ortega.solis\@epifitas.cl](mailto:g.ortega.solis@epifitas.cl)
 
 :::
 
