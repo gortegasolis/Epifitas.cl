@@ -53,7 +53,7 @@ cat(sprintf(
 geolibre_url <- sprintf(
   "https://web.geolibre.app/?url=%s",
   utils::URLencode(
-    sprintf("https://epifitas.cl/ocurrencias/%s.csv", species_name),
+    sprintf("https://epifitas.cl/geolibre/%s.geolibre.json", species_name),
     reserved = TRUE))
 cat(sprintf(
   '<p><a href="%s" target="_blank" rel="noopener">Explorar datos de ocurrencia en GeoLibre</a></p>',
