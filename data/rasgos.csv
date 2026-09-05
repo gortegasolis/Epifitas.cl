@@ -1,0 +1,16 @@
+species,slug,growth_form,family,elevation_min_m,elevation_max_m,host_specificity,phenology_flowering,phenology_fruiting,conservation_status
+Asplenium dareoides,asplenium-dareoides,Epífita,Aspleniaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable / Preocupación menor (según zona)
+Asplenium trilobum,asplenium-trilobum,Epífita,Aspleniaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable / Preocupación menor (según zona)
+Asteranthera ovata,asteranthera-ovata,Trepadora,Gesneriaceae,,,,Noviembre a Enero,Mayo a Agosto,Sin evaluar
+Fascicularia bicolor,fascicularia-bicolor,Epífita,Bromeliaceae,,,,Febrero,Marzo a Abril,Vulnerable
+Gaultheria insana,gaultheria-insana,Epífita,Ericaceae,,,,Octubre-Noviembre,Noviembre-Enero,No amenazada
+Hymenophyllum caudiculatum,hymenophyllum-caudiculatum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable
+Hymenophyllum cruentum,hymenophyllum-cruentum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable
+Hymenophyllum dicranotrichum,hymenophyllum-dicranotrichum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Preocupación menor
+Hymenophyllum pectinatum,hymenophyllum-pectinatum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Sin evaluar
+Hymenophyllum rugosum,hymenophyllum-rugosum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable
+Lapageria rosea,lapageria-rosea,Trepadora,Philesiaceae,,,,Marzo-Julio,Junio-Marzo,Vulnerable
+Luzuriaga radicans,luzuriaga-radicans,Trepadora,Luzuriagaceae,,,,Septiembre a Diciembre,Diciembre a Mayo,Sin evaluar
+Mitraria coccinea,mitraria-coccinea,Trepadora / Epífita facultativa,Gesneriaceae,,,,Octubre – Diciembre,Enero- Mayo,Sin evaluar
+Philesia magellanica,philesia-magellanica,Trepadora / Epífita facultativa,Philesiaceae,,,,Diciembre- Abril,Marzo- Junio,Sin evaluar
+Sarmienta scandens,sarmienta-scandens,Epífita,Gesneriaceae,,,,No registrada.,No registrada.,Sin evaluar

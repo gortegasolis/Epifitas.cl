@@ -202,6 +202,44 @@ a:hover {
   font-size: 0.85rem;
 }
 
+/* ---- Growth-habit badges ---- */
+.habito-badges {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.habito-badges p {
+  margin: 0;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.badge-epifita,
+.badge-trepadora,
+.badge-hemiepifita {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0.2em 0.9em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.badge-epifita {
+  background-color: var(--ep-green-mid);
+}
+
+.badge-trepadora {
+  background-color: var(--ep-gold);
+  color: #3a2f10;
+}
+
+.badge-hemiepifita {
+  background-color: #7b5ea7;
+}
+
 /* ---- Category badges ---- */
 .quarto-category {
   background-color: var(--ep-green-mid) !important;
@@ -434,6 +472,17 @@ a:hover {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.map-container-wide {
+  border-radius: var(--ep-radius);
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--ep-shadow);
+  margin: 1.5rem 0;
+}
+
+.leyenda-mapa a {
+  color: var(--ep-green-mid);
 }
 
 /* ---- Responsive ---- */

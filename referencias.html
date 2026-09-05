@@ -27,6 +27,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -47,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-71b76b6b056ddf9c16da5cff41a10f6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,6 +110,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -139,6 +176,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Referencias</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./rasgos.html"> 
+<span class="menu-text">Rasgos</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./distribucion.html"> 
 <span class="menu-text">Distribución</span></a>
   </li>  
@@ -186,334 +227,79 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>En esta sección presentamos una recopilación de investigaciones científicas sobre plantas epífitas, trepadoras, lianas y parásitas realizadas en los bosques de Chile.</p>
-<section id="trabajos-destacados" class="level3 content-section">
-<h3 class="anchored" data-anchor-id="trabajos-destacados">Trabajos destacados</h3>
-<ul>
-<li><strong>Armesto JJ, J Díaz-Forester, C Tejo Haristoy, JL Celis-Diez. 2011.</strong> <em>Botánica ecológica. Guía de Campo de la flora leñosa de Chiloé</em>. IEB. Santiago, Chile. 161 p.</li>
-<li><strong>Díaz IA, KE Sieving, ME Pena-Foxon, J Larraín, JJ Armesto. 2010.</strong> Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A neglected functional component. <em>Forest Ecology and Management</em>, 259(8): 1490-1501.</li>
-<li><strong>Marticorena A, D Alarcón, L Abello, C Atala. 2010.</strong> <em>Plantas trepadoras, epífitas y parásitas nativas de Chile. Guía de Campo</em>. Ed. Corporación Chilena de la Madera, Concepción, Chile, 291 p.</li>
-<li><strong>Ortega-Solís G, I Díaz, D Mellado-Mansilla, F Tello, R Moreno, C Tejo. 2017.</strong> Ecosystem engineering by <em>Fascicularia bicolor</em> in the canopy of the South-American temperate rainforest. <em>Forest Ecology and Management</em>, 400: 417-428.</li>
-</ul>
+<section id="bibliografía-completa" class="level3 content-section">
+<h3 class="anchored" data-anchor-id="bibliografía-completa">Bibliografía completa</h3>
+<p>Busque por autor, título, revista o año. Pinche el título para buscar el trabajo en <a href="https://search.crossref.org/">CrossRef</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>referencias <span class="op">=</span> d3<span class="op">.</span><span class="fu">csv</span>(<span class="st">"data/referencias.csv"</span><span class="op">,</span> d3<span class="op">.</span><span class="at">autoType</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="21" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 20;"><span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>viewof consulta <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(referencias<span class="op">,</span> {</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Buscar por autor, título, revista o año…"</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="28" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`**</span><span class="sc">${</span>consulta<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs"> referencias** (de </span><span class="sc">${</span>referencias<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs"> registradas)`</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="33" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 32;"><span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(consulta<span class="op">,</span> {</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [<span class="st">"author"</span><span class="op">,</span> <span class="st">"title"</span><span class="op">,</span> <span class="st">"year"</span><span class="op">,</span> <span class="st">"journal"</span><span class="op">,</span> <span class="st">"volume"</span><span class="op">,</span> <span class="st">"pages"</span>]<span class="op">,</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> {</span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span><span class="op">:</span> <span class="st">"Autores"</span><span class="op">,</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span><span class="op">:</span> <span class="st">"Título"</span><span class="op">,</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span><span class="op">:</span> <span class="st">"Año"</span><span class="op">,</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span><span class="op">:</span> <span class="st">"Revista"</span><span class="op">,</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span><span class="op">:</span> <span class="st">"Vol."</span><span class="op">,</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span><span class="op">:</span> <span class="st">"Páginas"</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span><span class="op">:</span> (t) <span class="kw">=&gt;</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>      <span class="fu">html</span><span class="vs">`&lt;a href="https://search.crossref.org/?q=</span><span class="sc">${</span><span class="pp">encodeURIComponent</span>(</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>        t</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>      )<span class="sc">}</span><span class="vs">" target="_blank" rel="noopener"&gt;</span><span class="sc">${</span>t<span class="sc">}</span><span class="vs">&lt;/a&gt;`</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> <span class="st">"year"</span><span class="op">,</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="dt">reverse</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p><em>Las referencias marcadas como posibles duplicados en <a href="data/referencias.csv"><code>data/referencias.csv</code></a> serán depuradas en futuras actualizaciones.</em></p>
 </section>
-<p>Found 42 references</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 22%">
-<col style="width: 14%">
-<col style="width: 25%">
-<col style="width: 17%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Autor</th>
-<th>Título</th>
-<th>Año</th>
-<th>Revista</th>
-<th>Tipo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Arroniz-Crespo, M., Perez-Ortega, S., De los Rios, A., Green, T.G.A., Ochoa-Hues</td>
-<td>Bryophyte-Cyanobacteria Associations during Primary Succession in Recently Deglaciated Areas of Tier</td>
-<td>2014</td>
-<td>PLOS ONEVol. 9(5)</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Atala, C., Schneider, C., Bravo, G., Quilodran, M. and Vargas, R.</td>
-<td>Anatomical, physiological and chemical differences between populations of Pseudocyphellaria flavican</td>
-<td>2015</td>
-<td>GAYANA BOTANICAVol. 72(1), pp.&nbsp;21-26</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Cornelius, C.</td>
-<td>SPATIAL VARIATION IN NEST-SITE SELECTION BY A SECONDARY CAVITY-NESTING BIRD IN A HUMAN-ALTERED LANDS</td>
-<td>2008</td>
-<td>CONDORVol. 110(4), pp.&nbsp;615-626</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Del Val, E. and Dirzo, R.</td>
-<td>Myrmecophily: Plants with their own army</td>
-<td>2004</td>
-<td>INTERCIENCIAVol. 29(12), pp.&nbsp;673+</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Diaz, I., Papic, C. and Armesto, J.</td>
-<td>An assessment of post-dispersal seed predation in temperate rain forest fragments in Chiloe Island,</td>
-<td>1999</td>
-<td>OIKOSVol. 87(2), pp.&nbsp;228-238</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Diaz, I.A., Correa, C., Pena-Foxon, M.E., Mendez, M.A.&nbsp;and Charrier, A.</td>
-<td>First record on an amphibian in the canopy of temperate rainforests of southern South America: Eupso</td>
-<td>2010</td>
-<td>BOSQUEVol. 31(2), pp.&nbsp;165-168</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Diaz, I.A., Sieving, K.E., Pena-Foxon, M. and Armesto, J.J.</td>
-<td>A field experiment links forest structure and biodiversity: epiphytes enhance canopy invertebrates i</td>
-<td>2012</td>
-<td>ECOSPHEREVol. 3(1)</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Diaz, I.A., Sieving, K.E., Pena-Foxon, M.E., Larrain, J. and Armesto, J.J.</td>
-<td>Epiphyte diversity and biomass loads of canopy emergent trees in Chilean temperate rain forests: A n</td>
-<td>2010</td>
-<td>FOREST ECOLOGY AND MANAGEMENTVol. 259(8), pp.&nbsp;1490-1501</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Ely, F., Torres, F., Rada, F. and Leon, Y.</td>
-<td>Morpho-anatomical study of two tropical cloud forest orchids</td>
-<td>2007</td>
-<td>INTERCIENCIAVol. 32(6), pp.&nbsp;410-418</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Fernanda Salinas, M., Arroyo, M.T.K. and Armesto, J.J.</td>
-<td>EPIPHYTIC GROWTH HABITS OF CHILEAN GESNERIACEAE AND THE EVOLUTION OF EPIPHYTES WITHIN THE TRIBE CORO</td>
-<td>2010</td>
-<td>ANNALS OF THE MISSOURI BOTANICAL GARDENVol. 97(1), pp.&nbsp;117-1</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Fernandez, R., Moreno-Chacon, M., Canessa, R., Mardones, D., Viveros, N. and Sal</td>
-<td>Relationship between ecological breadth of vascular epiphytes and their ecophysiological responses t</td>
-<td>2016</td>
-<td>GAYANA BOTANICAVol. 73(1), pp.&nbsp;68-76</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Figueroa, J. and Armesto, J.</td>
-<td>Community-wide germination strategies in a temperate rainforest of Southern Chile: ecological and ev</td>
-<td>2001</td>
-<td>AUSTRALIAN JOURNAL OF BOTANYVol. 49(4), pp.&nbsp;411-425</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Gatica, A., Pereira, I. and Vallejos, O.</td>
-<td>Epiphytic lichens: a tool for to study the ecological continuity Mocha Island, Chile</td>
-<td>2011</td>
-<td>GAYANA BOTANICAVol. 68(2), pp.&nbsp;226-235</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Godoy, O. and Gianoli, E.</td>
-<td>Functional variation of leaf succulence in a cold rainforest epiphyte</td>
-<td>2013</td>
-<td>PLANT ECOLOGY AND EVOLUTIONVol. 146(2), pp.&nbsp;167-172</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Godoy, R., Oyarzun, C. and Gerding, V.</td>
-<td>Precipitation chemistry in deciduous and evergreen Nothofagus forests of southern Chile under a low-</td>
-<td>2001</td>
-<td>BASIC AND APPLIED ECOLOGYVol. 2(1), pp.&nbsp;65-72</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Gonzalez, A.L., Miguel Farina, J., Pinto, R., Perez, C., Weathers, K.C., Armesto</td>
-<td>Bromeliad growth and stoichiometry: responses to atmospheric nutrient supply in fog-dependent ecosys</td>
-<td>2011</td>
-<td>OECOLOGIAVol. 167(3), pp.&nbsp;835-845</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Gradstein, S.R. and Cuvertino, J.</td>
-<td>Observations on the liverwort flora of the surroundings of Santiago, Central Chile</td>
-<td>2015</td>
-<td>CRYPTOGAMIE BRYOLOGIEVol. 36(2), pp.&nbsp;129-141</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Guzman-Marin, R. and Saldana, A.</td>
-<td>Contribution of accidental epiphytism to the vascular plants distribution in a southern temperate ra</td>
-<td>2017</td>
-<td>GAYANA BOTANICAVol. 74(1), pp.&nbsp;226-228</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Jose Parra, M., Acuna, K.I., Sierra-Almeida, A., Sanfuentes, C., Saldana, A., Co</td>
-<td>Photosynthetic Light Responses May Explain Vertical Distribution of Hymenophyllaceae Species in a Te</td>
-<td>2015</td>
-<td>PLOS ONEVol. 10(12)</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Jose Parra, M., Rodriguez, R., Cavieres, L., Munoz-Tapia, L. and Atala, C.</td>
-<td>Latitudinal patterns in Pteridophyte distribution of Continental Chile</td>
-<td>2015</td>
-<td>GAYANA BOTANICAVol. 72(1), pp.&nbsp;58-69</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Mellado-Mansilla, D., Leon, C.A., Ortega-Solis, G., Godoy-Guinao, J., Moreno, R.</td>
-<td>Vertical patterns of epiphytic bryophyte diversity in a montane Nothofagus forest in the Chilean And</td>
-<td>2017</td>
-<td>NEW ZEALAND JOURNAL OF BOTANYVol. 55(4), pp.&nbsp;514-529</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Moreno, J., Merino, S., Vasquez, R. and Armesto, J.</td>
-<td>Breeding biology of the Thorn-tailed Rayadito (Furnariidae) in south-temperate rainforests of Chile</td>
-<td>2005</td>
-<td>CONDORVol. 107(1), pp.&nbsp;69-77</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Munoz, A., Chacon, P., Perez, F., Barnert, E. and Armesto, J.</td>
-<td>Diversity and host tree preferences of vascular epiphytes and vines in a temperate rainforest in sou</td>
-<td>2003</td>
-<td>AUSTRALIAN JOURNAL OF BOTANYVol. 51(4), pp.&nbsp;381-391</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Ortega-Solis, G., Diaz, I., Mellado-Mansilla, D., Tello, F., Moreno, R. and Tejo</td>
-<td>Ecosystem engineering by Fascicularia bicolor in the canopy of the South-American temperate rainfore</td>
-<td>2017</td>
-<td>FOREST ECOLOGY AND MANAGEMENTVol. 400, pp.&nbsp;417-428</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Parra, M.J., Acuna, K., Corcuera, L.J. and Saldana, A.</td>
-<td>Vertical distribution of Hymenophyllaceae species among host tree microhabitats in a temperate rain</td>
-<td>2009</td>
-<td>JOURNAL OF VEGETATION SCIENCEVol. 20(4), pp.&nbsp;588-595</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Perez, C., Guevara, R., Carmona, M. and Armesto, J.</td>
-<td>Nitrogen mineralization in epiphytic soils of an old-growth Fitzroya cupressoides forest, southern C</td>
-<td>2005</td>
-<td>ECOSCIENCEVol. 12(2), pp.&nbsp;210-215</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Pincheira-Ulbrich, J.</td>
-<td>Diversity patterns of climbing plants and vascular epiphytes in the Valdivian rain forest of South A</td>
-<td>2011</td>
-<td>PHYTON-INTERNATIONAL JOURNAL OF EXPERIMENTAL BOTANYVol. 80,</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Pincheira-Ulbrich, J., Hernandez, C., Saldana, A., Pena-Cortes, F. and Aguilera-</td>
-<td>Assessing the completeness of inventories of vascular epiphytes and climbing plants in Chilean swamp</td>
-<td>2016</td>
-<td>NEW ZEALAND JOURNAL OF BOTANYVol. 54(4)</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Pincheira-Ulbrich, J., Hernandez, C.E., Saldana, A., Pena-Cortes, F. and Aguiler</td>
-<td>Assessing the completeness of inventories of vascular epiphytes and climbing plants in Chilean swamp</td>
-<td>2016</td>
-<td>NEW ZEALAND JOURNAL OF BOTANYVol. 54(4), pp.&nbsp;458-474</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Pincheira-Ulbrich, J., Rau, J.R. and Smith-Ramirez, C.</td>
-<td>Vascular epiphytes and climbing plants diversity in an agroforestal landscape in southern Chile: a c</td>
-<td>2012</td>
-<td>BOLETIN DE LA SOCIEDAD ARGENTINA DE BOTANICAVol. 47(3-4), pp</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Promis, A., Bergh, G., Teresa Serra, M. and Cruz, G.</td>
-<td>Description of the vascular flora in the understory of a swamp forest and in an anthropogenic Juncus</td>
-<td>2013</td>
-<td>GAYANA BOTANICAVol. 70(1), pp.&nbsp;164-169</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Quilodran, C.S., Vasquez, R.A. and Estades, C.F.</td>
-<td>NESTING OF THE THORN-TAILED RAYADITO (APHRASTURA SPINICAUDA) IN A PINE PLANTATION IN SOUTHCENTRAL CH</td>
-<td>2012</td>
-<td>WILSON JOURNAL OF ORNITHOLOGYVol. 124(4), pp.&nbsp;737-742</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Reyes, F., Zanetti, S., Espinosa, A. and Alvear, M.</td>
-<td>BIOCHEMICAL PROPERTIES IN VASCULAR EPIPHYTES SUBSTRATE FROM A TEMPERATE FOREST OF CHILE</td>
-<td>2010</td>
-<td>REVISTA DE LA CIENCIA DEL SUELO Y NUTRICION VEGETALVol. 10(2</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Reyes, F., Zanetti, S., Espinosa, A. and Alvear, M.</td>
-<td>BIOCHEMICAL PROPERTIES IN VASCULAR EPIPHYTES SUBSTRATE FROM A TEMPERATE FOREST OF CHILE</td>
-<td>2010</td>
-<td>JOURNAL OF SOIL SCIENCE AND PLANT NUTRITIONVol. 10(2), pp.&nbsp;1</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Saldana, A., Parra, M.J., Flores-Bavestrello, A., Corcuera, L.J. and Bravo, L.A.</td>
-<td>Effects of forest successional status on microenvironmental conditions, diversity, and distribution</td>
-<td>2014</td>
-<td>PLANT SPECIES BIOLOGYVol. 29(3), pp.&nbsp;253-262</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Salinas, F. and Armesto, J.J.</td>
-<td>Regeneration niche of three epiphytic species of Gesneriaceae from Chilean rainforests: implications</td>
-<td>2012</td>
-<td>BOTANICAL JOURNAL OF THE LINNEAN SOCIETYVol. 170(1), pp.&nbsp;79-</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Soler, R., Martinez Pastur, G., Vanessa Lencinas, M. and Rosenfeld, M.</td>
-<td>Variable retention management influences biomass of Misodendrum and Usnea in Nothofagus pumilio sout</td>
-<td>2014</td>
-<td>NEW ZEALAND JOURNAL OF BOTANYVol. 52(2), pp.&nbsp;224-235</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Stanton, D.E., Huallpa Chavez, J., Villegas, L., Villasante, F., Armesto, J., He</td>
-<td>Epiphytes improve host plant water use by microenvironment modification</td>
-<td>2014</td>
-<td>FUNCTIONAL ECOLOGYVol. 28(5), pp.&nbsp;1274-1283</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Taylor, A., Saldana, A., Zotz, G., Kirby, C., Diaz, I. and Burns, K.</td>
-<td>Composition patterns and network structure of epiphyte-host interactions in Chilean and New Zealand</td>
-<td>2016</td>
-<td>NEW ZEALAND JOURNAL OF BOTANYVol. 54(2, SI), pp.&nbsp;204-222</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Tejo Haristoy, C., Zabowski, D. and Nadkarni, N.</td>
-<td>Canopy Soils of Sitka Spruce and Bigleaf Maple in the Queets River Watershed, Washington</td>
-<td>2014</td>
-<td>SOIL SCIENCE SOCIETY OF AMERICA JOURNALVol. 78(1), pp.&nbsp;S118-</td>
-<td>article</td>
-</tr>
-<tr class="odd">
-<td>Tejo, C.F., Zabowski, D. and Nadkarni, N.M.</td>
-<td>Total and epiphytic litter under the canopy of Acer macrophyllum in an old-growth temperate rainfore</td>
-<td>2015</td>
-<td>CANADIAN JOURNAL OF FOREST RESEARCHVol. 45(11), pp.&nbsp;1654-166</td>
-<td>article</td>
-</tr>
-<tr class="even">
-<td>Troncoso, P.A., Perez, C.A., Larrain, J. and Ardiles, V.</td>
-<td>The development of symbiotic nitrogen fixation along a primary chronosequence in Santa Ines Island,</td>
-<td>2013</td>
-<td>REVISTA CHILENA DE HISTORIA NATURALVol. 86(3), pp.&nbsp;345-355</td>
-<td>article</td>
-</tr>
-</tbody>
-</table>
 
 
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJlZmVyZW5jaWFzID0gZDMuY3N2KFwiZGF0YS9yZWZlcmVuY2lhcy5jc3ZcIiwgZDMuYXV0b1R5cGUpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2YgY29uc3VsdGEgPSBJbnB1dHMuc2VhcmNoKHJlZmVyZW5jaWFzLCB7XG4gIHBsYWNlaG9sZGVyOiBcIkJ1c2NhciBwb3IgYXV0b3IsIHTDrXR1bG8sIHJldmlzdGEgbyBhw7Fv4oCmXCJcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJtZGAqKiR7Y29uc3VsdGEubGVuZ3RofSByZWZlcmVuY2lhcyoqIChkZSAke3JlZmVyZW5jaWFzLmxlbmd0aH0gcmVnaXN0cmFkYXMpYFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiSW5wdXRzLnRhYmxlKGNvbnN1bHRhLCB7XG4gIGNvbHVtbnM6IFtcImF1dGhvclwiLCBcInRpdGxlXCIsIFwieWVhclwiLCBcImpvdXJuYWxcIiwgXCJ2b2x1bWVcIiwgXCJwYWdlc1wiXSxcbiAgaGVhZGVyOiB7XG4gICAgYXV0aG9yOiBcIkF1dG9yZXNcIixcbiAgICB0aXRsZTogXCJUw610dWxvXCIsXG4gICAgeWVhcjogXCJBw7FvXCIsXG4gICAgam91cm5hbDogXCJSZXZpc3RhXCIsXG4gICAgdm9sdW1lOiBcIlZvbC5cIixcbiAgICBwYWdlczogXCJQw6FnaW5hc1wiXG4gIH0sXG4gIGZvcm1hdDoge1xuICAgIHRpdGxlOiAodCkgPT5cbiAgICAgIGh0bWxgPGEgaHJlZj1cImh0dHBzOi8vc2VhcmNoLmNyb3NzcmVmLm9yZy8/cT0ke2VuY29kZVVSSUNvbXBvbmVudChcbiAgICAgICAgdFxuICAgICAgKX1cIiB0YXJnZXQ9XCJfYmxhbmtcIiByZWw9XCJub29wZW5lclwiPiR7dH08L2E+YFxuICB9LFxuICByb3dzOiAyMCxcbiAgc29ydDogXCJ5ZWFyXCIsXG4gIHJldmVyc2U6IHRydWVcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ2NvbnN1bHRhJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
