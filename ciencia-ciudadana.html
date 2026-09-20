@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Plantas arraigadas en el suelo que utilizan otros vegetales para ascender hacia la luz">
+<meta name="description" content="Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist">
 
-<title>Trepadoras – Epifitas.cl</title>
+<title>Ciencia ciudadana – Epifitas.cl</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,26 +30,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/cc-by-nc-sa.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/cc-by-nc-sa.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,90 +74,30 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Buscar"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Trepadoras – Epifitas.cl">
-<meta property="og:description" content="Plantas arraigadas en el suelo que utilizan otros vegetales para ascender hacia la luz">
-<meta property="og:image" content="https://epifitas.cl/images/especies/webp/DSCN3857esc.webp">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Ciencia ciudadana – Epifitas.cl">
+<meta property="og:description" content="Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist">
 <meta property="og:site_name" content="Epifitas.cl">
-<meta name="twitter:title" content="Trepadoras – Epifitas.cl">
-<meta name="twitter:description" content="Plantas arraigadas en el suelo que utilizan otros vegetales para ascender hacia la luz">
-<meta name="twitter:image" content="https://epifitas.cl/images/especies/webp/DSCN3857esc.webp">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ciencia ciudadana – Epifitas.cl">
+<meta name="twitter:description" content="Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/header/bombus.jpg" alt="Epifitas.cl" class="navbar-logo light-content">
-    <img src="../images/header/bombus.jpg" alt="Epifitas.cl" class="navbar-logo dark-content">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/header/bombus.jpg" alt="Epifitas.cl" class="navbar-logo light-content">
+    <img src="./images/header/bombus.jpg" alt="Epifitas.cl" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Epifitas.cl</span>
     </a>
   </div>
@@ -170,11 +108,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../nombres-cientificos.html"> 
+    <a class="nav-link" href="./nombres-cientificos.html"> 
 <span class="menu-text">Nombres científicos</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -183,48 +121,48 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-formas-de-crecimiento">    
         <li>
-    <a class="dropdown-item" href="../categorias/epifitas.html">
+    <a class="dropdown-item" href="./categorias/epifitas.html">
  <span class="dropdown-text">Epífitas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../categorias/hemiepifitas.html">
+    <a class="dropdown-item" href="./categorias/hemiepifitas.html">
  <span class="dropdown-text">Hemiepífitas</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../categorias/trepadoras.html">
+    <a class="dropdown-item" href="./categorias/trepadoras.html">
  <span class="dropdown-text">Trepadoras</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../referencias.html"> 
+    <a class="nav-link" href="./referencias.html"> 
 <span class="menu-text">Referencias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../rasgos.html"> 
+    <a class="nav-link" href="./rasgos.html"> 
 <span class="menu-text">Rasgos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../distribucion.html"> 
+    <a class="nav-link" href="./distribucion.html"> 
 <span class="menu-text">Distribución</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../ciencia-ciudadana.html"> 
+    <a class="nav-link active" href="./ciencia-ciudadana.html" aria-current="page"> 
 <span class="menu-text">Ciencia ciudadana</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contacto.html"> 
+    <a class="nav-link" href="./contacto.html"> 
 <span class="menu-text">Contacto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="../#" target="_blank"> <i class="bi bi-instagram" role="img" aria-label="Instagram de Epifitas.cl">
+    <a class="nav-link" href="./#" target="_blank"> <i class="bi bi-instagram" role="img" aria-label="Instagram de Epifitas.cl">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../#" target="_blank"> <i class="bi bi-bluesky" role="img" aria-label="Bluesky de Epifitas.cl">
+    <a class="nav-link" href="./#" target="_blank"> <i class="bi bi-bluesky" role="img" aria-label="Bluesky de Epifitas.cl">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -239,26 +177,18 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#especies-trepadoras" id="toc-especies-trepadoras" class="nav-link active" data-scroll-target="#especies-trepadoras">Especies trepadoras</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Trepadoras</h1>
+<h1 class="title">Ciencia ciudadana</h1>
 </div>
 
 <div>
   <div class="description">
-    Plantas arraigadas en el suelo que utilizan otros vegetales para ascender hacia la luz
+    Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist
   </div>
 </div>
 
@@ -275,124 +205,89 @@ window.Quarto = {
 </header>
 
 
-<p>Las trepadoras y lianas son plantas con tallos flexibles que germinan en el suelo del bosque y se apoyan o sujetan de árboles y arbustos para alcanzar la luz en el dosel.</p>
-<section id="especies-trepadoras" class="level2">
-<h2 class="anchored" data-anchor-id="especies-trepadoras">Especies trepadoras</h2>
-<div id="listing-listing" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="VHJlcGFkb3Jhcw==" data-listing-file-modified-sort="1788467053925" data-listing-reading-time-sort="1" data-listing-word-count-sort="186">
-<a href="../especies/asteranthera-ovata.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/especies/webp/DSCN3857esc.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<em>Asteranthera ovata</em>
-</h5>
-<div class="card-subtitle listing-subtitle">
-Estrellita
+<p>Súmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilenos. Cada observación con foto y ubicación que subas a nuestro proyecto en iNaturalist ayuda a ampliar el mapa de distribución de estas especies.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="listing-categories">
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>¿Cómo participar?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Instala la app de <a href="https://www.inaturalist.org/pages/getting+started">iNaturalist</a> o usa el sitio web.</li>
+<li>Fotografía la planta (hoja, flor o fruto ayudan a la identificación) y registra la ubicación.</li>
+<li>Súmate al proyecto <a href="https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile"><strong>“Epífitas, hemiepífitas y trepadoras de Chile”</strong></a> en iNaturalist.</li>
+<li>La comunidad de iNaturalist ayuda a confirmar la identificación; las observaciones “grado de investigación” (research grade) se consideran citables como registro de ocurrencia.</li>
+</ol>
+</div>
+</div>
+<section id="observaciones-recientes" class="level2">
+<h2 class="anchored" data-anchor-id="observaciones-recientes">Observaciones recientes</h2>
+<div id="inat-observaciones" class="inat-grid">
+Cargando observaciones…
+</div>
+<style>
+.inat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 1rem; }
+.inat-card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; background: white; }
+.inat-card img { width: 100%; height: 140px; object-fit: cover; display: block; }
+.inat-card .inat-meta { padding: 6px 8px; font-size: 0.8rem; }
+.inat-card .inat-meta i { color: #2d5a2d; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // El API de iNaturalist acepta el slug del proyecto (de su URL) o su ID
+  // numérico en project_id. Usamos el slug directamente:
+  // https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile
+  var PROJECT_ID = "epifitas-hemiepifitas-y-trepadoras-de-chile";
+  var contenedor = document.getElementById("inat-observaciones");
 
-<div class="listing-category" onclick="window.quartoListingCategory('VHJlcGFkb3Jhcw=='); return false;">Trepadoras</div>
-
+  fetch("https://api.inaturalist.org/v1/observations?project_id=" + PROJECT_ID +
+        "&order_by=observed_on&order=desc&per_page=12&photos=true")
+    .then(function (r) { return r.json(); })
+    .then(function (datos) {
+      contenedor.innerHTML = "";
+      datos.results.forEach(function (obs) {
+        var foto = obs.photos && obs.photos[0]
+          ? obs.photos[0].url.replace("square", "medium")
+          : null;
+        var nombre = (obs.taxon && (obs.taxon.preferred_common_name || obs.taxon.name)) || "Sin identificar";
+        var a = document.createElement("a");
+        a.className = "inat-card";
+        a.href = "https://www.inaturalist.org/observations/" + obs.id;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML =
+          (foto ? '<img src="' + foto + '" alt="' + nombre + '">' : "") +
+          '<div class="inat-meta"><i>' + nombre + "</i><br>" +
+          (obs.observed_on || "s/f") + " · " + (obs.user ? obs.user.login : "") + "</div>";
+        contenedor.appendChild(a);
+      });
+      if (datos.results.length === 0) {
+        contenedor.innerHTML = '<div class="callout callout-info">Aún no hay observaciones en el proyecto.</div>';
+      }
+    })
+    .catch(function () {
+      contenedor.innerHTML =
+        '<div class="callout callout-info">No se pudieron cargar las observaciones de iNaturalist en este momento.</div>';
+    });
+});
+</script>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VHJlcGFkb3Jhcw==" data-listing-file-modified-sort="1788467091341" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
-<a href="../especies/lapageria-rosea.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/especies/webp/lrosea-600x800.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<em>Lapageria rosea</em>
-</h5>
-<div class="card-subtitle listing-subtitle">
-Copihue
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJlcGFkb3Jhcw=='); return false;">Trepadoras</div>
-
+<div class="callout-body-container callout-body">
+<p>Los datos se obtienen en vivo desde la <a href="https://api.inaturalist.org/v1/docs/">API pública de iNaturalist</a>.</p>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="VHJlcGFkb3Jhcw==" data-listing-file-modified-sort="1788467109940" data-listing-reading-time-sort="1" data-listing-word-count-sort="134">
-<a href="../especies/luzuriaga-radicans.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/especies/webp/arb-044escala.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<em>Luzuriaga radicans</em>
-</h5>
-<div class="card-subtitle listing-subtitle">
-Quilineja, Azahar de monte
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJlcGFkb3Jhcw=='); return false;">Trepadoras</div>
-
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="VHJlcGFkb3JhcyUyQ0VwJUMzJUFEZml0YXM=" data-listing-file-modified-sort="1788467116101" data-listing-reading-time-sort="2" data-listing-word-count-sort="259">
-<a href="../especies/mitraria-coccinea.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/especies/webp/DSCN3836escala-1024x768.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<em>Mitraria coccinea</em>
-</h5>
-<div class="card-subtitle listing-subtitle">
-Botellita, voquivoqui, boche-boche
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJlcGFkb3Jhcw=='); return false;">Trepadoras</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXAlQzMlQURmaXRhcw=='); return false;">Epífitas</div>
-
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="VHJlcGFkb3JhcyUyQ0VwJUMzJUFEZml0YXM=" data-listing-file-modified-sort="1788467122420" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
-<a href="../especies/philesia-magellanica.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/especies/webp/coi_AC_esc.webp" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<em>Philesia magellanica</em>
-</h5>
-<div class="card-subtitle listing-subtitle">
-Coicopihue, copihue chilote
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJlcGFkb3Jhcw=='); return false;">Trepadoras</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RXAlQzMlQURmaXRhcw=='); return false;">Epífitas</div>
-
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No hay resultados</div>
-</div>
-
 
 
 </section>
@@ -807,10 +702,10 @@ Coicopihue, copihue chilote
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 <a href="../index.html">Epifitas.cl</a></p>
+<p>© 2025 <a href="./index.html">Epifitas.cl</a></p>
 </div>   
     <div class="nav-footer-center">
-<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../images/cc-by-nc-sa.png" height="31" alt="CC BY-NC-SA 4.0"></a> <a href="../contacto.html">Daniela Mellado-Mansilla &amp; Gabriel Ortega-Solís</a></p>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./images/cc-by-nc-sa.png" height="31" alt="CC BY-NC-SA 4.0"></a> <a href="./contacto.html">Daniela Mellado-Mansilla &amp; Gabriel Ortega-Solís</a></p>
 </div>
     <div class="nav-footer-right">
 <p>Construido con <a href="https://quarto.org">Quarto</a> · <a href="#">Instagram</a> · <a href="#">Bluesky</a></p>
@@ -821,5 +716,5 @@ Coicopihue, copihue chilote
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
