@@ -1,10 +1,16 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
+    - "!AI plans/"
   resources:
     - mapas/
     - geolibre/
     - ocurrencias/
+    - data/
+    - images/header/
 
 website:
   title: "Epifitas.cl"
@@ -33,10 +39,24 @@ website:
             href: categorias/trepadoras.qmd
       - text: "Referencias"
         href: referencias.qmd
+      - text: "Rasgos"
+        href: rasgos.qmd
       - text: "Distribución"
         href: distribucion.qmd
+      - text: "Ciencia ciudadana"
+        href: ciencia-ciudadana.qmd
       - text: "Contacto"
         href: contacto.qmd
+    right:
+      # TODO: reemplazar "#" por las URL reales de los perfiles cuando existan
+      - icon: instagram
+        href: "#"
+        aria-label: "Instagram de Epifitas.cl"
+        target: _blank
+      - icon: bluesky
+        href: "#"
+        aria-label: "Bluesky de Epifitas.cl"
+        target: _blank
 
   page-footer:
     left: |
@@ -45,7 +65,7 @@ website:
       [![CC BY-NC-SA 4.0](/images/cc-by-nc-sa.png){height="31"}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
       [Daniela Mellado-Mansilla & Gabriel Ortega-Solís](/contacto.qmd)
     right: |
-      Construido con [Quarto](https://quarto.org)
+      Construido con [Quarto](https://quarto.org) · [Instagram](#) · [Bluesky](#)
     background: "#1a2f1a"
     foreground: "#a0b8a0"
 

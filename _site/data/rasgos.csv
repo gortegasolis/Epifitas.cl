@@ -1,0 +1,16 @@
+species,slug,growth_form,family,elevation_min_m,elevation_max_m,host_specificity,phenology_flowering,phenology_fruiting,conservation_status,plant_height_m,leaf_area_mm2,sla_mm2_mg,seed_mass_mg,wood_density_g_cm3,trait_source
+Asplenium dareoides,asplenium-dareoides,Epífita,Aspleniaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable / Preocupación menor (según zona),,,,,,Sin dato
+Asplenium trilobum,asplenium-trilobum,Epífita,Aspleniaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable / Preocupación menor (según zona),,,,,,Sin dato
+Asteranthera ovata,asteranthera-ovata,Trepadora,Gesneriaceae,,,,Noviembre a Enero,Mayo a Agosto,Sin evaluar,,,,,,Sin dato
+Fascicularia bicolor,fascicularia-bicolor,Epífita,Bromeliaceae,,,,Febrero,Marzo a Abril,Vulnerable,,,,,,Sin dato
+Gaultheria insana,gaultheria-insana,Epífita,Ericaceae,,,,Octubre-Noviembre,Noviembre-Enero,No amenazada,5,,,0.33,,Rasgos-CL
+Hymenophyllum caudiculatum,hymenophyllum-caudiculatum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable,,,,,,Sin dato
+Hymenophyllum cruentum,hymenophyllum-cruentum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable,,,,,,Sin dato
+Hymenophyllum dicranotrichum,hymenophyllum-dicranotrichum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Preocupación menor,,,,,,Sin dato
+Hymenophyllum pectinatum,hymenophyllum-pectinatum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Sin evaluar,,,,,,Sin dato
+Hymenophyllum rugosum,hymenophyllum-rugosum,Epífita,Hymenophyllaceae,,,,No aplica (helecho),No aplica (helecho),Vulnerable,,,,,,Sin dato
+Lapageria rosea,lapageria-rosea,Trepadora,Philesiaceae,,,,Marzo-Julio,Junio-Marzo,Vulnerable,,,,,,Sin dato
+Luzuriaga radicans,luzuriaga-radicans,Trepadora,Luzuriagaceae,,,,Septiembre a Diciembre,Diciembre a Mayo,Sin evaluar,,,,,,Sin dato
+Mitraria coccinea,mitraria-coccinea,Trepadora / Epífita facultativa,Gesneriaceae,,,,Octubre – Diciembre,Enero- Mayo,Sin evaluar,,,,,,Sin dato
+Philesia magellanica,philesia-magellanica,Trepadora / Epífita facultativa,Philesiaceae,,,,Diciembre- Abril,Marzo- Junio,Sin evaluar,,,,,,Sin dato
+Sarmienta scandens,sarmienta-scandens,Epífita,Gesneriaceae,,,,No registrada.,No registrada.,Sin evaluar,,,,,,Sin dato

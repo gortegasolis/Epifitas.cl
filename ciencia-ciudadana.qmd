@@ -1,0 +1,72 @@
+---
+title: "Ciencia ciudadana"
+description: "Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist"
+toc: false
+---
+
+Súmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilenos. Cada observación con foto y ubicación que subas a nuestro proyecto en iNaturalist ayuda a ampliar el mapa de distribución de estas especies.
+
+::: {.callout-tip}
+### ¿Cómo participar?
+1. Instala la app de [iNaturalist](https://www.inaturalist.org/pages/getting+started) o usa el sitio web.
+2. Fotografía la planta (hoja, flor o fruto ayudan a la identificación) y registra la ubicación.
+3. Súmate al proyecto [**"Epífitas, hemiepífitas y trepadoras de Chile"**](https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile) en iNaturalist.
+4. La comunidad de iNaturalist ayuda a confirmar la identificación; las observaciones "grado de investigación" (research grade) se consideran citables como registro de ocurrencia.
+:::
+
+## Observaciones recientes
+
+<div id="inat-observaciones" class="inat-grid">Cargando observaciones…</div>
+
+```{=html}
+<style>
+.inat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 1rem; }
+.inat-card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; text-decoration: none; color: inherit; background: white; }
+.inat-card img { width: 100%; height: 140px; object-fit: cover; display: block; }
+.inat-card .inat-meta { padding: 6px 8px; font-size: 0.8rem; }
+.inat-card .inat-meta i { color: #2d5a2d; }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // El API de iNaturalist acepta el slug del proyecto (de su URL) o su ID
+  // numérico en project_id. Usamos el slug directamente:
+  // https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile
+  var PROJECT_ID = "epifitas-hemiepifitas-y-trepadoras-de-chile";
+  var contenedor = document.getElementById("inat-observaciones");
+
+  fetch("https://api.inaturalist.org/v1/observations?project_id=" + PROJECT_ID +
+        "&order_by=observed_on&order=desc&per_page=12&photos=true")
+    .then(function (r) { return r.json(); })
+    .then(function (datos) {
+      contenedor.innerHTML = "";
+      datos.results.forEach(function (obs) {
+        var foto = obs.photos && obs.photos[0]
+          ? obs.photos[0].url.replace("square", "medium")
+          : null;
+        var nombre = (obs.taxon && (obs.taxon.preferred_common_name || obs.taxon.name)) || "Sin identificar";
+        var a = document.createElement("a");
+        a.className = "inat-card";
+        a.href = "https://www.inaturalist.org/observations/" + obs.id;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.innerHTML =
+          (foto ? '<img src="' + foto + '" alt="' + nombre + '">' : "") +
+          '<div class="inat-meta"><i>' + nombre + "</i><br>" +
+          (obs.observed_on || "s/f") + " · " + (obs.user ? obs.user.login : "") + "</div>";
+        contenedor.appendChild(a);
+      });
+      if (datos.results.length === 0) {
+        contenedor.innerHTML = '<div class="callout callout-info">Aún no hay observaciones en el proyecto.</div>';
+      }
+    })
+    .catch(function () {
+      contenedor.innerHTML =
+        '<div class="callout callout-info">No se pudieron cargar las observaciones de iNaturalist en este momento.</div>';
+    });
+});
+</script>
+```
+
+::: {.callout-note}
+Los datos se obtienen en vivo desde la [API pública de iNaturalist](https://api.inaturalist.org/v1/docs/).
+:::

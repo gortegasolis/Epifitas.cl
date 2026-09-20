@@ -1,9 +1,10 @@
 ---
 title: "*Fascicularia bicolor*"
 subtitle: "Chupalla, poe, puñeñe"
+author: "Gabriel Ortega"
 description: "Fascicularia bicolor — Epífita. Bromeliaceae. Distribución: V-X Regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/DSCN4057escala.JPG"
+categories: [Epífitas]
+image: "../images/especies/webp/DSCN4057escala.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -43,11 +44,11 @@ Vulnerable
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/pagweb.JPG){group="fascicularia-bicolor"}
+![](../images/especies/webp/pagweb.webp){group="fascicularia-bicolor"}
 
-![](../images/especies/fbicoloresc.JPG){group="fascicularia-bicolor"}
+![](../images/especies/webp/fbicoloresc.webp){group="fascicularia-bicolor"}
 
-![](../images/especies/DSCN4529esc.JPG){group="fascicularia-bicolor"}
+![](../images/especies/webp/DSCN4529esc.webp){group="fascicularia-bicolor"}
 :::
 
 ### Mapa de distribución en Chile

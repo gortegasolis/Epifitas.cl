@@ -50,3 +50,7 @@ rsconnect/
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Herramientas locales (binarios, no publicar)
+tools/
+.serena/

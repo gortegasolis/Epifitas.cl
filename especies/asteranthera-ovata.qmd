@@ -1,9 +1,10 @@
 ---
 title: "*Asteranthera ovata*"
 subtitle: "Estrellita"
+author: "Daniela Mellado-Mansilla"
 description: "Asteranthera ovata — Rastrera, trepadora. Gesneriaceae. Distribución: VII-XII regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/DSCN3857esc.jpg"
+categories: [Trepadoras]
+image: "../images/especies/webp/DSCN3857esc.webp"
 ---
 
 ## Información taxonómica {.species-title}

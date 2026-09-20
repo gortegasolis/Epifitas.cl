@@ -8,7 +8,7 @@ listing:
   include:
     categories: "Epífitas"
   sort: "title"
-  fields: [image, title, subtitle]
+  fields: [image, title, subtitle, categories]
 ---
 
 Las epífitas son plantas que crecen sobre otras plantas, usándolas como soporte y siendo capaces de desarrollar todo su ciclo de vida sobre ellas.

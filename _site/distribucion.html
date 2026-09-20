@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-71b76b6b056ddf9c16da5cff41a10f6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -139,12 +139,32 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Referencias</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./rasgos.html"> 
+<span class="menu-text">Rasgos</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./distribucion.html" aria-current="page"> 
 <span class="menu-text">Distribución</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./ciencia-ciudadana.html"> 
+<span class="menu-text">Ciencia ciudadana</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./contacto.html"> 
 <span class="menu-text">Contacto</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="./#" target="_blank"> <i class="bi bi-instagram" role="img" aria-label="Instagram de Epifitas.cl">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./#" target="_blank"> <i class="bi bi-bluesky" role="img" aria-label="Bluesky de Epifitas.cl">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -190,13 +210,86 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="fuentes-y-herramientas">Fuentes y herramientas</h3>
 <ul>
 <li><strong>Datos:</strong> Global Biodiversity Information Facility (<a href="https://www.gbif.org/">GBIF</a>)</li>
-<li><strong>Análisis y Mapas:</strong> R Core Team, paquetes <code>spocc</code> y <code>leaflet</code>.</li>
+<li><strong>Análisis y Mapas:</strong> R, paquetes <code>spocc</code> y <code>leaflet</code>.</li>
 </ul>
 </section>
-<div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290000!2d-73.5!3d-40.5!2z4DGB!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-</iframe>
+<div class="map-container-wide">
+<div id="mapa-distribucion" style="height: 600px; width: 100%;">
+
 </div>
+</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var colores = { epifita: "#2d5a2d", trepadora: "#c9a84c", hemiepifita: "#7b5ea7" };
+  var mapa = L.map("mapa-distribucion").setView([-38.5, -72.5], 5);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(mapa);
+
+  fetch("ocurrencias/todas-las-especies.geojson")
+    .then(function (r) { return r.json(); })
+    .then(function (datos) {
+      var porEspecie = {};
+      datos.features.forEach(function (f) {
+        var p = f.properties;
+        if (!porEspecie[p.species]) {
+          porEspecie[p.species] = { nombre: p.nombre, forma: p.forma, puntos: [] };
+        }
+        porEspecie[p.species].puntos.push(f);
+      });
+
+      var capas = {};
+      var slugs = Object.keys(porEspecie).sort(function (a, b) {
+        return porEspecie[a].nombre.localeCompare(porEspecie[b].nombre);
+      });
+      slugs.forEach(function (slug) {
+        var e = porEspecie[slug];
+        var color = colores[e.forma] || "#2d5a2d";
+        var capa = L.layerGroup(
+          e.puntos.map(function (f) {
+            var c = f.geometry.coordinates;
+            return L.circleMarker([c[1], c[0]], {
+              radius: 4, color: color, weight: 1,
+              fillColor: color, fillOpacity: 0.6
+            }).bindPopup(
+              "<i>" + e.nombre + "</i><br>Año: " + (f.properties.year || "s/d") +
+              "<br>Base: " + (f.properties.basisOfRecord || "s/d")
+            );
+          })
+        );
+        var etiqueta = '<span style="color:' + color + '">●</span> <i>' +
+          e.nombre + "</i> (" + e.puntos.length + ")";
+        capas[etiqueta] = capa;
+        capa.addTo(mapa);
+      });
+      L.control.layers(null, capas, { collapsed: false, position: "topright" }).addTo(mapa);
+
+      var leyenda = L.control({ position: "bottomleft" });
+      leyenda.onAdd = function () {
+        var div = L.DomUtil.create("div", "leyenda-mapa");
+        div.style.cssText = "background:white;padding:8px 12px;border-radius:8px;" +
+          "box-shadow:0 2px 8px rgba(0,0,0,.25);font-size:.8rem;max-height:280px;overflow-y:auto;";
+        var html = '<strong>Especies</strong> <span style="color:#888">(clic abre la ficha)</span><br>' +
+          '<span style="color:' + colores.epifita + '">●</span> Epífitas · ' +
+          '<span style="color:' + colores.trepadora + '">●</span> Trepadoras<br>';
+        slugs.forEach(function (slug) {
+          var e = porEspecie[slug];
+          html += '<a href="especies/' + slug + '.html"><i>' + e.nombre + "</i></a><br>";
+        });
+        div.innerHTML = html;
+        return div;
+      };
+      leyenda.addTo(mapa);
+    })
+    .catch(function (e) {
+      document.getElementById("mapa-distribucion").innerHTML =
+        '<div class="callout callout-info">No se pudieron cargar los datos de ocurrencia.</div>';
+    });
+});
+</script>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -207,7 +300,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><em>Nota: El mapa dinámico interactivo con capas de especies puede ser generado nuevamente ejecutando scripts de consulta directa a la API de GBIF.</em></p>
+<p>Use el panel de capas (esquina superior derecha) para activar o desactivar especies.</p>
 </div>
 </div>
 
@@ -629,7 +722,7 @@ Tip
 <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="./images/cc-by-nc-sa.png" height="31" alt="CC BY-NC-SA 4.0"></a> <a href="./contacto.html">Daniela Mellado-Mansilla &amp; Gabriel Ortega-Solís</a></p>
 </div>
     <div class="nav-footer-right">
-<p>Construido con <a href="https://quarto.org">Quarto</a></p>
+<p>Construido con <a href="https://quarto.org">Quarto</a> · <a href="#">Instagram</a> · <a href="#">Bluesky</a></p>
 </div>
   </div>
 </footer>

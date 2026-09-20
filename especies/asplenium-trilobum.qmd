@@ -1,6 +1,7 @@
 ---
 title: "*Asplenium trilobum*"
 subtitle: "Helecho trilobulado"
+author: "Daniela Mellado-Mansilla"
 description: "Asplenium trilobum — Epífito, raramente terrestre. Aspleniaceae. Distribución: VII-XI regiones."
 categories: [Epífitas]
 ---

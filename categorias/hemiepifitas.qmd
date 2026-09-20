@@ -8,12 +8,16 @@ listing:
   include:
     categories: "Hemiepífitas"
   sort: "title"
-  fields: [image, title, subtitle]
+  fields: [image, title, subtitle, categories]
 ---
 
 Las hemiepífitas son plantas que desarrollan solo una etapa de su ciclo vital como epífitas. Se dividen comúnmente en hemiepífitas primarias (germinan en el dosel y luego envían raíces al suelo) y secundarias (germinan en el suelo y posteriormente pierden su conexión subterránea).
 
 ## Especies hemiepífitas
+
+::: {.callout-note}
+Actualmente ninguna de las especies con ficha en el sitio presenta un hábito estrictamente hemiepífito. A medida que se incorporen nuevas fichas de hemiepífitas (por ejemplo, del género *Hydrangea*), aparecerán listadas aquí.
+:::
 
 :::{#listing}
 :::

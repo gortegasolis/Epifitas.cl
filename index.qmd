@@ -1,8 +1,4 @@
 ---
-title: "Epifitas.cl"
-subtitle: "Plantas epífitas, trepadoras y hemiepífitas de los bosques de Chile"
-pagetitle: "Epifitas.cl — Plantas del dosel de los bosques chilenos"
-description: "Sitio dedicado a difundir el conocimiento sobre las plantas que habitan en el perfil vertical de los bosques chilenos: epífitas, trepadoras y hemiepífitas."
 image: images/header/bombus.jpg
 toc: false
 listing:
@@ -23,7 +19,7 @@ listing:
 
 Este sitio ha sido creado para difundir el conocimiento sobre las plantas que habitan en el perfil vertical de los bosques chilenos. Queremos despertar el interés del público por aquellos organismos que son un componente importante pero muchas veces obviado de nuestros bosques: **epífitas**, **trepadoras** y **hemiepífitas**.
 
-Mediante información científica, fotos, videos e ilustraciones buscaremos mostrar la belleza e importancia de este grupo de especies.
+Mediante información científica, fotos e ilustraciones buscaremos mostrar la belleza e importancia de este grupo de especies.
 
 [*¡Esperamos que disfruten el sitio y que comiencen a observar los bosques desde una nueva perspectiva!*]{.highlight}
 

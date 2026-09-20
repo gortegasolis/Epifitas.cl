@@ -1,8 +1,9 @@
 ---
 title: "*Hymenophyllum dicranotrichum*"
 subtitle: "Helecho película, Mämell-täpel (“Hoja de palo” en mapudungún)"
+author: "Daniela Mellado-Mansilla"
 description: "Hymenophyllum dicranotrichum — Epifito, epipetrico. Hymenophyllaceae. Distribución: VIII-XI regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
+categories: [Epífitas]
 image: "../images/especies/makeo2-063escala-768x576.jpg"
 ---
 
@@ -35,9 +36,9 @@ Preocupación menor.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0410esca-300x225.jpg){group="hymenophyllum-dicranotrichum"}
+![](../images/especies/webp/DSCN0410esca-300x225.webp){group="hymenophyllum-dicranotrichum"}
 
-![](../images/especies/DSCN0414escala-300x225.jpg){group="hymenophyllum-dicranotrichum"}
+![](../images/especies/webp/DSCN0414escala-300x225.webp){group="hymenophyllum-dicranotrichum"}
 :::
 
 ### Mapa de distribución en Chile

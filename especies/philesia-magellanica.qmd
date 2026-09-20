@@ -1,9 +1,10 @@
 ---
 title: "*Philesia magellanica*"
 subtitle: "Coicopihue, copihue chilote"
+author: "Daniela Mellado-Mansilla"
 description: "Philesia magellanica — Trepador apoyante, también puede ser encontrado como epífito. Philesiaceae. Distribución: XIV-XII regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/coi_AC_esc.jpg"
+categories: [Trepadoras, Epífitas]
+image: "../images/especies/webp/coi_AC_esc.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -43,11 +44,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/coi_AC_esc.jpg){group="philesia-magellanica"}
+![](../images/especies/webp/coi_AC_esc.webp){group="philesia-magellanica"}
 
-![](../images/especies/Chiloé-2009-145escala-225x300.jpg){group="philesia-magellanica"}
+![](../images/especies/webp/Chiloé-2009-145escala-225x300.webp){group="philesia-magellanica"}
 
-![](../images/especies/coi_fru_esc.jpg){group="philesia-magellanica"}
+![](../images/especies/webp/coi_fru_esc.webp){group="philesia-magellanica"}
 :::
 
 ### Mapa de distribución en Chile

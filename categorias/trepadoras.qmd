@@ -8,7 +8,7 @@ listing:
   include:
     categories: "Trepadoras"
   sort: "title"
-  fields: [image, title, subtitle]
+  fields: [image, title, subtitle, categories]
 ---
 
 Las trepadoras y lianas son plantas con tallos flexibles que germinan en el suelo del bosque y se apoyan o sujetan de árboles y arbustos para alcanzar la luz en el dosel.

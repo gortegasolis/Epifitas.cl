@@ -1,0 +1,102 @@
+---
+title: "Rasgos funcionales"
+description: "Tabla de rasgos funcionales de las epífitas, trepadoras y hemiepífitas de Chile"
+toc: false
+code-copy: false
+code-tools: false
+---
+
+Rasgos ecológicos y funcionales de las especies documentadas en este sitio. Los rasgos cuantitativos (altura de planta, área foliar, SLA, masa de semilla, densidad de madera) provienen de bases de datos externas — ver la nota de fuentes al final de la página.
+
+```{ojs}
+//| echo: false
+rasgos = d3.csv("data/rasgos.csv", d3.autoType)
+```
+
+::: {.panel-input}
+
+```{ojs}
+//| echo: false
+viewof formaSel = Inputs.checkbox(
+  [...new Set(rasgos.map((d) => d.growth_form))],
+  { label: "Forma de crecimiento", value: [...new Set(rasgos.map((d) => d.growth_form))] }
+)
+```
+
+```{ojs}
+//| echo: false
+viewof familiaSel = Inputs.select(
+  [...new Set(rasgos.map((d) => d.family))].sort(),
+  { label: "Familia", multiple: true }
+)
+```
+
+```{ojs}
+//| echo: false
+viewof textoRasgos = Inputs.text({ label: "Buscar", placeholder: "Especie, estado de conservación…" })
+```
+
+:::
+
+```{ojs}
+//| echo: false
+filtrados = rasgos.filter((d) => {
+  const famOk = familiaSel.length === 0 || familiaSel.includes(d.family);
+  const txt = textoRasgos.trim().toLowerCase();
+  const txtOk =
+    txt === "" ||
+    Object.values(d).join(" ").toLowerCase().includes(txt);
+  return formaSel.includes(d.growth_form) && famOk && txtOk;
+})
+```
+
+```{ojs}
+//| echo: false
+slugPorEspecie = new Map(rasgos.map((d) => [d.species, d.slug]))
+```
+
+```{ojs}
+//| echo: false
+Inputs.table(filtrados, {
+  columns: [
+    "species", "growth_form", "family",
+    "phenology_flowering", "phenology_fruiting", "conservation_status",
+    "plant_height_m", "seed_mass_mg", "wood_density_g_cm3", "trait_source"
+  ],
+  header: {
+    species: "Especie",
+    growth_form: "Forma de crecimiento",
+    family: "Familia",
+    phenology_flowering: "Floración",
+    phenology_fruiting: "Fructificación",
+    conservation_status: "Estado de conservación",
+    plant_height_m: "Altura (m)",
+    seed_mass_mg: "Masa semilla (mg)",
+    wood_density_g_cm3: "Densidad madera (g/cm³)",
+    trait_source: "Fuente rasgos"
+  },
+  format: {
+    species: (s) =>
+      html`<a href="especies/${slugPorEspecie.get(s)}.html"><i>${s}</i></a>`,
+    plant_height_m: (v) => v == null ? "—" : v,
+    seed_mass_mg: (v) => v == null ? "—" : v,
+    wood_density_g_cm3: (v) => v == null ? "—" : v
+  },
+  rows: 15,
+  sort: "species"
+})
+```
+
+## Fuentes de los rasgos cuantitativos
+
+::: {.callout-note}
+- **[Rasgos-CL](https://github.com/dylancraven/Rasgos-CL)** ([Alfaro et al. 2023, *Global Ecology and Biogeography*](https://onlinelibrary.wiley.com/doi/10.1111/geb.13755)): base de rasgos funcionales de plantas leñosas de Chile, incorporada directamente desde su repositorio público.
+- **[BIEN](https://bien.nceas.ucsb.edu/bien/)** (Botanical Information and Ecology Network): consultada vía el paquete de R `BIEN` para especies no leñosas o herbáceas que Rasgos-CL no cubre.
+- Especies sin dato en ninguna de las dos fuentes (frecuente en helechos) se marcan como "Sin dato" en la columna **Fuente rasgos**, en vez de dejarse en blanco.
+:::
+
+## Datos abiertos
+
+Los datos de rasgos están disponibles bajo licencia [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/):
+
+- [Descargar `rasgos.csv`](data/rasgos.csv)

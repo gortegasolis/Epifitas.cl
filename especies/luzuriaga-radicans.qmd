@@ -1,9 +1,10 @@
 ---
 title: "*Luzuriaga radicans*"
 subtitle: "Quilineja, Azahar de monte"
+author: "Daniela Mellado-Mansilla"
 description: "Luzuriaga radicans — Trepadora, rastrera. Luzuriagaceae. Distribución: VII-XI regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/arb-044escala.jpg"
+categories: [Trepadoras]
+image: "../images/especies/webp/arb-044escala.webp"
 ---
 
 ## Información taxonómica {.species-title}

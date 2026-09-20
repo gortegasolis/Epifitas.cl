@@ -1,6 +1,7 @@
 ---
 title: "*Asplenium dareoides*"
 subtitle: "Helechito perejil, filu-lahuén"
+author: "Felipe González Cifuentes"
 description: "Asplenium dareoides — Epífito. Aspleniaceae. Distribución: IV-XII regiones y Archipiélago de Juan Fernández."
 categories: [Epífitas]
 ---

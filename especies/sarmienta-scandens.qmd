@@ -1,9 +1,10 @@
 ---
 title: "*Sarmienta scandens*"
 subtitle: "Medallita"
+author: "Daniela Mellado-Mansilla"
 description: "Sarmienta scandens — Epífita. Gesneriaceae. Distribución: IV-XI regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/bombus-1.jpg"
+categories: [Epífitas]
+image: "../images/especies/webp/bombus-1.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -28,6 +29,14 @@ Distribución
 
 Planta completamente epífita, endémica de los Bosques Templados de Sudamérica. Hojas redondeadas de color verde claro, algunas con el ápice o extremo superior dentado, miden alrededor de 2 cm de largo, muy carnosas, suculentas. El envés es glauco. Flores rojas anaranjadas globosas y solitarias. Debido a su color, los picaflores son atraídos hacia ellas, también insectos polinizadores como Bombus dahlbomii. Los frutos corresponden a capsulas ovadas de color amarillo. Los frutos son consumidos exclusivamente por Monito del monte (Dromiciops gliroides). Gracias a la particularidad de sus hojas suculentas, S. scandens puede crecer en las zonas más altas y expuestas del dosel, alcanzando incluso los 23 m.
 
+### Floración
+
+No registrada.
+
+### Fructificación
+
+No registrada.
+
 ### Estado de conservación
 
 No existen revisiones sobre esta especie.
@@ -35,11 +44,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/IMG_0646-300x225.jpg){group="sarmienta-scandens"}
+![](../images/especies/webp/IMG_0646-300x225.webp){group="sarmienta-scandens"}
 
-![](../images/especies/IMG_0582-300x225.jpg){group="sarmienta-scandens"}
+![](../images/especies/webp/IMG_0582-300x225.webp){group="sarmienta-scandens"}
 
-![](../images/especies/IMG_0057-300x225.jpg){group="sarmienta-scandens"}
+![](../images/especies/webp/IMG_0057-300x225.webp){group="sarmienta-scandens"}
 :::
 
 ### Mapa de distribución en Chile

@@ -1,8 +1,9 @@
 ---
 title: "*Hymenophyllum cruentum*"
 subtitle: "Seda de la luma, sanguinaria, voladora del monte"
+author: "Daniela Mellado-Mansilla"
 description: "Hymenophyllum cruentum — Epífito. Hymenophyllaceae. Distribución: VII-XII regiones, también en el Archipiélago de Juan Fernández."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
+categories: [Epífitas]
 image: "../images/especies/puyehue-147escala.jpg"
 ---
 
@@ -37,7 +38,7 @@ Vulnerable
 ::: {.gallery}
 ![](../images/especies/arb-278escala-225x300.jpg){group="hymenophyllum-cruentum"}
 
-![](../images/especies/100_4404escala-300x225.jpg){group="hymenophyllum-cruentum"}
+![](../images/especies/webp/100_4404escala-300x225.webp){group="hymenophyllum-cruentum"}
 
 ![](../images/especies/puyehue-135escala-225x300.jpg){group="hymenophyllum-cruentum"}
 

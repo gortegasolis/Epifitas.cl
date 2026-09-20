@@ -1,0 +1,359 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Trepadoras",
+    "section": "",
+    "text": "Este sitio ha sido creado para difundir el conocimiento sobre las plantas que habitan en el perfil vertical de los bosques chilenos. Queremos despertar el interés del público por aquellos organismos que son un componente importante pero muchas veces obviado de nuestros bosques: epífitas, trepadoras y hemiepífitas.\nMediante información científica, fotos e ilustraciones buscaremos mostrar la belleza e importancia de este grupo de especies.\n¡Esperamos que disfruten el sitio y que comiencen a observar los bosques desde una nueva perspectiva!\n— Los autores"
+  },
+  {
+    "objectID": "index.html#fichas",
+    "href": "index.html#fichas",
+    "title": "Trepadoras",
+    "section": "Fichas de especies",
+    "text": "Fichas de especies\nExplora las fichas botánicas de las especies epífitas, trepadoras y hemiepífitas presentes en los bosques de Chile.\n\n\n\n\n\n\n\n\nAsplenium dareoides\n\n\nHelechito perejil, filu-lahuén\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\nAsplenium trilobum\n\n\nHelecho trilobulado\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsteranthera ovata\n\n\nEstrellita\n\n\n\nTrepadoras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFascicularia bicolor\n\n\nChupalla, poe, puñeñe\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGaultheria insana\n\n\nHued-hued, Chaura\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum caudiculatum\n\n\nHelecho película, pallante chilote\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\nNo hay resultados\n\n\n→ Ver todos los nombres científicos\n\n\n\nRasgos ecológicos y funcionales de las especies documentadas en este sitio. Los rasgos cuantitativos (altura de planta, área foliar, SLA, masa de semilla, densidad de madera) provienen de bases de datos externas — ver la nota de fuentes al final de la página.\n//| echo: false\nrasgos = d3.csv(\"data/rasgos.csv\", d3.autoType)\n\n//| echo: false\nviewof formaSel = Inputs.checkbox(\n  [...new Set(rasgos.map((d) =&gt; d.growth_form))],\n  { label: \"Forma de crecimiento\", value: [...new Set(rasgos.map((d) =&gt; d.growth_form))] }\n)\n//| echo: false\nviewof familiaSel = Inputs.select(\n  [...new Set(rasgos.map((d) =&gt; d.family))].sort(),\n  { label: \"Familia\", multiple: true }\n)\n//| echo: false\nviewof textoRasgos = Inputs.text({ label: \"Buscar\", placeholder: \"Especie, estado de conservación…\" })\n\n//| echo: false\nfiltrados = rasgos.filter((d) =&gt; {\n  const famOk = familiaSel.length === 0 || familiaSel.includes(d.family);\n  const txt = textoRasgos.trim().toLowerCase();\n  const txtOk =\n    txt === \"\" ||\n    Object.values(d).join(\" \").toLowerCase().includes(txt);\n  return formaSel.includes(d.growth_form) && famOk && txtOk;\n})\n//| echo: false\nslugPorEspecie = new Map(rasgos.map((d) =&gt; [d.species, d.slug]))\n//| echo: false\nInputs.table(filtrados, {\n  columns: [\n    \"species\", \"growth_form\", \"family\",\n    \"phenology_flowering\", \"phenology_fruiting\", \"conservation_status\",\n    \"plant_height_m\", \"seed_mass_mg\", \"wood_density_g_cm3\", \"trait_source\"\n  ],\n  header: {\n    species: \"Especie\",\n    growth_form: \"Forma de crecimiento\",\n    family: \"Familia\",\n    phenology_flowering: \"Floración\",\n    phenology_fruiting: \"Fructificación\",\n    conservation_status: \"Estado de conservación\",\n    plant_height_m: \"Altura (m)\",\n    seed_mass_mg: \"Masa semilla (mg)\",\n    wood_density_g_cm3: \"Densidad madera (g/cm³)\",\n    trait_source: \"Fuente rasgos\"\n  },\n  format: {\n    species: (s) =&gt;\n      html`&lt;a href=\"especies/${slugPorEspecie.get(s)}.html\"&gt;&lt;i&gt;${s}&lt;/i&gt;&lt;/a&gt;`,\n    plant_height_m: (v) =&gt; v == null ? \"—\" : v,\n    seed_mass_mg: (v) =&gt; v == null ? \"—\" : v,\n    wood_density_g_cm3: (v) =&gt; v == null ? \"—\" : v\n  },\n  rows: 15,\n  sort: \"species\"\n})"
+  },
+  {
+    "objectID": "index.html#fuentes-de-los-rasgos-cuantitativos",
+    "href": "index.html#fuentes-de-los-rasgos-cuantitativos",
+    "title": "Trepadoras",
+    "section": "Fuentes de los rasgos cuantitativos",
+    "text": "Fuentes de los rasgos cuantitativos\n\n\n\n\n\n\nNota\n\n\n\n\nRasgos-CL (Alfaro et al. 2023, Global Ecology and Biogeography): base de rasgos funcionales de plantas leñosas de Chile, incorporada directamente desde su repositorio público.\nBIEN (Botanical Information and Ecology Network): consultada vía el paquete de R BIEN para especies no leñosas o herbáceas que Rasgos-CL no cubre.\nEspecies sin dato en ninguna de las dos fuentes (frecuente en helechos) se marcan como “Pendiente” o “Sin dato” en la columna Fuente rasgos, en vez de dejarse en blanco."
+  },
+  {
+    "objectID": "index.html#datos-abiertos",
+    "href": "index.html#datos-abiertos",
+    "title": "Trepadoras",
+    "section": "Datos abiertos",
+    "text": "Datos abiertos\nLos datos de rasgos están disponibles bajo licencia CC BY-NC-SA 4.0:\n\nDescargar rasgos.csv"
+  },
+  {
+    "objectID": "index.html#los-autores",
+    "href": "index.html#los-autores",
+    "title": "Trepadoras",
+    "section": "Los autores",
+    "text": "Los autores\nSi tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con Daniela Mellado y/o Gabriel Ortega a través de los siguientes correo:\n\n📧 Correo de contacto:\n\nd.mellado.mansilla@epifitas.cl\ng.ortega.solis@epifitas.cl\n\nDesde ya te agradecemos por visitar la página."
+  },
+  {
+    "objectID": "index.html#licencia",
+    "href": "index.html#licencia",
+    "title": "Trepadoras",
+    "section": "Licencia",
+    "text": "Licencia\n\n\n\n\nLicencia Creative Commons\n\n\nEpifitas.cl por Daniela Mellado-Mansilla & Gabriel Ortega-Solís se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.\nExcepciones o derechos de uso no cubiertos por esta licencia deben ser solicitados a los autores.\n\nDistribución geográfica de las ocurrencias reportadas para especies de plantas epífitas, trepadoras y parásitas presentes en Chile, a partir de registros del Global Biodiversity Information Facility (GBIF).\n\nFuentes y herramientas\n\nDatos: Global Biodiversity Information Facility (GBIF)\nAnálisis y Mapas: R, paquetes spocc y leaflet.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse el panel de capas (esquina superior derecha) para activar o desactivar especies.\n\n\nSúmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilenos. Cada observación con foto y ubicación que subas a nuestro proyecto en iNaturalist ayuda a ampliar el mapa de distribución de estas especies.\n\n\n\n\n\n\n¿Cómo participar?\n\n\n\n\nInstala la app de iNaturalist o usa el sitio web.\nFotografía la planta (hoja, flor o fruto ayudan a la identificación) y registra la ubicación.\nSúmate al proyecto “Epífitas y trepadoras de Chile” — el enlace directo se agrega apenas el proyecto esté creado en iNaturalist.\nLa comunidad de iNaturalist ayuda a confirmar la identificación; las observaciones “grado de investigación” (research grade) se consideran citables como registro de ocurrencia."
+  },
+  {
+    "objectID": "index.html#observaciones-recientes",
+    "href": "index.html#observaciones-recientes",
+    "title": "Trepadoras",
+    "section": "Observaciones recientes",
+    "text": "Observaciones recientes\n\nCargando observaciones…\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos datos se obtienen en vivo desde la API pública de iNaturalist (sin necesidad de credenciales); no requieren mantener un archivo estático aparte, aunque se puede agregar una sincronización periódica vía GitHub Actions si se prefiere una copia versionada de las observaciones.\n\n\nEn esta sección presentamos una recopilación de investigaciones científicas sobre plantas epífitas, trepadoras, lianas y parásitas realizadas en los bosques de Chile.\n\nBibliografía completa\nBusque por autor, título, revista o año. Pinche el título para buscar el trabajo en CrossRef.\n//| echo: false\nreferencias = d3.csv(\"data/referencias.csv\", d3.autoType)\n//| echo: false\nviewof consulta = Inputs.search(referencias, {\n  placeholder: \"Buscar por autor, título, revista o año…\"\n})\n//| echo: false\nmd`**${consulta.length} referencias** (de ${referencias.length} registradas)`\n//| echo: false\nInputs.table(consulta, {\n  columns: [\"author\", \"title\", \"year\", \"journal\", \"volume\", \"pages\"],\n  header: {\n    author: \"Autores\",\n    title: \"Título\",\n    year: \"Año\",\n    journal: \"Revista\",\n    volume: \"Vol.\",\n    pages: \"Páginas\"\n  },\n  format: {\n    title: (t) =&gt;\n      html`&lt;a href=\"https://search.crossref.org/?q=${encodeURIComponent(\n        t\n      )}\" target=\"_blank\" rel=\"noopener\"&gt;${t}&lt;/a&gt;`\n  },\n  rows: 20,\n  sort: \"year\",\n  reverse: true\n})\nLas referencias marcadas como posibles duplicados en data/referencias.csv serán depuradas en futuras actualizaciones.\n\nListado alfabético de las especies de plantas epífitas, trepadoras y hemiepífitas presentes en los bosques de Chile.\n\nA B C E F G H L M P R S"
+  },
+  {
+    "objectID": "index.html#a",
+    "href": "index.html#a",
+    "title": "Trepadoras",
+    "section": "A",
+    "text": "A\n\nAsplenium dareoides\nAsplenium trilobum\nAsteranthera ovata"
+  },
+  {
+    "objectID": "index.html#b",
+    "href": "index.html#b",
+    "title": "Trepadoras",
+    "section": "B",
+    "text": "B\n\nBoquila trifoliolata"
+  },
+  {
+    "objectID": "index.html#c",
+    "href": "index.html#c",
+    "title": "Trepadoras",
+    "section": "C",
+    "text": "C\n\nCampsidium valdivianum\nCissus striata"
+  },
+  {
+    "objectID": "index.html#e",
+    "href": "index.html#e",
+    "title": "Trepadoras",
+    "section": "E",
+    "text": "E\n\nElytropus chilensis\nErcilla syncarpelata"
+  },
+  {
+    "objectID": "index.html#f",
+    "href": "index.html#f",
+    "title": "Trepadoras",
+    "section": "F",
+    "text": "F\n\nFascicularia bicolor"
+  },
+  {
+    "objectID": "index.html#g",
+    "href": "index.html#g",
+    "title": "Trepadoras",
+    "section": "G",
+    "text": "G\n\nGaultheria insana\nGrammitis magellanica\nGriselinia racemosa"
+  },
+  {
+    "objectID": "index.html#h",
+    "href": "index.html#h",
+    "title": "Trepadoras",
+    "section": "H",
+    "text": "H\n\nHydrangea serratifolia\nHymenophyllum caudiculatum\nHymenophyllum cruentum\nHymenophyllum cuneatum\nHymenophyllum darwinii\nHymenophyllum dicranotrichum\nHymenophyllum ferrugineum\nHymenophyllum pectinatum\nHymenophyllum peltatum\nHymenophyllum plicatum\nHymenophyllum rugosum"
+  },
+  {
+    "objectID": "index.html#l",
+    "href": "index.html#l",
+    "title": "Trepadoras",
+    "section": "L",
+    "text": "L\n\nLapageria rosea\nLuzuriaga polyphylla\nLuzuriaga radicans"
+  },
+  {
+    "objectID": "index.html#m",
+    "href": "index.html#m",
+    "title": "Trepadoras",
+    "section": "M",
+    "text": "M\n\nMitraria coccinea"
+  },
+  {
+    "objectID": "index.html#p",
+    "href": "index.html#p",
+    "title": "Trepadoras",
+    "section": "P",
+    "text": "P\n\nPhilesia magellanica"
+  },
+  {
+    "objectID": "index.html#r",
+    "href": "index.html#r",
+    "title": "Trepadoras",
+    "section": "R",
+    "text": "R\n\nRaukaua laetevirens\nRaukaua valdiviensis"
+  },
+  {
+    "objectID": "index.html#s",
+    "href": "index.html#s",
+    "title": "Trepadoras",
+    "section": "S",
+    "text": "S\n\nSarmienta scandens\nSerpyllopsis caespitosa\nSynammia feullei\nSynammia intermedia\n\n\n\n\n\n\n\nNota\n\n\n\nLas especies con enlace tienen ficha botánica disponible. Las demás serán incorporadas en futuras actualizaciones.\n\n\nLas epífitas son plantas que crecen sobre otras plantas, usándolas como soporte y siendo capaces de desarrollar todo su ciclo de vida sobre ellas.\n\n\n\n\n\n\nNota\n\n\n\nA diferencia de las plantas parásitas, las epífitas no extraen nutrientes directamente del tejido vivo de su hospedero. Para sobrevivir en lo alto del dosel, han desarrollado diversas adaptaciones para capturar humedad atmosférica, almacenar agua y retener materia orgánica."
+  },
+  {
+    "objectID": "index.html#especies-epífitas",
+    "href": "index.html#especies-epífitas",
+    "title": "Trepadoras",
+    "section": "Especies epífitas",
+    "text": "Especies epífitas\n\n\n\nLas hemiepífitas son plantas que desarrollan solo una etapa de su ciclo vital como epífitas. Se dividen comúnmente en hemiepífitas primarias (germinan en el dosel y luego envían raíces al suelo) y secundarias (germinan en el suelo y posteriormente pierden su conexión subterránea)."
+  },
+  {
+    "objectID": "index.html#especies-hemiepífitas",
+    "href": "index.html#especies-hemiepífitas",
+    "title": "Trepadoras",
+    "section": "Especies hemiepífitas",
+    "text": "Especies hemiepífitas\n\n\n\n\n\n\nNota\n\n\n\nActualmente ninguna de las especies con ficha en el sitio presenta un hábito estrictamente hemiepífito. A medida que se incorporen nuevas fichas de hemiepífitas (por ejemplo, del género Hydrangea), aparecerán listadas aquí.\n\n\n\n\n\nLas trepadoras y lianas son plantas con tallos flexibles que germinan en el suelo del bosque y se apoyan o sujetan de árboles y arbustos para alcanzar la luz en el dosel."
+  },
+  {
+    "objectID": "index.html#especies-trepadoras",
+    "href": "index.html#especies-trepadoras",
+    "title": "Trepadoras",
+    "section": "Especies trepadoras",
+    "text": "Especies trepadoras"
+  },
+  {
+    "objectID": "rasgos.html",
+    "href": "rasgos.html",
+    "title": "Rasgos funcionales",
+    "section": "",
+    "text": "Rasgos ecológicos y funcionales de las especies documentadas en este sitio. Los rasgos cuantitativos (altura de planta, área foliar, SLA, masa de semilla, densidad de madera) provienen de bases de datos externas — ver la nota de fuentes al final de la página.\nrasgos = d3.csv(\"data/rasgos.csv\", d3.autoType)\nfiltrados = rasgos.filter((d) =&gt; {\n  const famOk = familiaSel.length === 0 || familiaSel.includes(d.family);\n  const txt = textoRasgos.trim().toLowerCase();\n  const txtOk =\n    txt === \"\" ||\n    Object.values(d).join(\" \").toLowerCase().includes(txt);\n  return formaSel.includes(d.growth_form) && famOk && txtOk;\n})\nslugPorEspecie = new Map(rasgos.map((d) =&gt; [d.species, d.slug]))\nInputs.table(filtrados, {\n  columns: [\n    \"species\", \"growth_form\", \"family\",\n    \"phenology_flowering\", \"phenology_fruiting\", \"conservation_status\",\n    \"plant_height_m\", \"seed_mass_mg\", \"wood_density_g_cm3\", \"trait_source\"\n  ],\n  header: {\n    species: \"Especie\",\n    growth_form: \"Forma de crecimiento\",\n    family: \"Familia\",\n    phenology_flowering: \"Floración\",\n    phenology_fruiting: \"Fructificación\",\n    conservation_status: \"Estado de conservación\",\n    plant_height_m: \"Altura (m)\",\n    seed_mass_mg: \"Masa semilla (mg)\",\n    wood_density_g_cm3: \"Densidad madera (g/cm³)\",\n    trait_source: \"Fuente rasgos\"\n  },\n  format: {\n    species: (s) =&gt;\n      html`&lt;a href=\"especies/${slugPorEspecie.get(s)}.html\"&gt;&lt;i&gt;${s}&lt;/i&gt;&lt;/a&gt;`,\n    plant_height_m: (v) =&gt; v == null ? \"—\" : v,\n    seed_mass_mg: (v) =&gt; v == null ? \"—\" : v,\n    wood_density_g_cm3: (v) =&gt; v == null ? \"—\" : v\n  },\n  rows: 15,\n  sort: \"species\"\n})"
+  },
+  {
+    "objectID": "rasgos.html#fuentes-de-los-rasgos-cuantitativos",
+    "href": "rasgos.html#fuentes-de-los-rasgos-cuantitativos",
+    "title": "Rasgos funcionales",
+    "section": "Fuentes de los rasgos cuantitativos",
+    "text": "Fuentes de los rasgos cuantitativos\n\n\n\n\n\n\nNota\n\n\n\n\nRasgos-CL (Alfaro et al. 2023, Global Ecology and Biogeography): base de rasgos funcionales de plantas leñosas de Chile, incorporada directamente desde su repositorio público.\nBIEN (Botanical Information and Ecology Network): consultada vía el paquete de R BIEN para especies no leñosas o herbáceas que Rasgos-CL no cubre.\nEspecies sin dato en ninguna de las dos fuentes (frecuente en helechos) se marcan como “Pendiente” o “Sin dato” en la columna Fuente rasgos, en vez de dejarse en blanco."
+  },
+  {
+    "objectID": "rasgos.html#datos-abiertos",
+    "href": "rasgos.html#datos-abiertos",
+    "title": "Rasgos funcionales",
+    "section": "Datos abiertos",
+    "text": "Datos abiertos\nLos datos de rasgos están disponibles bajo licencia CC BY-NC-SA 4.0:\n\nDescargar rasgos.csv"
+  },
+  {
+    "objectID": "contacto.html",
+    "href": "contacto.html",
+    "title": "Contacto",
+    "section": "",
+    "text": "Si tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con Daniela Mellado y/o Gabriel Ortega a través de los siguientes correo:\n\n📧 Correo de contacto:\n\nd.mellado.mansilla@epifitas.cl\ng.ortega.solis@epifitas.cl\n\nDesde ya te agradecemos por visitar la página."
+  },
+  {
+    "objectID": "contacto.html#los-autores",
+    "href": "contacto.html#los-autores",
+    "title": "Contacto",
+    "section": "",
+    "text": "Si tienes sugerencias para la página web, fotos, ilustraciones o datos que quieras compartir, o si quieres contribuir con alguna ficha botánica puedes comunicarte con Daniela Mellado y/o Gabriel Ortega a través de los siguientes correo:\n\n📧 Correo de contacto:\n\nd.mellado.mansilla@epifitas.cl\ng.ortega.solis@epifitas.cl\n\nDesde ya te agradecemos por visitar la página."
+  },
+  {
+    "objectID": "contacto.html#licencia",
+    "href": "contacto.html#licencia",
+    "title": "Contacto",
+    "section": "Licencia",
+    "text": "Licencia\n\n\n\n\nLicencia Creative Commons\n\n\nEpifitas.cl por Daniela Mellado-Mansilla & Gabriel Ortega-Solís se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.\nExcepciones o derechos de uso no cubiertos por esta licencia deben ser solicitados a los autores."
+  },
+  {
+    "objectID": "distribucion.html",
+    "href": "distribucion.html",
+    "title": "Distribución",
+    "section": "",
+    "text": "Distribución geográfica de las ocurrencias reportadas para especies de plantas epífitas, trepadoras y parásitas presentes en Chile, a partir de registros del Global Biodiversity Information Facility (GBIF).\n\nFuentes y herramientas\n\nDatos: Global Biodiversity Information Facility (GBIF)\nAnálisis y Mapas: R, paquetes spocc y leaflet.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nUse el panel de capas (esquina superior derecha) para activar o desactivar especies."
+  },
+  {
+    "objectID": "ciencia-ciudadana.html",
+    "href": "ciencia-ciudadana.html",
+    "title": "Ciencia ciudadana",
+    "section": "",
+    "text": "Súmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilenos. Cada observación con foto y ubicación que subas a nuestro proyecto en iNaturalist ayuda a ampliar el mapa de distribución de estas especies."
+  },
+  {
+    "objectID": "ciencia-ciudadana.html#observaciones-recientes",
+    "href": "ciencia-ciudadana.html#observaciones-recientes",
+    "title": "Ciencia ciudadana",
+    "section": "Observaciones recientes",
+    "text": "Observaciones recientes\n\nCargando observaciones…\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nLos datos se obtienen en vivo desde la API pública de iNaturalist (sin necesidad de credenciales); no requieren mantener un archivo estático aparte, aunque se puede agregar una sincronización periódica vía GitHub Actions si se prefiere una copia versionada de las observaciones."
+  },
+  {
+    "objectID": "referencias.html",
+    "href": "referencias.html",
+    "title": "Referencias",
+    "section": "",
+    "text": "En esta sección presentamos una recopilación de investigaciones científicas sobre plantas epífitas, trepadoras, lianas y parásitas realizadas en los bosques de Chile.\n\nBibliografía completa\nBusque por autor, título, revista o año. Pinche el título para buscar el trabajo en CrossRef.\n\nreferencias = d3.csv(\"data/referencias.csv\", d3.autoType)\n\n\n\n\n\n\n\nviewof consulta = Inputs.search(referencias, {\n  placeholder: \"Buscar por autor, título, revista o año…\"\n})\n\n\n\n\n\n\n\nmd`**${consulta.length} referencias** (de ${referencias.length} registradas)`\n\n\n\n\n\n\n\nInputs.table(consulta, {\n  columns: [\"author\", \"title\", \"year\", \"journal\", \"volume\", \"pages\"],\n  header: {\n    author: \"Autores\",\n    title: \"Título\",\n    year: \"Año\",\n    journal: \"Revista\",\n    volume: \"Vol.\",\n    pages: \"Páginas\"\n  },\n  format: {\n    title: (t) =&gt;\n      html`&lt;a href=\"https://search.crossref.org/?q=${encodeURIComponent(\n        t\n      )}\" target=\"_blank\" rel=\"noopener\"&gt;${t}&lt;/a&gt;`\n  },\n  rows: 20,\n  sort: \"year\",\n  reverse: true\n})\n\n\n\n\n\n\nLas referencias marcadas como posibles duplicados en data/referencias.csv serán depuradas en futuras actualizaciones."
+  },
+  {
+    "objectID": "nombres-cientificos.html",
+    "href": "nombres-cientificos.html",
+    "title": "Nombres científicos",
+    "section": "",
+    "text": "Listado alfabético de las especies de plantas epífitas, trepadoras y hemiepífitas presentes en los bosques de Chile."
+  },
+  {
+    "objectID": "nombres-cientificos.html#a",
+    "href": "nombres-cientificos.html#a",
+    "title": "Nombres científicos",
+    "section": "A",
+    "text": "A\n\nAsplenium dareoides\nAsplenium trilobum\nAsteranthera ovata"
+  },
+  {
+    "objectID": "nombres-cientificos.html#b",
+    "href": "nombres-cientificos.html#b",
+    "title": "Nombres científicos",
+    "section": "B",
+    "text": "B\n\nBoquila trifoliolata"
+  },
+  {
+    "objectID": "nombres-cientificos.html#c",
+    "href": "nombres-cientificos.html#c",
+    "title": "Nombres científicos",
+    "section": "C",
+    "text": "C\n\nCampsidium valdivianum\nCissus striata"
+  },
+  {
+    "objectID": "nombres-cientificos.html#e",
+    "href": "nombres-cientificos.html#e",
+    "title": "Nombres científicos",
+    "section": "E",
+    "text": "E\n\nElytropus chilensis\nErcilla syncarpelata"
+  },
+  {
+    "objectID": "nombres-cientificos.html#f",
+    "href": "nombres-cientificos.html#f",
+    "title": "Nombres científicos",
+    "section": "F",
+    "text": "F\n\nFascicularia bicolor"
+  },
+  {
+    "objectID": "nombres-cientificos.html#g",
+    "href": "nombres-cientificos.html#g",
+    "title": "Nombres científicos",
+    "section": "G",
+    "text": "G\n\nGaultheria insana\nGrammitis magellanica\nGriselinia racemosa"
+  },
+  {
+    "objectID": "nombres-cientificos.html#h",
+    "href": "nombres-cientificos.html#h",
+    "title": "Nombres científicos",
+    "section": "H",
+    "text": "H\n\nHydrangea serratifolia\nHymenophyllum caudiculatum\nHymenophyllum cruentum\nHymenophyllum cuneatum\nHymenophyllum darwinii\nHymenophyllum dicranotrichum\nHymenophyllum ferrugineum\nHymenophyllum pectinatum\nHymenophyllum peltatum\nHymenophyllum plicatum\nHymenophyllum rugosum"
+  },
+  {
+    "objectID": "nombres-cientificos.html#l",
+    "href": "nombres-cientificos.html#l",
+    "title": "Nombres científicos",
+    "section": "L",
+    "text": "L\n\nLapageria rosea\nLuzuriaga polyphylla\nLuzuriaga radicans"
+  },
+  {
+    "objectID": "nombres-cientificos.html#m",
+    "href": "nombres-cientificos.html#m",
+    "title": "Nombres científicos",
+    "section": "M",
+    "text": "M\n\nMitraria coccinea"
+  },
+  {
+    "objectID": "nombres-cientificos.html#p",
+    "href": "nombres-cientificos.html#p",
+    "title": "Nombres científicos",
+    "section": "P",
+    "text": "P\n\nPhilesia magellanica"
+  },
+  {
+    "objectID": "nombres-cientificos.html#r",
+    "href": "nombres-cientificos.html#r",
+    "title": "Nombres científicos",
+    "section": "R",
+    "text": "R\n\nRaukaua laetevirens\nRaukaua valdiviensis"
+  },
+  {
+    "objectID": "nombres-cientificos.html#s",
+    "href": "nombres-cientificos.html#s",
+    "title": "Nombres científicos",
+    "section": "S",
+    "text": "S\n\nSarmienta scandens\nSerpyllopsis caespitosa\nSynammia feullei\nSynammia intermedia\n\n\n\n\n\n\n\nNota\n\n\n\nLas especies con enlace tienen ficha botánica disponible. Las demás serán incorporadas en futuras actualizaciones."
+  },
+  {
+    "objectID": "categorias/epifitas.html",
+    "href": "categorias/epifitas.html",
+    "title": "Epífitas",
+    "section": "",
+    "text": "Las epífitas son plantas que crecen sobre otras plantas, usándolas como soporte y siendo capaces de desarrollar todo su ciclo de vida sobre ellas."
+  },
+  {
+    "objectID": "categorias/epifitas.html#especies-epífitas",
+    "href": "categorias/epifitas.html#especies-epífitas",
+    "title": "Epífitas",
+    "section": "Especies epífitas",
+    "text": "Especies epífitas\n\n\n\n\n\n\n\n\nAsplenium dareoides\n\n\nHelechito perejil, filu-lahuén\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\nAsplenium trilobum\n\n\nHelecho trilobulado\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFascicularia bicolor\n\n\nChupalla, poe, puñeñe\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGaultheria insana\n\n\nHued-hued, Chaura\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum caudiculatum\n\n\nHelecho película, pallante chilote\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum cruentum\n\n\nSeda de la luma, sanguinaria, voladora del monte\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum dicranotrichum\n\n\nHelecho película, Mämell-täpel (“Hoja de palo” en mapudungún)\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum pectinatum\n\n\nHelecho película, helecho peineta\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHymenophyllum rugosum\n\n\nHelecho película\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMitraria coccinea\n\n\nBotellita, voquivoqui, boche-boche\n\n\n\nTrepadoras\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhilesia magellanica\n\n\nCoicopihue, copihue chilote\n\n\n\nTrepadoras\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSarmienta scandens\n\n\nMedallita\n\n\n\nEpífitas\n\n\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "categorias/hemiepifitas.html",
+    "href": "categorias/hemiepifitas.html",
+    "title": "Hemiepífitas",
+    "section": "",
+    "text": "Las hemiepífitas son plantas que desarrollan solo una etapa de su ciclo vital como epífitas. Se dividen comúnmente en hemiepífitas primarias (germinan en el dosel y luego envían raíces al suelo) y secundarias (germinan en el suelo y posteriormente pierden su conexión subterránea)."
+  },
+  {
+    "objectID": "categorias/hemiepifitas.html#especies-hemiepífitas",
+    "href": "categorias/hemiepifitas.html#especies-hemiepífitas",
+    "title": "Hemiepífitas",
+    "section": "Especies hemiepífitas",
+    "text": "Especies hemiepífitas\n\n\n\n\n\n\nNota\n\n\n\nActualmente ninguna de las especies con ficha en el sitio presenta un hábito estrictamente hemiepífito. A medida que se incorporen nuevas fichas de hemiepífitas (por ejemplo, del género Hydrangea), aparecerán listadas aquí.\n\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "categorias/trepadoras.html",
+    "href": "categorias/trepadoras.html",
+    "title": "Trepadoras",
+    "section": "",
+    "text": "Las trepadoras y lianas son plantas con tallos flexibles que germinan en el suelo del bosque y se apoyan o sujetan de árboles y arbustos para alcanzar la luz en el dosel."
+  },
+  {
+    "objectID": "categorias/trepadoras.html#especies-trepadoras",
+    "href": "categorias/trepadoras.html#especies-trepadoras",
+    "title": "Trepadoras",
+    "section": "Especies trepadoras",
+    "text": "Especies trepadoras\n\n\n\n\n\n\n\n\n\n\nAsteranthera ovata\n\n\nEstrellita\n\n\n\nTrepadoras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLapageria rosea\n\n\nCopihue\n\n\n\nTrepadoras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLuzuriaga radicans\n\n\nQuilineja, Azahar de monte\n\n\n\nTrepadoras\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMitraria coccinea\n\n\nBotellita, voquivoqui, boche-boche\n\n\n\nTrepadoras\n\n\nEpífitas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhilesia magellanica\n\n\nCoicopihue, copihue chilote\n\n\n\nTrepadoras\n\n\nEpífitas\n\n\n\n\n\n\n\n\nNo hay resultados"
+  }
+]

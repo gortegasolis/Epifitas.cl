@@ -1,8 +1,9 @@
 ---
 title: "*Hymenophyllum caudiculatum*"
 subtitle: "Helecho película, pallante chilote"
+author: "Daniela Mellado-Mansilla"
 description: "Hymenophyllum caudiculatum — Epífito. Hymenophyllaceae. Distribución: VIII- XII regiones, también en el Archipiélago de Juan Fernández."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
+categories: [Epífitas]
 image: "../images/especies/arb-291escala.jpg"
 ---
 
@@ -35,7 +36,7 @@ Vulnerable.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0451escala.JPG){group="hymenophyllum-caudiculatum"}
+![](../images/especies/webp/DSCN0451escala.webp){group="hymenophyllum-caudiculatum"}
 
 ![](../images/especies/arb-303escala-300x225.jpg){group="hymenophyllum-caudiculatum"}
 :::

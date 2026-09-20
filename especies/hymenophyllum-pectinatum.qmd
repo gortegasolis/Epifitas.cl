@@ -1,9 +1,10 @@
 ---
 title: "*Hymenophyllum pectinatum*"
 subtitle: "Helecho película, helecho peineta"
+author: "Daniela Mellado-Mansilla"
 description: "Hymenophyllum pectinatum — Epífito, epipetrico. Hymenophyllaceae. Distribución: VII-XII regiones."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
-image: "../images/especies/pecti.JPG"
+categories: [Epífitas]
+image: "../images/especies/webp/pecti.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -35,7 +36,7 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/DSCN0434escala-300x225.jpg){group="hymenophyllum-pectinatum"}
+![](../images/especies/webp/DSCN0434escala-300x225.webp){group="hymenophyllum-pectinatum"}
 
 ![](../images/especies/300x225xsan-pablo-467escala-300x225.jpg.pagespeed.ic.jsTNNDMF-g.jpg){group="hymenophyllum-pectinatum"}
 

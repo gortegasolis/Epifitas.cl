@@ -1,0 +1,51 @@
+name: Actualizar datos GBIF
+
+# Actualización mensual de ocurrencias. Si se usa descarga autenticada de GBIF,
+# configure las credenciales como secretos del repositorio.
+on:
+  schedule:
+    - cron: "0 6 1 * *" # día 1 de cada mes, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Instalar Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Instalar R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Cache de paquetes R
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-gbif-${{ hashFiles('scripts/*.R') }}
+          restore-keys: r-gbif-
+
+      - name: Paquetes R
+        run: |
+          install.packages(c("pacman", "tidyverse", "rgbif", "terra", "here",
+                             "CoordinateCleaner", "bdc", "rnaturalearth",
+                             "rnaturalearthdata", "htmlwidgets", "jsonlite"),
+                           repos = "https://cloud.r-project.org")
+        shell: Rscript {0}
+
+      - name: Descargar ocurrencias y regenerar mapas
+        run: Rscript scripts/ocurrencias_gbif.R
+
+      - name: Regenerar GeoJSON combinado
+        run: Rscript scripts/combinar_ocurrencias.R
+
+      - name: Commit de datos actualizados
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Datos GBIF actualizados (mensual)"
+          file_pattern: "ocurrencias/ mapas/ geolibre/"

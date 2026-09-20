@@ -1,8 +1,9 @@
 ---
 title: "*Hymenophyllum rugosum*"
 subtitle: "Helecho película"
+author: "Diego Penneckamp Furniel"
 description: "Hymenophyllum rugosum — Epífito, eventualmente rastrero. Hymenophyllaceae. Distribución: V Región. (Endémico de Juan Fernández)."
-categories: [Epífitas, Hemiepífitas, Trepadoras]
+categories: [Epífitas]
 image: "../images/especies/Hymenophyllum_rugosum2_esc-945x709.jpg.pagespeed.ic.Vj9EKblqJD.jpg"
 ---
 
@@ -62,7 +63,6 @@ cat(sprintf(
 - Rodríguez, R. 1995. Pteridophyta. En: Marticorena, C. & R. Rodriguez (Eds.). Flora de Chile. Vol. 1. Pteridophyta – Gymnospermae. Universidad de Concepción, Chile. 119 – 309.
 - BARRERA, E. 1997. Helechos de Juan Fernández. Museo Nacional de Historia Natural, Publicación Ocasional Nº 51, 104 pp.
 - Larsen, Cristian, Ponce, M. Mónica, & Scataglini, M. Amalia. (2013). Revisión de las especies de Hymenophyllum (Hymenophyllaceae) del sur de Argentina y Chile. Gayana. Botánica, 70(2), 275-330.
-- GuardarGuardar.
 :::
 
 ---
