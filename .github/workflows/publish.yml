@@ -30,9 +30,10 @@ jobs:
           key: r-packages-${{ hashFiles('.github/workflows/publish.yml') }}
           restore-keys: r-packages-
 
-      - name: Paquetes R (knitr para los bloques de código de las fichas)
+      - name: Paquetes R (knitr/rmarkdown para renderizado Quarto)
         run: |
-          install.packages("knitr", repos = "https://cloud.r-project.org")
+          repos <- Sys.getenv("RSPM", unset = "https://cloud.r-project.org")
+          install.packages(c("knitr", "rmarkdown"), repos = repos)
         shell: Rscript {0}
 
       - name: Renderizar sitio
