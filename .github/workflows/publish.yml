@@ -32,7 +32,8 @@ jobs:
 
       - name: Paquetes R (knitr/rmarkdown para renderizado Quarto)
         run: |
-          install.packages(c("knitr", "rmarkdown"), repos = "https://cloud.r-project.org")
+          repos <- Sys.getenv("RSPM", unset = "https://cloud.r-project.org")
+          install.packages(c("knitr", "rmarkdown"), repos = repos)
         shell: Rscript {0}
 
       - name: Renderizar sitio
