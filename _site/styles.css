@@ -121,9 +121,9 @@ a:hover {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(26, 47, 26, 0.85) 0%,
-    rgba(45, 90, 45, 0.6) 50%,
-    rgba(26, 47, 26, 0.75) 100%
+    rgba(26, 47, 26, 0.55) 0%,
+    rgba(45, 90, 45, 0.3) 50%,
+    rgba(26, 47, 26, 0.45) 100%
   );
   z-index: 1;
 }
