@@ -30,14 +30,15 @@ jobs:
         with:
           path: ${{ env.R_LIBS_USER }}
           key: r-gbif-4.5-${{ hashFiles('scripts/*.R') }}
-          restore-keys: r-gbif-
+          restore-keys: r-gbif-4.5-
 
       - name: Paquetes R
         run: |
           install.packages(c("pacman", "tidyverse", "rgbif", "terra", "here",
-                             "CoordinateCleaner", "bdc", "rnaturalearth",
-                             "rnaturalearthdata", "htmlwidgets", "jsonlite"),
+                             "bdc", "rnaturalearth", "rnaturalearthdata",
+                             "htmlwidgets", "jsonlite", "remotes"),
                            repos = "https://cloud.r-project.org")
+          remotes::install_github("ropensci/CoordinateCleaner")
         shell: Rscript {0}
 
       - name: Descargar ocurrencias y regenerar mapas
