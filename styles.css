@@ -78,6 +78,19 @@ a.nav-link {
   color: var(--ep-green-accent) !important;
 }
 
+/* iNaturalist icon: Bootstrap Icons has none, so the SVG is used as a mask
+   and takes the current text colour (incl. hover) like the other icons */
+.bi-inaturalist::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  -webkit-mask: url("images/inaturalist.svg") no-repeat center / contain;
+  mask: url("images/inaturalist.svg") no-repeat center / contain;
+}
+
 /* Dropdown menus: match navbar background */
 .navbar .dropdown-menu {
   background-color: var(--ep-green-dark);
