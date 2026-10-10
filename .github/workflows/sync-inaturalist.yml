@@ -1,0 +1,28 @@
+name: Actualizar observaciones iNaturalist
+
+# Actualización semanal de las observaciones recientes que muestra
+# ciencia-ciudadana.qmd. El sitio lee data/inaturalist.json en vez de
+# consultar la API de iNaturalist en cada visita.
+on:
+  schedule:
+    - cron: "0 6 * * 1" # cada lunes, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Descargar observaciones recientes
+        run: bash scripts/observaciones_inaturalist.sh
+
+      - name: Commit de datos actualizados
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Observaciones iNaturalist actualizadas (semanal)"
+          file_pattern: "data/inaturalist.json"

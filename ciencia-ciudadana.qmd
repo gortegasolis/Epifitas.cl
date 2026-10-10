@@ -1,7 +1,6 @@
 ---
 title: "Ciencia ciudadana"
 description: "Observaciones de la comunidad de epífitas, trepadoras y hemiepífitas de Chile en iNaturalist"
-toc: false
 ---
 
 Súmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilenos. Cada observación con foto y ubicación que subas a nuestro proyecto en iNaturalist ayuda a ampliar el mapa de distribución de estas especies.
@@ -28,36 +27,31 @@ Súmate a documentar epífitas, trepadoras y hemiepífitas de los bosques chilen
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // El API de iNaturalist acepta el slug del proyecto (de su URL) o su ID
-  // numérico en project_id. Usamos el slug directamente:
-  // https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile
-  var PROJECT_ID = "epifitas-hemiepifitas-y-trepadoras-de-chile";
+  // Las observaciones se descargan una vez por semana desde la API de
+  // iNaturalist (.github/workflows/sync-inaturalist.yml) y se guardan en
+  // data/inaturalist.json, para no consultar la API en cada visita.
   var contenedor = document.getElementById("inat-observaciones");
 
-  fetch("https://api.inaturalist.org/v1/observations?project_id=" + PROJECT_ID +
-        "&order_by=observed_on&order=desc&per_page=12&photos=true")
+  fetch("data/inaturalist.json")
     .then(function (r) { return r.json(); })
     .then(function (datos) {
       contenedor.innerHTML = "";
-      datos.results.forEach(function (obs) {
-        var foto = obs.photos && obs.photos[0]
-          ? obs.photos[0].url.replace("square", "medium")
-          : null;
-        var nombre = (obs.taxon && (obs.taxon.preferred_common_name || obs.taxon.name)) || "Sin identificar";
+      datos.observaciones.forEach(function (obs) {
         var a = document.createElement("a");
         a.className = "inat-card";
         a.href = "https://www.inaturalist.org/observations/" + obs.id;
         a.target = "_blank";
         a.rel = "noopener";
         a.innerHTML =
-          (foto ? '<img src="' + foto + '" alt="' + nombre + '">' : "") +
-          '<div class="inat-meta"><i>' + nombre + "</i><br>" +
-          (obs.observed_on || "s/f") + " · " + (obs.user ? obs.user.login : "") + "</div>";
+          (obs.foto ? '<img src="' + obs.foto + '" alt="' + obs.nombre + '">' : "") +
+          '<div class="inat-meta"><i>' + obs.nombre + "</i><br>" +
+          (obs.observed_on || "s/f") + " · " + (obs.usuario || "") + "</div>";
         contenedor.appendChild(a);
       });
-      if (datos.results.length === 0) {
+      if (datos.observaciones.length === 0) {
         contenedor.innerHTML = '<div class="callout callout-info">Aún no hay observaciones en el proyecto.</div>';
       }
+      document.getElementById("inat-actualizado").textContent = datos.actualizado;
     })
     .catch(function () {
       contenedor.innerHTML =
@@ -68,5 +62,5 @@ document.addEventListener("DOMContentLoaded", function () {
 ```
 
 ::: {.callout-note}
-Los datos se obtienen en vivo desde la [API pública de iNaturalist](https://api.inaturalist.org/v1/docs/).
+Los datos se obtienen semanalmente desde la [API pública de iNaturalist](https://api.inaturalist.org/v1/docs/). Última actualización: <span id="inat-actualizado">—</span>.
 :::

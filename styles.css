@@ -78,6 +78,28 @@ a.nav-link {
   color: var(--ep-green-accent) !important;
 }
 
+/* Dropdown menus: match navbar background */
+.navbar .dropdown-menu {
+  background-color: var(--ep-green-dark);
+  border: 1px solid var(--ep-green-mid);
+}
+
+.navbar .dropdown-item,
+.navbar .dropdown-item .dropdown-text {
+  color: var(--ep-green-pale);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: var(--ep-green-mid);
+  color: var(--ep-green-accent);
+}
+
+.navbar .dropdown-item:hover .dropdown-text,
+.navbar .dropdown-item:focus .dropdown-text {
+  color: var(--ep-green-accent);
+}
+
 .dropdown-item:active {
   background-color: var(--ep-green-mid);
 }
@@ -484,6 +506,30 @@ a:hover {
 
 .leyenda-mapa a {
   color: var(--ep-green-mid);
+}
+
+/* GeoLibre button above species maps */
+.mapa-acciones {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+a.boton-geolibre {
+  display: inline-block;
+  background-color: var(--ep-green-mid);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px var(--ep-shadow);
+  transition: background-color 0.3s;
+}
+
+a.boton-geolibre:hover,
+a.boton-geolibre:focus {
+  background-color: var(--ep-green-dark);
+  color: #fff;
 }
 
 /* ---- Responsive ---- */

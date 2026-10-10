@@ -1,7 +1,6 @@
 ---
 title: "Contacto"
 description: "Contacto con los autores de Epifitas.cl — Daniela Mellado-Mansilla y Gabriel Ortega-Solís"
-toc: false
 ---
 
 ## Los autores

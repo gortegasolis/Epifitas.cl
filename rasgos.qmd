@@ -1,7 +1,6 @@
 ---
 title: "Rasgos funcionales"
 description: "Tabla de rasgos funcionales de las epífitas, trepadoras y hemiepífitas de Chile"
-toc: false
 code-copy: false
 code-tools: false
 ---

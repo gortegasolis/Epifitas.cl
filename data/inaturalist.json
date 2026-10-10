@@ -1,0 +1,89 @@
+{
+  "actualizado": "2026-10-10",
+  "observaciones": [
+    {
+      "id": 406920935,
+      "observed_on": "2026-10-08",
+      "usuario": "omarbravo",
+      "nombre": "huedhued",
+      "foto": "https://static.inaturalist.org/photos/747700921/medium.jpg"
+    },
+    {
+      "id": 406705322,
+      "observed_on": "2026-10-07",
+      "usuario": "milla_anali",
+      "nombre": "Luzuriaga radicans",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747273666/medium.jpg"
+    },
+    {
+      "id": 406912787,
+      "observed_on": "2026-10-06",
+      "usuario": "esebaiertass",
+      "nombre": "Asplenium trilobum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747684727/medium.jpg"
+    },
+    {
+      "id": 406340831,
+      "observed_on": "2026-10-05",
+      "usuario": "fero33",
+      "nombre": "Campsidium valdivianum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746533478/medium.jpg"
+    },
+    {
+      "id": 406140974,
+      "observed_on": "2026-10-05",
+      "usuario": "isaac_ezequiel1",
+      "nombre": "Chilean bellflower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746129329/medium.jpg"
+    },
+    {
+      "id": 406652489,
+      "observed_on": "2026-10-05",
+      "usuario": "calw",
+      "nombre": "Synammia feuillei",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747162978/medium.jpg"
+    },
+    {
+      "id": 405973249,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745781846/medium.jpg"
+    },
+    {
+      "id": 405973242,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745778513/medium.jpg"
+    },
+    {
+      "id": 405968679,
+      "observed_on": "2026-10-04",
+      "usuario": "dozhk",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745783825/medium.jpg"
+    },
+    {
+      "id": 405931275,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745707026/medium.jpg"
+    },
+    {
+      "id": 405973019,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745738586/medium.jpg"
+    },
+    {
+      "id": 405915906,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745673751/medium.jpg"
+    }
+  ]
+}

@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -174,12 +174,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -220,6 +220,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+.leaflet-control-layers .enlace-ficha { color: inherit; }
+.leaflet-control-layers .enlace-ficha:hover { color: var(--ep-green-mid); text-decoration: underline; }
+.leaflet-control-layers .toggle-todas { display: block; padding-bottom: 4px; margin-bottom: 4px; border-bottom: 1px solid #ddd; }
+</style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var colores = { epifita: "#2d5a2d", trepadora: "#c9a84c", hemiepifita: "#7b5ea7" };
@@ -260,29 +265,39 @@ document.addEventListener("DOMContentLoaded", function () {
             );
           })
         );
-        var etiqueta = '<span style="color:' + color + '">●</span> <i>' +
-          e.nombre + "</i> (" + e.puntos.length + ")";
+        // El nombre es un enlace a la ficha; el clic en la casilla activa/desactiva la capa
+        var etiqueta = '<span style="color:' + color + '">●</span> ' +
+          '<a class="enlace-ficha" href="especies/' + slug + '.html"><i>' + e.nombre + "</i></a>" +
+          " (" + e.puntos.length + ")";
         capas[etiqueta] = capa;
         capa.addTo(mapa);
       });
-      L.control.layers(null, capas, { collapsed: false, position: "topright" }).addTo(mapa);
+      var control = L.control.layers(null, capas, { collapsed: false, position: "topright" }).addTo(mapa);
 
-      var leyenda = L.control({ position: "bottomleft" });
-      leyenda.onAdd = function () {
-        var div = L.DomUtil.create("div", "leyenda-mapa");
-        div.style.cssText = "background:white;padding:8px 12px;border-radius:8px;" +
-          "box-shadow:0 2px 8px rgba(0,0,0,.25);font-size:.8rem;max-height:280px;overflow-y:auto;";
-        var html = '<strong>Especies</strong> <span style="color:#888">(clic abre la ficha)</span><br>' +
-          '<span style="color:' + colores.epifita + '">●</span> Epífitas · ' +
-          '<span style="color:' + colores.trepadora + '">●</span> Trepadoras<br>';
-        slugs.forEach(function (slug) {
-          var e = porEspecie[slug];
-          html += '<a href="especies/' + slug + '.html"><i>' + e.nombre + "</i></a><br>";
+      // Casilla para marcar/desmarcar todas las especies. Se inserta fuera de la
+      // lista de capas porque Leaflet la reconstruye en cada cambio.
+      var todas = L.DomUtil.create("label", "toggle-todas");
+      todas.innerHTML = '<input type="checkbox" checked> <strong>Todas las especies</strong>';
+      var casilla = todas.querySelector("input");
+      control._overlaysList.parentNode.insertBefore(todas, control._overlaysList);
+      L.DomEvent.disableClickPropagation(todas);
+
+      var listaCapas = Object.keys(capas).map(function (k) { return capas[k]; });
+      function actualizarCasilla() {
+        var visibles = listaCapas.filter(function (c) { return mapa.hasLayer(c); }).length;
+        casilla.checked = visibles === listaCapas.length;
+        casilla.indeterminate = visibles > 0 && visibles < listaCapas.length;
+      }
+      casilla.addEventListener("change", function () {
+        // Se lee el estado antes del ciclo: cada capa añadida dispara
+        // overlayadd -> actualizarCasilla, que cambia casilla.checked a mitad del ciclo
+        var marcar = casilla.checked;
+        listaCapas.forEach(function (c) {
+          if (marcar) { mapa.addLayer(c); } else { mapa.removeLayer(c); }
         });
-        div.innerHTML = html;
-        return div;
-      };
-      leyenda.addTo(mapa);
+        actualizarCasilla();
+      });
+      mapa.on("overlayadd overlayremove", actualizarCasilla);
     })
     .catch(function (e) {
       document.getElementById("mapa-distribucion").innerHTML =
@@ -300,7 +315,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use el panel de capas (esquina superior derecha) para activar o desactivar especies.</p>
+<p>Use las casillas del panel de capas (esquina superior derecha) para activar o desactivar especies, o <em>Todas las especies</em> para cambiarlas a la vez. Haga clic en el nombre de una especie para abrir su ficha.</p>
 </div>
 </div>
 

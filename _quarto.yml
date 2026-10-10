@@ -83,8 +83,8 @@ format:
     fontsize: 1.05rem
     monofont: "Fira Code"
     highlight-style: arrow
-    toc: true
-    toc-depth: 3
+    toc: false
+    page-layout: full
     lang: es
     linkcolor: "#2d5a2d"
     code-copy: true

@@ -1,13 +1,12 @@
 ---
 image: images/header/bombus.jpg
-toc: false
 listing:
   - id: ultimas-especies
     contents: especies
     type: grid
     grid-columns: 3
     sort: "title"
-    categories: true
+    categories: false
     fields: [image, title, subtitle, categories]
     max-items: 6
 ---

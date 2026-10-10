@@ -1,7 +1,6 @@
 ---
 title: "Referencias"
 description: "Listado de trabajos científicos sobre epífitas, trepadoras y parásitas en Chile"
-toc: false
 ---
 
 En esta sección presentamos una recopilación de investigaciones científicas sobre plantas epífitas, trepadoras, lianas y parásitas realizadas en los bosques de Chile.

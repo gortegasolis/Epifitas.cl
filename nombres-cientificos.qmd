@@ -1,8 +1,6 @@
 ---
 title: "Nombres científicos"
 description: "Índice alfabético de plantas epífitas, trepadoras y hemiepífitas de Chile"
-toc: true
-toc-depth: 2
 ---
 
 Listado alfabético de las especies de plantas epífitas, trepadoras y hemiepífitas presentes en los bosques de Chile.
