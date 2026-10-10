@@ -11,6 +11,7 @@ project:
     - ocurrencias/
     - data/
     - images/header/
+    - images/inaturalist.svg
 
 website:
   title: "Epifitas.cl"
@@ -48,6 +49,10 @@ website:
       - text: "Contacto"
         href: contacto.qmd
     right:
+      - icon: inaturalist
+        href: "https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile"
+        aria-label: "Proyecto Epifitas.cl en iNaturalist"
+        target: _blank
       # TODO: reemplazar "#" por las URL reales de los perfiles cuando existan
       - icon: instagram
         href: "#"
@@ -65,7 +70,7 @@ website:
       [![CC BY-NC-SA 4.0](/images/cc-by-nc-sa.png){height="31"}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
       [Daniela Mellado-Mansilla & Gabriel Ortega-Solís](/contacto.qmd)
     right: |
-      Construido con [Quarto](https://quarto.org) · [Instagram](#) · [Bluesky](#)
+      Construido con [Quarto](https://quarto.org) · [iNaturalist](https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile) · [Instagram](#) · [Bluesky](#)
     background: "#1a2f1a"
     foreground: "#a0b8a0"
 
