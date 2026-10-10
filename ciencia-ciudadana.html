@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c109acf55b411f3fb04f06cf3e76ac52.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -174,12 +174,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -238,36 +238,31 @@ Cargando observaciones…
 </style>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  // El API de iNaturalist acepta el slug del proyecto (de su URL) o su ID
-  // numérico en project_id. Usamos el slug directamente:
-  // https://www.inaturalist.org/projects/epifitas-hemiepifitas-y-trepadoras-de-chile
-  var PROJECT_ID = "epifitas-hemiepifitas-y-trepadoras-de-chile";
+  // Las observaciones se descargan una vez por semana desde la API de
+  // iNaturalist (.github/workflows/sync-inaturalist.yml) y se guardan en
+  // data/inaturalist.json, para no consultar la API en cada visita.
   var contenedor = document.getElementById("inat-observaciones");
 
-  fetch("https://api.inaturalist.org/v1/observations?project_id=" + PROJECT_ID +
-        "&order_by=observed_on&order=desc&per_page=12&photos=true")
+  fetch("data/inaturalist.json")
     .then(function (r) { return r.json(); })
     .then(function (datos) {
       contenedor.innerHTML = "";
-      datos.results.forEach(function (obs) {
-        var foto = obs.photos && obs.photos[0]
-          ? obs.photos[0].url.replace("square", "medium")
-          : null;
-        var nombre = (obs.taxon && (obs.taxon.preferred_common_name || obs.taxon.name)) || "Sin identificar";
+      datos.observaciones.forEach(function (obs) {
         var a = document.createElement("a");
         a.className = "inat-card";
         a.href = "https://www.inaturalist.org/observations/" + obs.id;
         a.target = "_blank";
         a.rel = "noopener";
         a.innerHTML =
-          (foto ? '<img src="' + foto + '" alt="' + nombre + '">' : "") +
-          '<div class="inat-meta"><i>' + nombre + "</i><br>" +
-          (obs.observed_on || "s/f") + " · " + (obs.user ? obs.user.login : "") + "</div>";
+          (obs.foto ? '<img src="' + obs.foto + '" alt="' + obs.nombre + '">' : "") +
+          '<div class="inat-meta"><i>' + obs.nombre + "</i><br>" +
+          (obs.observed_on || "s/f") + " · " + (obs.usuario || "") + "</div>";
         contenedor.appendChild(a);
       });
-      if (datos.results.length === 0) {
+      if (datos.observaciones.length === 0) {
         contenedor.innerHTML = '<div class="callout callout-info">Aún no hay observaciones en el proyecto.</div>';
       }
+      document.getElementById("inat-actualizado").textContent = datos.actualizado;
     })
     .catch(function () {
       contenedor.innerHTML =
@@ -285,7 +280,7 @@ Nota
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Los datos se obtienen en vivo desde la <a href="https://api.inaturalist.org/v1/docs/">API pública de iNaturalist</a>.</p>
+<p>Los datos se obtienen semanalmente desde la <a href="https://api.inaturalist.org/v1/docs/">API pública de iNaturalist</a>. Última actualización: <span id="inat-actualizado">—</span>.</p>
 </div>
 </div>
 

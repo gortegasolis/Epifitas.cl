@@ -82,7 +82,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dce15eef0ed1f4e8890e6d2e024847f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c109acf55b411f3fb04f06cf3e76ac52.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -123,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -211,12 +211,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -244,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Rasgos ecológicos y funcionales de las especies documentadas en este sitio. Los rasgos cuantitativos (altura de planta, área foliar, SLA, masa de semilla, densidad de madera) provienen de bases de datos externas — ver la nota de fuentes al final de la página.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="12" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 11;"><span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>rasgos <span class="op">=</span> d3<span class="op">.</span><span class="fu">csv</span>(<span class="st">"data/rasgos.csv"</span><span class="op">,</span> d3<span class="op">.</span><span class="at">autoType</span>)</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="11" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 10;"><span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>rasgos <span class="op">=</span> d3<span class="op">.</span><span class="fu">csv</span>(<span class="st">"data/rasgos.csv"</span><span class="op">,</span> d3<span class="op">.</span><span class="at">autoType</span>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -253,10 +253,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="panel-input card bg-light p-2">
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="19" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>viewof formaSel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">growth_form</span>))]<span class="op">,</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Forma de crecimiento"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">growth_form</span>))] }</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="18" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 17;"><span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>viewof formaSel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">growth_form</span>))]<span class="op">,</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Forma de crecimiento"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">growth_form</span>))] }</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -264,10 +264,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="27" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>viewof familiaSel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">family</span>))]<span class="op">.</span><span class="fu">sort</span>()<span class="op">,</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Familia"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">true</span> }</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="26" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>viewof familiaSel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  [<span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">family</span>))]<span class="op">.</span><span class="fu">sort</span>()<span class="op">,</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>  { <span class="dt">label</span><span class="op">:</span> <span class="st">"Familia"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">true</span> }</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -275,7 +275,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="35" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 34;"><span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>viewof textoRasgos <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({ <span class="dt">label</span><span class="op">:</span> <span class="st">"Buscar"</span><span class="op">,</span> <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Especie, estado de conservación…"</span> })</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="34" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 33;"><span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>viewof textoRasgos <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({ <span class="dt">label</span><span class="op">:</span> <span class="st">"Buscar"</span><span class="op">,</span> <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Especie, estado de conservación…"</span> })</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
 
@@ -284,14 +284,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="42" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 41;"><span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>filtrados <span class="op">=</span> rasgos<span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> {</span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> famOk <span class="op">=</span> familiaSel<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> familiaSel<span class="op">.</span><span class="fu">includes</span>(d<span class="op">.</span><span class="at">family</span>)<span class="op">;</span></span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> txt <span class="op">=</span> textoRasgos<span class="op">.</span><span class="fu">trim</span>()<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">;</span></span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> txtOk <span class="op">=</span></span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">===</span> <span class="st">""</span> <span class="op">||</span></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(d)<span class="op">.</span><span class="fu">join</span>(<span class="st">" "</span>)<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(txt)<span class="op">;</span></span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> formaSel<span class="op">.</span><span class="fu">includes</span>(d<span class="op">.</span><span class="at">growth_form</span>) <span class="op">&amp;&amp;</span> famOk <span class="op">&amp;&amp;</span> txtOk<span class="op">;</span></span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="41" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 40;"><span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>filtrados <span class="op">=</span> rasgos<span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> {</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> famOk <span class="op">=</span> familiaSel<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> familiaSel<span class="op">.</span><span class="fu">includes</span>(d<span class="op">.</span><span class="at">family</span>)<span class="op">;</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> txt <span class="op">=</span> textoRasgos<span class="op">.</span><span class="fu">trim</span>()<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">;</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> txtOk <span class="op">=</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>    txt <span class="op">===</span> <span class="st">""</span> <span class="op">||</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(d)<span class="op">.</span><span class="fu">join</span>(<span class="st">" "</span>)<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(txt)<span class="op">;</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> formaSel<span class="op">.</span><span class="fu">includes</span>(d<span class="op">.</span><span class="at">growth_form</span>) <span class="op">&amp;&amp;</span> famOk <span class="op">&amp;&amp;</span> txtOk<span class="op">;</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="declaration">
 
@@ -299,7 +299,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="54" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 53;"><span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>slugPorEspecie <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">species</span><span class="op">,</span> d<span class="op">.</span><span class="at">slug</span>]))</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="53" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 52;"><span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>slugPorEspecie <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(rasgos<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">species</span><span class="op">,</span> d<span class="op">.</span><span class="at">slug</span>]))</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="declaration">
 
@@ -307,34 +307,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="59" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 58;"><span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(filtrados<span class="op">,</span> {</span>
-<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [</span>
-<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">"species"</span><span class="op">,</span> <span class="st">"growth_form"</span><span class="op">,</span> <span class="st">"family"</span><span class="op">,</span></span>
-<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">"phenology_flowering"</span><span class="op">,</span> <span class="st">"phenology_fruiting"</span><span class="op">,</span> <span class="st">"conservation_status"</span><span class="op">,</span></span>
-<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>    <span class="st">"plant_height_m"</span><span class="op">,</span> <span class="st">"seed_mass_mg"</span><span class="op">,</span> <span class="st">"wood_density_g_cm3"</span><span class="op">,</span> <span class="st">"trait_source"</span></span>
-<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
-<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> {</span>
-<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>    <span class="dt">species</span><span class="op">:</span> <span class="st">"Especie"</span><span class="op">,</span></span>
-<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>    <span class="dt">growth_form</span><span class="op">:</span> <span class="st">"Forma de crecimiento"</span><span class="op">,</span></span>
-<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>    <span class="dt">family</span><span class="op">:</span> <span class="st">"Familia"</span><span class="op">,</span></span>
-<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>    <span class="dt">phenology_flowering</span><span class="op">:</span> <span class="st">"Floración"</span><span class="op">,</span></span>
-<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a>    <span class="dt">phenology_fruiting</span><span class="op">:</span> <span class="st">"Fructificación"</span><span class="op">,</span></span>
-<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>    <span class="dt">conservation_status</span><span class="op">:</span> <span class="st">"Estado de conservación"</span><span class="op">,</span></span>
-<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a>    <span class="dt">plant_height_m</span><span class="op">:</span> <span class="st">"Altura (m)"</span><span class="op">,</span></span>
-<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>    <span class="dt">seed_mass_mg</span><span class="op">:</span> <span class="st">"Masa semilla (mg)"</span><span class="op">,</span></span>
-<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a>    <span class="dt">wood_density_g_cm3</span><span class="op">:</span> <span class="st">"Densidad madera (g/cm³)"</span><span class="op">,</span></span>
-<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>    <span class="dt">trait_source</span><span class="op">:</span> <span class="st">"Fuente rasgos"</span></span>
-<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> {</span>
-<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>    <span class="dt">species</span><span class="op">:</span> (s) <span class="kw">=&gt;</span></span>
-<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>      <span class="fu">html</span><span class="vs">`&lt;a href="especies/</span><span class="sc">${</span>slugPorEspecie<span class="op">.</span><span class="fu">get</span>(s)<span class="sc">}</span><span class="vs">.html"&gt;&lt;i&gt;</span><span class="sc">${</span>s<span class="sc">}</span><span class="vs">&lt;/i&gt;&lt;/a&gt;`</span><span class="op">,</span></span>
-<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">plant_height_m</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v<span class="op">,</span></span>
-<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">seed_mass_mg</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v<span class="op">,</span></span>
-<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>    <span class="dt">wood_density_g_cm3</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v</span>
-<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
-<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> <span class="st">"species"</span></span>
-<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="58" data-source-offset="0"><pre class="sourceCode js"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(filtrados<span class="op">,</span> {</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>    <span class="st">"species"</span><span class="op">,</span> <span class="st">"growth_form"</span><span class="op">,</span> <span class="st">"family"</span><span class="op">,</span></span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    <span class="st">"phenology_flowering"</span><span class="op">,</span> <span class="st">"phenology_fruiting"</span><span class="op">,</span> <span class="st">"conservation_status"</span><span class="op">,</span></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>    <span class="st">"plant_height_m"</span><span class="op">,</span> <span class="st">"seed_mass_mg"</span><span class="op">,</span> <span class="st">"wood_density_g_cm3"</span><span class="op">,</span> <span class="st">"trait_source"</span></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> {</span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>    <span class="dt">species</span><span class="op">:</span> <span class="st">"Especie"</span><span class="op">,</span></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>    <span class="dt">growth_form</span><span class="op">:</span> <span class="st">"Forma de crecimiento"</span><span class="op">,</span></span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>    <span class="dt">family</span><span class="op">:</span> <span class="st">"Familia"</span><span class="op">,</span></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>    <span class="dt">phenology_flowering</span><span class="op">:</span> <span class="st">"Floración"</span><span class="op">,</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>    <span class="dt">phenology_fruiting</span><span class="op">:</span> <span class="st">"Fructificación"</span><span class="op">,</span></span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a>    <span class="dt">conservation_status</span><span class="op">:</span> <span class="st">"Estado de conservación"</span><span class="op">,</span></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>    <span class="dt">plant_height_m</span><span class="op">:</span> <span class="st">"Altura (m)"</span><span class="op">,</span></span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a>    <span class="dt">seed_mass_mg</span><span class="op">:</span> <span class="st">"Masa semilla (mg)"</span><span class="op">,</span></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>    <span class="dt">wood_density_g_cm3</span><span class="op">:</span> <span class="st">"Densidad madera (g/cm³)"</span><span class="op">,</span></span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a>    <span class="dt">trait_source</span><span class="op">:</span> <span class="st">"Fuente rasgos"</span></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>    <span class="dt">species</span><span class="op">:</span> (s) <span class="kw">=&gt;</span></span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>      <span class="fu">html</span><span class="vs">`&lt;a href="especies/</span><span class="sc">${</span>slugPorEspecie<span class="op">.</span><span class="fu">get</span>(s)<span class="sc">}</span><span class="vs">.html"&gt;&lt;i&gt;</span><span class="sc">${</span>s<span class="sc">}</span><span class="vs">&lt;/i&gt;&lt;/a&gt;`</span><span class="op">,</span></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>    <span class="dt">plant_height_m</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v<span class="op">,</span></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">seed_mass_mg</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v<span class="op">,</span></span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>    <span class="dt">wood_density_g_cm3</span><span class="op">:</span> (v) <span class="kw">=&gt;</span> v <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">"—"</span> <span class="op">:</span> v</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a>  <span class="dt">rows</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> <span class="st">"species"</span></span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="expression">
 
