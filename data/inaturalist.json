@@ -1,6 +1,69 @@
 {
-  "actualizado": "2026-10-10",
+  "actualizado": "2026-10-12",
   "observaciones": [
+    {
+      "id": 407650902,
+      "observed_on": "2026-10-11",
+      "usuario": "antonia16492",
+      "nombre": "Luzuriaga radicans",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/749169020/medium.jpg"
+    },
+    {
+      "id": 407394998,
+      "observed_on": "2026-10-10",
+      "usuario": "falso_self",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748648852/medium.jpg"
+    },
+    {
+      "id": 407365264,
+      "observed_on": "2026-10-10",
+      "usuario": "catarjs",
+      "nombre": "devil's elder",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748586703/medium.jpg"
+    },
+    {
+      "id": 407396711,
+      "observed_on": "2026-10-10",
+      "usuario": "jose_ignacio_de_los_cobos",
+      "nombre": "Campsidium valdivianum",
+      "foto": "https://static.inaturalist.org/photos/748652461/medium.jpg"
+    },
+    {
+      "id": 407393037,
+      "observed_on": "2026-10-10",
+      "usuario": "jose_ignacio_de_los_cobos",
+      "nombre": "pilpil",
+      "foto": "https://static.inaturalist.org/photos/748645323/medium.jpg"
+    },
+    {
+      "id": 407369476,
+      "observed_on": "2026-10-10",
+      "usuario": "karencice",
+      "nombre": "Elytropus chilensis",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748595692/medium.jpg"
+    },
+    {
+      "id": 407441551,
+      "observed_on": "2026-10-10",
+      "usuario": "nathalie_levy",
+      "nombre": "Hydrangea serratifolia",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748747646/medium.jpg"
+    },
+    {
+      "id": 407697677,
+      "observed_on": "2026-10-10",
+      "usuario": "nathalie_levy",
+      "nombre": "Elytropus chilensis",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/749268489/medium.jpg"
+    },
+    {
+      "id": 407310078,
+      "observed_on": "2026-10-10",
+      "usuario": "raul644",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748489583/medium.jpg"
+    },
     {
       "id": 406920935,
       "observed_on": "2026-10-08",
@@ -21,69 +84,6 @@
       "usuario": "esebaiertass",
       "nombre": "Asplenium trilobum",
       "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747684727/medium.jpg"
-    },
-    {
-      "id": 406340831,
-      "observed_on": "2026-10-05",
-      "usuario": "fero33",
-      "nombre": "Campsidium valdivianum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746533478/medium.jpg"
-    },
-    {
-      "id": 406140974,
-      "observed_on": "2026-10-05",
-      "usuario": "isaac_ezequiel1",
-      "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746129329/medium.jpg"
-    },
-    {
-      "id": 406652489,
-      "observed_on": "2026-10-05",
-      "usuario": "calw",
-      "nombre": "Synammia feuillei",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747162978/medium.jpg"
-    },
-    {
-      "id": 405973249,
-      "observed_on": "2026-10-04",
-      "usuario": "jmcancino",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745781846/medium.jpg"
-    },
-    {
-      "id": 405973242,
-      "observed_on": "2026-10-04",
-      "usuario": "jmcancino",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745778513/medium.jpg"
-    },
-    {
-      "id": 405968679,
-      "observed_on": "2026-10-04",
-      "usuario": "dozhk",
-      "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745783825/medium.jpg"
-    },
-    {
-      "id": 405931275,
-      "observed_on": "2026-10-04",
-      "usuario": "jmcancino",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745707026/medium.jpg"
-    },
-    {
-      "id": 405973019,
-      "observed_on": "2026-10-04",
-      "usuario": "jmcancino",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745738586/medium.jpg"
-    },
-    {
-      "id": 405915906,
-      "observed_on": "2026-10-04",
-      "usuario": "jmcancino",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745673751/medium.jpg"
     }
   ]
 }
