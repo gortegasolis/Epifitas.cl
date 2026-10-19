@@ -1,89 +1,89 @@
 {
-  "actualizado": "2026-10-12",
+  "actualizado": "2026-10-19",
   "observaciones": [
     {
-      "id": 407650902,
-      "observed_on": "2026-10-11",
-      "usuario": "antonia16492",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/749169020/medium.jpg"
-    },
-    {
-      "id": 407394998,
-      "observed_on": "2026-10-10",
+      "id": 409333150,
+      "observed_on": "2026-10-18",
       "usuario": "falso_self",
-      "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748648852/medium.jpg"
+      "nombre": "filmy ferns",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/752598923/medium.jpg"
     },
     {
-      "id": 407365264,
-      "observed_on": "2026-10-10",
-      "usuario": "catarjs",
-      "nombre": "devil's elder",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748586703/medium.jpg"
-    },
-    {
-      "id": 407396711,
-      "observed_on": "2026-10-10",
-      "usuario": "jose_ignacio_de_los_cobos",
-      "nombre": "Campsidium valdivianum",
-      "foto": "https://static.inaturalist.org/photos/748652461/medium.jpg"
-    },
-    {
-      "id": 407393037,
-      "observed_on": "2026-10-10",
-      "usuario": "jose_ignacio_de_los_cobos",
-      "nombre": "pilpil",
-      "foto": "https://static.inaturalist.org/photos/748645323/medium.jpg"
-    },
-    {
-      "id": 407369476,
-      "observed_on": "2026-10-10",
-      "usuario": "karencice",
-      "nombre": "Elytropus chilensis",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748595692/medium.jpg"
-    },
-    {
-      "id": 407441551,
-      "observed_on": "2026-10-10",
-      "usuario": "nathalie_levy",
-      "nombre": "Hydrangea serratifolia",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748747646/medium.jpg"
-    },
-    {
-      "id": 407697677,
-      "observed_on": "2026-10-10",
-      "usuario": "nathalie_levy",
-      "nombre": "Elytropus chilensis",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/749268489/medium.jpg"
-    },
-    {
-      "id": 407310078,
-      "observed_on": "2026-10-10",
-      "usuario": "raul644",
-      "nombre": "Rhodostachys",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/748489583/medium.jpg"
-    },
-    {
-      "id": 406920935,
-      "observed_on": "2026-10-08",
-      "usuario": "omarbravo",
-      "nombre": "huedhued",
-      "foto": "https://static.inaturalist.org/photos/747700921/medium.jpg"
-    },
-    {
-      "id": 406705322,
-      "observed_on": "2026-10-07",
-      "usuario": "milla_anali",
+      "id": 409322521,
+      "observed_on": "2026-10-17",
+      "usuario": "rsndvl",
       "nombre": "Luzuriaga radicans",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747273666/medium.jpg"
+      "foto": "https://static.inaturalist.org/photos/752578329/medium.jpg"
     },
     {
-      "id": 406912787,
-      "observed_on": "2026-10-06",
-      "usuario": "esebaiertass",
-      "nombre": "Asplenium trilobum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747684727/medium.jpg"
+      "id": 409323560,
+      "observed_on": "2026-10-17",
+      "usuario": "rsndvl",
+      "nombre": "Asplenium dareoides",
+      "foto": "https://static.inaturalist.org/photos/752580738/medium.jpg"
+    },
+    {
+      "id": 408962953,
+      "observed_on": "2026-10-17",
+      "usuario": "camimellado",
+      "nombre": "Luzuriaga radicans",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751847593/medium.jpg"
+    },
+    {
+      "id": 408800897,
+      "observed_on": "2026-10-16",
+      "usuario": "andreabot_",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751523280/medium.jpg"
+    },
+    {
+      "id": 409009763,
+      "observed_on": "2026-10-16",
+      "usuario": "avilezbf",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751940663/medium.jpg"
+    },
+    {
+      "id": 409203052,
+      "observed_on": "2026-10-16",
+      "usuario": "milla_anali",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/752333069/medium.jpg"
+    },
+    {
+      "id": 408813761,
+      "observed_on": "2026-10-16",
+      "usuario": "falso_self",
+      "nombre": "Raukaua valdiviensis",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751549516/medium.jpg"
+    },
+    {
+      "id": 408683393,
+      "observed_on": "2026-10-15",
+      "usuario": "makiyucazteca",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751288572/medium.jpg"
+    },
+    {
+      "id": 408502801,
+      "observed_on": "2026-10-15",
+      "usuario": "sooooooooo",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750922806/medium.jpg"
+    },
+    {
+      "id": 408177840,
+      "observed_on": "2026-10-13",
+      "usuario": "milla_anali",
+      "nombre": "Hymenophyllum caudatum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750254106/medium.jpg"
+    },
+    {
+      "id": 408170290,
+      "observed_on": "2026-10-13",
+      "usuario": "milla_anali",
+      "nombre": "Chilean bellflower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750237637/medium.jpg"
     }
   ]
 }
