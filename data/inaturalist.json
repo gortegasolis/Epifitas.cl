@@ -1,89 +1,89 @@
 {
-  "actualizado": "2026-10-19",
+  "actualizado": "2026-10-26",
   "observaciones": [
     {
-      "id": 409333150,
-      "observed_on": "2026-10-18",
-      "usuario": "falso_self",
-      "nombre": "filmy ferns",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/752598923/medium.jpg"
+      "id": 410887518,
+      "observed_on": "2026-10-25",
+      "usuario": "milla_anali",
+      "nombre": "Hydrangea serratifolia",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755772329/medium.jpg"
     },
     {
-      "id": 409322521,
-      "observed_on": "2026-10-17",
-      "usuario": "rsndvl",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://static.inaturalist.org/photos/752578329/medium.jpg"
-    },
-    {
-      "id": 409323560,
-      "observed_on": "2026-10-17",
-      "usuario": "rsndvl",
-      "nombre": "Asplenium dareoides",
-      "foto": "https://static.inaturalist.org/photos/752580738/medium.jpg"
-    },
-    {
-      "id": 408962953,
-      "observed_on": "2026-10-17",
-      "usuario": "camimellado",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751847593/medium.jpg"
-    },
-    {
-      "id": 408800897,
-      "observed_on": "2026-10-16",
-      "usuario": "andreabot_",
-      "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751523280/medium.jpg"
-    },
-    {
-      "id": 409009763,
-      "observed_on": "2026-10-16",
+      "id": 410584048,
+      "observed_on": "2026-10-24",
       "usuario": "avilezbf",
       "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751940663/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755128105/medium.jpg"
     },
     {
-      "id": 409203052,
-      "observed_on": "2026-10-16",
-      "usuario": "milla_anali",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/752333069/medium.jpg"
-    },
-    {
-      "id": 408813761,
-      "observed_on": "2026-10-16",
-      "usuario": "falso_self",
-      "nombre": "Raukaua valdiviensis",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751549516/medium.jpg"
-    },
-    {
-      "id": 408683393,
-      "observed_on": "2026-10-15",
-      "usuario": "makiyucazteca",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/751288572/medium.jpg"
-    },
-    {
-      "id": 408502801,
-      "observed_on": "2026-10-15",
-      "usuario": "sooooooooo",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750922806/medium.jpg"
-    },
-    {
-      "id": 408177840,
-      "observed_on": "2026-10-13",
-      "usuario": "milla_anali",
-      "nombre": "Hymenophyllum caudatum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750254106/medium.jpg"
-    },
-    {
-      "id": 408170290,
-      "observed_on": "2026-10-13",
-      "usuario": "milla_anali",
+      "id": 410583953,
+      "observed_on": "2026-10-24",
+      "usuario": "avilezbf",
       "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/750237637/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755127495/medium.jpg"
+    },
+    {
+      "id": 410371226,
+      "observed_on": "2026-10-23",
+      "usuario": "bmurtha",
+      "nombre": "coicopihue",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754717428/medium.jpg"
+    },
+    {
+      "id": 410783365,
+      "observed_on": "2026-10-23",
+      "usuario": "marvin12748",
+      "nombre": "Luzuriaga radicans",
+      "foto": "https://static.inaturalist.org/photos/755565246/medium.jpg"
+    },
+    {
+      "id": 410371050,
+      "observed_on": "2026-10-23",
+      "usuario": "bmurtha",
+      "nombre": "devil's elder",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754716924/medium.jpg"
+    },
+    {
+      "id": 410370827,
+      "observed_on": "2026-10-23",
+      "usuario": "bmurtha",
+      "nombre": "Campsidium valdivianum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754716305/medium.jpg"
+    },
+    {
+      "id": 410395418,
+      "observed_on": "2026-10-23",
+      "usuario": "falso_self",
+      "nombre": "Hymenophyllum dentatum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754769007/medium.jpg"
+    },
+    {
+      "id": 410781962,
+      "observed_on": "2026-10-23",
+      "usuario": "marvin12748",
+      "nombre": "Rhodostachys",
+      "foto": "https://static.inaturalist.org/photos/755562490/medium.jpg"
+    },
+    {
+      "id": 410396137,
+      "observed_on": "2026-10-23",
+      "usuario": "falso_self",
+      "nombre": "Synammia feuillei",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754770630/medium.jpg"
+    },
+    {
+      "id": 410777391,
+      "observed_on": "2026-10-23",
+      "usuario": "marvin12748",
+      "nombre": "Luzuriaga radicans",
+      "foto": "https://static.inaturalist.org/photos/755553287/medium.jpg"
+    },
+    {
+      "id": 410777199,
+      "observed_on": "2026-10-23",
+      "usuario": "marvin12748",
+      "nombre": "Hymenophyllum plicatum",
+      "foto": "https://static.inaturalist.org/photos/755552875/medium.jpg"
     }
   ]
 }
