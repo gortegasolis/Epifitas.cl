@@ -4,7 +4,7 @@ subtitle: "Seda de la luma, sanguinaria, voladora del monte"
 author: "Daniela Mellado-Mansilla"
 description: "Hymenophyllum cruentum — Epífito. Hymenophyllaceae. Distribución: VII-XII regiones, también en el Archipiélago de Juan Fernández."
 categories: [Epífitas]
-image: "../images/especies/puyehue-147escala.jpg"
+image: "../images/especies/webp/hymenophyllum-cruentum-cc-1.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -36,13 +36,15 @@ Vulnerable
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/arb-278escala-225x300.jpg){group="hymenophyllum-cruentum"}
+![Foto: Krzysztof Ziarnek, Kenraiz, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hymenophyllum_cruentum_kz07.jpg).](../images/especies/webp/hymenophyllum-cruentum-cc-1.webp){group="hymenophyllum-cruentum"}
+
+![Foto: Krzysztof Ziarnek, Kenraiz, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hymenophyllum_cruentum_kz04.jpg).](../images/especies/webp/hymenophyllum-cruentum-cc-2.webp){group="hymenophyllum-cruentum"}
 
 ![](../images/especies/webp/100_4404escala-300x225.webp){group="hymenophyllum-cruentum"}
 
-![](../images/especies/puyehue-135escala-225x300.jpg){group="hymenophyllum-cruentum"}
+![Foto: © Ezequiel Racker, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/334365074).](../images/especies/webp/hymenophyllum-cruentum-cc-3.webp){group="hymenophyllum-cruentum"}
 
-![](../images/especies/arb-275escala-225x300.jpg){group="hymenophyllum-cruentum"}
+![Foto: © Matt Berger, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/260528350).](../images/especies/webp/hymenophyllum-cruentum-cc-4.webp){group="hymenophyllum-cruentum"}
 :::
 
 ### Mapa de distribución en Chile

@@ -4,6 +4,7 @@ subtitle: "Helechito perejil, filu-lahuén"
 author: "Felipe González Cifuentes"
 description: "Asplenium dareoides — Epífito. Aspleniaceae. Distribución: IV-XII regiones y Archipiélago de Juan Fernández."
 categories: [Epífitas]
+image: "../images/especies/webp/asplenium-dareoides-cc-1.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -31,6 +32,16 @@ Helecho minúsculo perenne, terrestre o epífito, con rizomas escamosos de color
 ### Estado de conservación
 
 Vulnerable en Chile continental y de preocupación menor en Juan Fernández.
+
+## Galería
+
+::: {.gallery}
+![Foto: © Cody Hinchliff, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/336406647).](../images/especies/webp/asplenium-dareoides-cc-1.webp){group="asplenium-dareoides"}
+
+![Foto: © Diego González, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/169411741).](../images/especies/webp/asplenium-dareoides-cc-2.webp){group="asplenium-dareoides"}
+
+![Foto: © Diego González, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/169411741).](../images/especies/webp/asplenium-dareoides-cc-3.webp){group="asplenium-dareoides"}
+:::
 
 ### Mapa de distribución en Chile
 ```{r}

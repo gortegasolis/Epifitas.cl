@@ -4,7 +4,7 @@ subtitle: "Helecho película"
 author: "Diego Penneckamp Furniel"
 description: "Hymenophyllum rugosum — Epífito, eventualmente rastrero. Hymenophyllaceae. Distribución: V Región. (Endémico de Juan Fernández)."
 categories: [Epífitas]
-image: "../images/especies/Hymenophyllum_rugosum2_esc-945x709.jpg.pagespeed.ic.Vj9EKblqJD.jpg"
+image: "../images/especies/webp/hymenophyllum-rugosum-cc-1.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -36,7 +36,9 @@ Vulnerable. (MMA 2008)
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/Hymenophyllum_rugosum1_esc.jpg){group="hymenophyllum-rugosum"}
+![Ejemplar de herbario K000589696 (leg. C. Skottsberg & I. Skottsberg, 1917). Imagen: Royal Botanic Gardens, Kew, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [GBIF](https://www.gbif.org/occurrence/912476812).](../images/especies/webp/hymenophyllum-rugosum-cc-1.webp){group="hymenophyllum-rugosum"}
+
+![Ejemplar de herbario S-R-2983 (leg. C. Skottsberg & I. Skottsberg, 1917). Imagen: Swedish Museum of Natural History (S), foto Karin dos Santos, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [GBIF](https://www.gbif.org/occurrence/1096352855).](../images/especies/webp/hymenophyllum-rugosum-cc-2.webp){group="hymenophyllum-rugosum"}
 :::
 
 ### Mapa de distribución en Chile

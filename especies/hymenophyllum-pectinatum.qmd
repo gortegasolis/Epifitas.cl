@@ -38,9 +38,9 @@ No existen revisiones sobre esta especie.
 ::: {.gallery}
 ![](../images/especies/webp/DSCN0434escala-300x225.webp){group="hymenophyllum-pectinatum"}
 
-![](../images/especies/300x225xsan-pablo-467escala-300x225.jpg.pagespeed.ic.jsTNNDMF-g.jpg){group="hymenophyllum-pectinatum"}
+![Foto: Krzysztof Ziarnek, Kenraiz, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hymenophyllum_pectinatum_kz06.jpg).](../images/especies/webp/hymenophyllum-pectinatum-cc-1.webp){group="hymenophyllum-pectinatum"}
 
-![](../images/especies/300x225xDSCN0438esca-300x225.jpg.pagespeed.ic.9oEE3eMfwh.jpg){group="hymenophyllum-pectinatum"}
+![Foto: © Cody Hinchliff, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/261808108).](../images/especies/webp/hymenophyllum-pectinatum-cc-2.webp){group="hymenophyllum-pectinatum"}
 :::
 
 ### Mapa de distribución en Chile

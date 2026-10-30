@@ -49,6 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-74fb39693fedce94a79b0a5ad333131f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,10 +84,12 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Asplenium dareoides – Epifitas.cl">
 <meta property="og:description" content="Asplenium dareoides — Epífito. Aspleniaceae. Distribución: IV-XII regiones y Archipiélago de Juan Fernández.">
+<meta property="og:image" content="https://epifitas.cl/images/especies/webp/asplenium-dareoides-cc-1.webp">
 <meta property="og:site_name" content="Epifitas.cl">
 <meta name="twitter:title" content="Asplenium dareoides – Epifitas.cl">
 <meta name="twitter:description" content="Asplenium dareoides — Epífito. Aspleniaceae. Distribución: IV-XII regiones y Archipiélago de Juan Fernández.">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://epifitas.cl/images/especies/webp/asplenium-dareoides-cc-1.webp">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -251,6 +256,29 @@ IV-XII regiones y Archipiélago de Juan Fernández
 <h3 class="anchored" data-anchor-id="estado-de-conservación">Estado de conservación</h3>
 <p>Vulnerable en Chile continental y de preocupación menor en Juan Fernández.</p>
 </section>
+</section>
+<section id="galería" class="level2">
+<h2 class="anchored" data-anchor-id="galería">Galería</h2>
+<div class="gallery">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/especies/webp/asplenium-dareoides-cc-1.webp" class="lightbox" data-gallery="asplenium-dareoides" title="Foto: © Cody Hinchliff, CC BY 4.0, vía iNaturalist."><img src="../images/especies/webp/asplenium-dareoides-cc-1.webp" class="img-fluid figure-img" alt="Foto: © Cody Hinchliff, CC BY 4.0, vía iNaturalist."></a></p>
+<figcaption>Foto: © Cody Hinchliff, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, vía <a href="https://www.inaturalist.org/observations/336406647">iNaturalist</a>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/especies/webp/asplenium-dareoides-cc-2.webp" class="lightbox" data-gallery="asplenium-dareoides" title="Foto: © Diego González, CC BY 4.0, vía iNaturalist."><img src="../images/especies/webp/asplenium-dareoides-cc-2.webp" class="img-fluid figure-img" alt="Foto: © Diego González, CC BY 4.0, vía iNaturalist."></a></p>
+<figcaption>Foto: © Diego González, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, vía <a href="https://www.inaturalist.org/observations/169411741">iNaturalist</a>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/especies/webp/asplenium-dareoides-cc-3.webp" class="lightbox" data-gallery="asplenium-dareoides" title="Foto: © Diego González, CC BY 4.0, vía iNaturalist."><img src="../images/especies/webp/asplenium-dareoides-cc-3.webp" class="img-fluid figure-img" alt="Foto: © Diego González, CC BY 4.0, vía iNaturalist."></a></p>
+<figcaption>Foto: © Diego González, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, vía <a href="https://www.inaturalist.org/observations/169411741">iNaturalist</a>.</figcaption>
+</figure>
+</div>
+</div>
 <section id="mapa-de-distribución-en-chile" class="level3">
 <h3 class="anchored" data-anchor-id="mapa-de-distribución-en-chile">Mapa de distribución en Chile</h3>
 <div class="mapa-acciones">
@@ -694,6 +722,38 @@ IV-XII regiones y Archipiélago de Juan Fernández
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

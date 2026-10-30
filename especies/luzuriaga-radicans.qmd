@@ -44,11 +44,11 @@ No existen revisiones sobre esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/frutos-lr-300x225.jpg){group="luzuriaga-radicans"}
+![Foto: © Bruno Avilez, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/299695406).](../images/especies/webp/luzuriaga-radicans-cc-3.webp){group="luzuriaga-radicans"}
 
-![](../images/especies/arb-036escala-225x300.jpg){group="luzuriaga-radicans"}
+![Foto: © Cristian Riquelme, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/39216051).](../images/especies/webp/luzuriaga-radicans-cc-2.webp){group="luzuriaga-radicans"}
 
-![](../images/especies/arb-040escala-300x225.jpg){group="luzuriaga-radicans"}
+![Foto: Jason Hollinger, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Luzuriaga_radicans.jpg).](../images/especies/webp/luzuriaga-radicans-cc-1.webp){group="luzuriaga-radicans"}
 :::
 
 ### Mapa de distribución en Chile

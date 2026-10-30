@@ -44,9 +44,9 @@ No existen datos para esta especie.
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/san-pablo-033escala.jpg){group="asteranthera-ovata"}
+![Foto: Jason Hollinger, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Asteranthera_ovata_on_Nothofagus_Trunk_(pellaea).jpg).](../images/especies/webp/asteranthera-ovata-cc-1.webp){group="asteranthera-ovata"}
 
-![](../images/especies/makeo2-431escala.jpg){group="asteranthera-ovata"}
+![Foto: Jason Hollinger, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Asteranthera_ovata_(3184540257).jpg).](../images/especies/webp/asteranthera-ovata-cc-2.webp){group="asteranthera-ovata"}
 :::
 
 ### Mapa de distribución en Chile

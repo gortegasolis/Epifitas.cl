@@ -4,6 +4,7 @@ subtitle: "Helecho trilobulado"
 author: "Daniela Mellado-Mansilla"
 description: "Asplenium trilobum — Epífito, raramente terrestre. Aspleniaceae. Distribución: VII-XI regiones."
 categories: [Epífitas]
+image: "../images/especies/webp/asplenium-trilobum-cc-1.webp"
 ---
 
 ## Información taxonómica {.species-title}
@@ -31,6 +32,16 @@ Helecho perenne, común en bosques húmedos costeros. También puede encontrarse
 ### Estado de conservación
 
 Vulnerable entre las regiones del Biobío y La Araucanía, y de preocupación menor en el resto de su distribución austral.
+
+## Galería
+
+::: {.gallery}
+![Foto: © Cristian Riquelme, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/238638921).](../images/especies/webp/asplenium-trilobum-cc-1.webp){group="asplenium-trilobum"}
+
+![Foto: Pincheira-Ulbrich, Zambrano & Contreras (2023), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Asplenium_trilobum_(10.3897-BDJ.11.e105990)_Figure_3c.jpg).](../images/especies/webp/asplenium-trilobum-cc-2.webp){group="asplenium-trilobum"}
+
+![Foto: © Inao Vasquez, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/84907757).](../images/especies/webp/asplenium-trilobum-cc-3.webp){group="asplenium-trilobum"}
+:::
 
 ### Mapa de distribución en Chile
 ```{r}

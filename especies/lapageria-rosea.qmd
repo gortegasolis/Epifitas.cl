@@ -44,11 +44,11 @@ Vulnerable. Por ser la flora nacional de Chile y símbolo del pueblo Araucano, s
 ## Galería
 
 ::: {.gallery}
-![](../images/especies/laro-225x300.jpg){group="lapageria-rosea"}
+![Foto: Krzysztof Ziarnek, Kenraiz, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lapageria_rosea_kz02.jpg).](../images/especies/webp/lapageria-rosea-cc-1.webp){group="lapageria-rosea"}
 
-![](../images/especies/hojaslrosea-225x300.jpg){group="lapageria-rosea"}
+![Foto: Krzysztof Ziarnek, Kenraiz, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lapageria_rosea_kz05.jpg).](../images/especies/webp/lapageria-rosea-cc-2.webp){group="lapageria-rosea"}
 
-![](../images/especies/laro2-225x300.jpg){group="lapageria-rosea"}
+![Foto: © Cody Hinchliff, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), vía [iNaturalist](https://www.inaturalist.org/observations/259383090).](../images/especies/webp/lapageria-rosea-cc-3.webp){group="lapageria-rosea"}
 :::
 
 ### Mapa de distribución en Chile
