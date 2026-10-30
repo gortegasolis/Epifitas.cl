@@ -1,89 +1,89 @@
 {
-  "actualizado": "2026-10-26",
+  "actualizado": "2026-10-10",
   "observaciones": [
     {
-      "id": 410887518,
-      "observed_on": "2026-10-25",
+      "id": 406920935,
+      "observed_on": "2026-10-08",
+      "usuario": "omarbravo",
+      "nombre": "huedhued",
+      "foto": "https://static.inaturalist.org/photos/747700921/medium.jpg"
+    },
+    {
+      "id": 406705322,
+      "observed_on": "2026-10-07",
       "usuario": "milla_anali",
-      "nombre": "Hydrangea serratifolia",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755772329/medium.jpg"
-    },
-    {
-      "id": 410584048,
-      "observed_on": "2026-10-24",
-      "usuario": "avilezbf",
-      "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755128105/medium.jpg"
-    },
-    {
-      "id": 410583953,
-      "observed_on": "2026-10-24",
-      "usuario": "avilezbf",
-      "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/755127495/medium.jpg"
-    },
-    {
-      "id": 410371226,
-      "observed_on": "2026-10-23",
-      "usuario": "bmurtha",
-      "nombre": "coicopihue",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754717428/medium.jpg"
-    },
-    {
-      "id": 410783365,
-      "observed_on": "2026-10-23",
-      "usuario": "marvin12748",
       "nombre": "Luzuriaga radicans",
-      "foto": "https://static.inaturalist.org/photos/755565246/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747273666/medium.jpg"
     },
     {
-      "id": 410371050,
-      "observed_on": "2026-10-23",
-      "usuario": "bmurtha",
-      "nombre": "devil's elder",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754716924/medium.jpg"
+      "id": 406912787,
+      "observed_on": "2026-10-06",
+      "usuario": "esebaiertass",
+      "nombre": "Asplenium trilobum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747684727/medium.jpg"
     },
     {
-      "id": 410370827,
-      "observed_on": "2026-10-23",
-      "usuario": "bmurtha",
+      "id": 406340831,
+      "observed_on": "2026-10-05",
+      "usuario": "fero33",
       "nombre": "Campsidium valdivianum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754716305/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746533478/medium.jpg"
     },
     {
-      "id": 410395418,
-      "observed_on": "2026-10-23",
-      "usuario": "falso_self",
-      "nombre": "Hymenophyllum dentatum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754769007/medium.jpg"
+      "id": 406140974,
+      "observed_on": "2026-10-05",
+      "usuario": "isaac_ezequiel1",
+      "nombre": "Chilean bellflower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/746129329/medium.jpg"
     },
     {
-      "id": 410781962,
-      "observed_on": "2026-10-23",
-      "usuario": "marvin12748",
-      "nombre": "Rhodostachys",
-      "foto": "https://static.inaturalist.org/photos/755562490/medium.jpg"
-    },
-    {
-      "id": 410396137,
-      "observed_on": "2026-10-23",
-      "usuario": "falso_self",
+      "id": 406652489,
+      "observed_on": "2026-10-05",
+      "usuario": "calw",
       "nombre": "Synammia feuillei",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/754770630/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/747162978/medium.jpg"
     },
     {
-      "id": 410777391,
-      "observed_on": "2026-10-23",
-      "usuario": "marvin12748",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://static.inaturalist.org/photos/755553287/medium.jpg"
+      "id": 405973249,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745781846/medium.jpg"
     },
     {
-      "id": 410777199,
-      "observed_on": "2026-10-23",
-      "usuario": "marvin12748",
-      "nombre": "Hymenophyllum plicatum",
-      "foto": "https://static.inaturalist.org/photos/755552875/medium.jpg"
+      "id": 405973242,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745778513/medium.jpg"
+    },
+    {
+      "id": 405968679,
+      "observed_on": "2026-10-04",
+      "usuario": "dozhk",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745783825/medium.jpg"
+    },
+    {
+      "id": 405931275,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745707026/medium.jpg"
+    },
+    {
+      "id": 405973019,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745738586/medium.jpg"
+    },
+    {
+      "id": 405915906,
+      "observed_on": "2026-10-04",
+      "usuario": "jmcancino",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/745673751/medium.jpg"
     }
   ]
 }
