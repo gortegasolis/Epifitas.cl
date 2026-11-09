@@ -1,89 +1,89 @@
 {
-  "actualizado": "2026-11-02",
+  "actualizado": "2026-11-09",
   "observaciones": [
     {
-      "id": 412312411,
-      "observed_on": "2026-11-01",
-      "usuario": "milla_anali",
-      "nombre": "filmy ferns",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/758648805/medium.jpg"
+      "id": 413627911,
+      "observed_on": "2026-11-08",
+      "usuario": "yadixsant",
+      "nombre": "Rhodostachys",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/761315193/medium.jpg"
     },
     {
-      "id": 412258254,
-      "observed_on": "2026-11-01",
-      "usuario": "tritz1",
-      "nombre": "Hydrangea serratifolia",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/758541861/medium.jpg"
+      "id": 413627981,
+      "observed_on": "2026-11-08",
+      "usuario": "yadixsant",
+      "nombre": "Griselinia racemosa",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/761315366/medium.jpg"
     },
     {
-      "id": 412086962,
-      "observed_on": "2026-10-31",
-      "usuario": "milla_anali",
+      "id": 413435721,
+      "observed_on": "2026-11-07",
+      "usuario": "strigidae_sp",
       "nombre": "climbing Chilean pitcher flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/758193831/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/760920585/medium.jpg"
     },
     {
-      "id": 412087252,
-      "observed_on": "2026-10-31",
-      "usuario": "milla_anali",
-      "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/758194423/medium.jpg"
+      "id": 413435370,
+      "observed_on": "2026-11-07",
+      "usuario": "strigidae_sp",
+      "nombre": "Luzuriaga polyphylla",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/760919697/medium.jpg"
     },
     {
-      "id": 412074454,
-      "observed_on": "2026-10-31",
-      "usuario": "slowmadic",
-      "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/758167976/medium.jpg"
-    },
-    {
-      "id": 411843905,
-      "observed_on": "2026-10-30",
-      "usuario": "falso_self",
-      "nombre": "Asplenium dareoides",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/757705236/medium.jpg"
-    },
-    {
-      "id": 411840640,
-      "observed_on": "2026-10-30",
-      "usuario": "falso_self",
-      "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/757698559/medium.jpg"
-    },
-    {
-      "id": 411834808,
-      "observed_on": "2026-10-30",
-      "usuario": "nothofaguss",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/757687764/medium.jpg"
-    },
-    {
-      "id": 411641246,
-      "observed_on": "2026-10-29",
-      "usuario": "ig-bastianoptero",
+      "id": 413468375,
+      "observed_on": "2026-11-07",
+      "usuario": "danaegarridoh",
       "nombre": "Hydrangea serratifolia",
-      "foto": "https://static.inaturalist.org/photos/757304093/medium.jpg"
+      "foto": "https://static.inaturalist.org/photos/760988469/medium.jpg"
     },
     {
-      "id": 411679913,
-      "observed_on": "2026-10-28",
-      "usuario": "devirou",
-      "nombre": "Hymenophyllum dentatum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/757380342/medium.jpg"
+      "id": 413437279,
+      "observed_on": "2026-11-07",
+      "usuario": "strigidae_sp",
+      "nombre": "filmy ferns",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/760923870/medium.jpg"
     },
     {
-      "id": 411259529,
-      "observed_on": "2026-10-27",
-      "usuario": "paolalpez20",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://static.inaturalist.org/photos/756531295/medium.jpg"
+      "id": 413228842,
+      "observed_on": "2026-11-06",
+      "usuario": "djalma2631",
+      "nombre": "Chilean bellflower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/760507066/medium.jpg"
     },
     {
-      "id": 411259506,
-      "observed_on": "2026-10-27",
-      "usuario": "paolalpez20",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://static.inaturalist.org/photos/756530861/medium.jpg"
+      "id": 413251295,
+      "observed_on": "2026-11-06",
+      "usuario": "luckscasti",
+      "nombre": "Luzuriaga polyphylla",
+      "foto": "https://static.inaturalist.org/photos/760552206/medium.jpg"
+    },
+    {
+      "id": 413610472,
+      "observed_on": "2026-11-06",
+      "usuario": "andreanaturalista",
+      "nombre": "Chilean bellflower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/761280726/medium.jpg"
+    },
+    {
+      "id": 413593857,
+      "observed_on": "2026-11-06",
+      "usuario": "andreanaturalista",
+      "nombre": "huedhued",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/761247216/medium.jpg"
+    },
+    {
+      "id": 413592639,
+      "observed_on": "2026-11-06",
+      "usuario": "andreanaturalista",
+      "nombre": "pilpil",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/761244630/medium.jpg"
+    },
+    {
+      "id": 413468795,
+      "observed_on": "2026-11-06",
+      "usuario": "danaegarridoh",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://static.inaturalist.org/photos/760988996/medium.jpg"
     }
   ]
 }
