@@ -1,89 +1,89 @@
 {
-  "actualizado": "2026-11-16",
+  "actualizado": "2026-11-23",
   "observaciones": [
     {
-      "id": 414901096,
-      "observed_on": "2026-11-15",
-      "usuario": "mikeslater",
-      "nombre": "Hymenophyllum pectinatum",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763887060/medium.jpg"
+      "id": 416464965,
+      "observed_on": "2026-11-22",
+      "usuario": "magdzraw",
+      "nombre": "Raukaua valdiviensis",
+      "foto": "https://static.inaturalist.org/photos/766991586/medium.jpg"
     },
     {
-      "id": 414897393,
-      "observed_on": "2026-11-15",
-      "usuario": "mikeslater",
+      "id": 416508379,
+      "observed_on": "2026-11-22",
+      "usuario": "konrradd",
+      "nombre": "Hymenophyllum plicatum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/767080661/medium.jpg"
+    },
+    {
+      "id": 416517614,
+      "observed_on": "2026-11-22",
+      "usuario": "nicrodemo",
+      "nombre": "Hydrangea serratifolia",
+      "foto": "https://static.inaturalist.org/photos/767100633/medium.jpg"
+    },
+    {
+      "id": 416548952,
+      "observed_on": "2026-11-21",
+      "usuario": "margaritarp",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://static.inaturalist.org/photos/767157674/medium.jpg"
+    },
+    {
+      "id": 416185348,
+      "observed_on": "2026-11-21",
+      "usuario": "diariodelguardaparque",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/766430825/medium.jpg"
+    },
+    {
+      "id": 416185250,
+      "observed_on": "2026-11-21",
+      "usuario": "diariodelguardaparque",
       "nombre": "Estrellita",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763879380/medium.jpg"
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/766430588/medium.jpg"
     },
     {
-      "id": 414874143,
-      "observed_on": "2026-11-15",
-      "usuario": "mikeslater",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763831304/medium.jpg"
-    },
-    {
-      "id": 414758546,
-      "observed_on": "2026-11-14",
-      "usuario": "mikeslater",
-      "nombre": "Luzuriaga radicans",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763591679/medium.jpg"
-    },
-    {
-      "id": 414797562,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763672964/medium.jpg"
-    },
-    {
-      "id": 414797099,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "climbing Chilean pitcher flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763671809/medium.jpg"
-    },
-    {
-      "id": 414797394,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "Griselinia racemosa",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763672618/medium.jpg"
-    },
-    {
-      "id": 414797715,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "pilpil",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763673228/medium.jpg"
-    },
-    {
-      "id": 414797796,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "Chilean Mitre Flower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763673420/medium.jpg"
-    },
-    {
-      "id": 414798205,
-      "observed_on": "2026-11-14",
-      "usuario": "carlos_e_valdivia",
-      "nombre": "Luzuriaga polyphylla",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/763674103/medium.jpg"
-    },
-    {
-      "id": 415044633,
-      "observed_on": "2026-11-14",
-      "usuario": "eltontitodelosbichos",
+      "id": 416220394,
+      "observed_on": "2026-11-21",
+      "usuario": "mauricio1987",
       "nombre": "Chilean bellflower",
-      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/764172061/medium.jpg"
+      "foto": "https://static.inaturalist.org/photos/766500056/medium.jpg"
     },
     {
-      "id": 414994512,
-      "observed_on": "2026-11-14",
-      "usuario": "pauliyanezm",
-      "nombre": "Elytropus chilensis",
-      "foto": "https://static.inaturalist.org/photos/764064707/medium.jpg"
+      "id": 416182184,
+      "observed_on": "2026-11-21",
+      "usuario": "brechtverstraete",
+      "nombre": "huedhued",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/766424684/medium.jpg"
+    },
+    {
+      "id": 416547936,
+      "observed_on": "2026-11-21",
+      "usuario": "margaritarp",
+      "nombre": "devil's elder",
+      "foto": "https://static.inaturalist.org/photos/767155499/medium.jpg"
+    },
+    {
+      "id": 416539515,
+      "observed_on": "2026-11-21",
+      "usuario": "margaritarp",
+      "nombre": "Chilean Mitre Flower",
+      "foto": "https://static.inaturalist.org/photos/767140977/medium.jpg"
+    },
+    {
+      "id": 416472359,
+      "observed_on": "2026-11-21",
+      "usuario": "davidcavieres",
+      "nombre": "Hymenophyllum cruentum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/767006565/medium.jpg"
+    },
+    {
+      "id": 416472389,
+      "observed_on": "2026-11-21",
+      "usuario": "davidcavieres",
+      "nombre": "Hymenophyllum pectinatum",
+      "foto": "https://inaturalist-open-data.s3.amazonaws.com/photos/767006603/medium.jpg"
     }
   ]
 }
